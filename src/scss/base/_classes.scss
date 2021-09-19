@@ -14,12 +14,12 @@
     display: none !important;
 }
 
-.hide-medium {
-	@include medium(display, none !important);
-}
-
 .hide-tablet {
 	@include tablet(display, none !important);
+}
+
+.hide-tabletSM {
+	@include tabletSM(display, none !important);
 }
 
 .hide-mobile {
@@ -49,6 +49,18 @@
     &--dark {
         background-color: var(--color-dark);
     }
+    &--dark-low {
+        background-color: var(--color-dark-low);
+    }
+    &--black {
+        background-color: var(--color-black);
+    }
+    &--black-hight {
+        background-color: var(--color-black-hight);
+    }
+    &--black-low {
+        background-color: var(--color-black-low);
+    }
 }
 
 /* Links */
@@ -59,57 +71,53 @@
 }
 
 .link:hover {
-    color: var(--color-orange);
+    color: var(--color-blue-low);
 }
 
 /* Title */
 
 .title {
-    font-family: var(--font-gotham);
+    font-family: var(--font-myriad);
     font-style: normal;
     margin: 0;
     &--big {
-		font-size: 45px;
-        font-size: responsive 16px 45px;
-        font-range: 320px 1440px;
+        font-size: responsive 45px 75px;
+        font-range: 320px 1280px;
     }
     &--large {
-        font-size: responsive 20px 26px;
-        font-range: 1024px 1440px;
+        font-size: responsive 25px 45px;
+        font-range: 320px 1280px;
     }
     &--medium {
-        font-size: responsive 18px 22px;
-        font-range: 1024px 1440px;
+        font-size: responsive 20px 25px;
+        font-range: 320px 1280px;
     }
     &--small {
         font-size: 16px;
     }
-    &--tiny {
-        font-size: 12px;
-    }
-    &--orange {
-        color: var(--color-orange);
-    }
     &--white {
         color: var(--color-white);
 	}
-    &--black-gray {
-		color: var(--color-black-gray); 
+    &--white-low-75 {
+        color: var(--color-white-low-75);
 	}
-	&--w-light {
-		font-weight: 300;
-    }
-    &--w-normal {
+    &--white-low-65 {
+        color: var(--color-white-low-65);
+	}
+    &--white-low-50 {
+        color: var(--color-white-low-50);
+	}
+    &--white {
+        color: var(--color-white);
+	}
+    &--w-regular {
 		font-weight: 400;
 	}
-    &--w-medium {
-		font-weight: 500;
+    &--w-semibold {
+		font-weight: 600;
 	}
 	&--w-bold {
 		font-weight: bold;
-	}
-	&--w-black {
-		font-weight: 900;
 	}
 	&--uppercase {
 		text-transform: uppercase;
@@ -117,64 +125,36 @@
 }
 
 .title--indent {
-    margin: 0 0 30px 50px;
-    @include tablet(margin, 0 0 20px 15px);
-    @include mobile(margin, 0 0 20px 0);
+    margin: 0 0 30px 0;
 }
 
 /* Text */
 
 .text {
-    font-family: var(--font-roboto);
+    font-family: var(--font-rubik);
     font-style: normal;
     margin: 0;
-	&--black-gray {
-		color: var(--color-black-gray); 
-	}
-	&--orange {
-		color: var(--color-orange);
-	}
 	&--white {
 		color: var(--color-white);
 	}
 	&--big {
-		font-size: 22px;
-        font-size: responsive 20px 30px;
-        font-range: 320px 1440px;
+        font-size: responsive 20px 22px;
+        font-range: 320px 1280px;
 	}
 	&--large {
-		font-size: 22px;
-        font-size: responsive 14px 22px;
-        font-range: 320px 1440px;
+        font-size: responsive 18px 20px;
+        font-range: 320px 1280px;
 	}
 	&--normal {
-        font-size: responsive 12px 16px;
-        font-range: 1024px 1440px;
+        font-size: responsive 16px 18px;
+        font-range: 320px 1280px;
 	}
 	&--small {
-		font-size: 12px;
-	}
-	&--tiny {
-		font-size: 10px;
+		font-size: 14px;
 	}
 	&--w-light {
 		font-weight: 300;
 	}
-	&--w-regular {
-		font-weight: normal;
-	}
-	&--w-medium {
-		font-weight: 500;
-	}
-	&--w-bold {
-		font-weight: 700;
-    }
-	&--w-black {
-		font-weight: 900;
-    }
-    &--italic {
-        font-style: italic;
-    }
     &--uppercase {
 		text-transform: uppercase;
 	}

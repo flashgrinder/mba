@@ -1,13 +1,17 @@
 :root {
-    --color-blue: #4A72CE;
-    --color-blue-opaciti-85: rgba(74, 114, 206, 0.85);
-    --color-light-blue: #5FB2D6;
-    --color-dark-blue: #43b1e0;
-    --color-dark: #555555;
-	--color-gray: #EFEFEF;
+    --color-blue: #0799EB;
+    --color-blue-low-75: rgba(7, 153, 235, 0.75);
+    --color-blue-low-65: rgba(7, 153, 235, 0.65);;
+    --color-blue-low-50: rgba(7, 153, 235, 0.5);
+    --color-dark: #1F1F1F;
+    --color-black: #1C1C1C;
+    --color-black-hight: #121212;
+    --color-black-low: #252525;
+    --color-dark-low: #505050;
 	--color-white: #FFFFFF;
-    --color-dark-gray: #A9A9A9;
-    --color-white-gray: #E5E5E5;
-    --font-roboto: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-gotham: "GothamPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--color-white-low-75: rgba(255, 255, 255, 0.75);
+	--color-white-low-65: rgba(255, 255, 255, 0.65);
+	--color-white-low-45: rgba(255, 255, 255, 0.45);
+    --font-myriad: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-rubik: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

@@ -1,0 +1,413 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro/MyriadPro-Semibold.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro/MyriadPro-Bold.eot");
+  src: url("../fonts/MyriadPro/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("../fonts/Rubik/Rubik-Light.eot");
+  src: url("../fonts/Rubik/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Light.woff") format("woff"), url("../fonts/Rubik/Rubik-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --color-blue: #0799EB;
+  --color-blue-low-75: rgba(7, 153, 235, 0.75);
+  --color-blue-low-65: rgba(7, 153, 235, 0.65);
+  --color-blue-low-50: rgba(7, 153, 235, 0.5);
+  --color-dark: #1F1F1F;
+  --color-black: #1C1C1C;
+  --color-black-hight: #121212;
+  --color-black-low: #252525;
+  --color-dark-low: #505050;
+  --color-white: #FFFFFF;
+  --color-white-low-75: rgba(255, 255, 255, 0.75);
+  --color-white-low-65: rgba(255, 255, 255, 0.65);
+  --color-white-low-45: rgba(255, 255, 255, 0.45);
+  --font-myriad: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-rubik: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Base */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Animation */
+
+/* Base Classes */
+
+/* Containers */
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container-full {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Hide */
+
+.hide {
+  display: none !important;
+}
+
+/* Position */
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Background */
+
+.bg--white {
+  background-color: var(--color-white);
+}
+
+.bg--dark {
+  background-color: var(--color-dark);
+}
+
+.bg--dark-low {
+  background-color: var(--color-dark-low);
+}
+
+.bg--black {
+  background-color: var(--color-black);
+}
+
+.bg--black-hight {
+  background-color: var(--color-black-hight);
+}
+
+.bg--black-low {
+  background-color: var(--color-black-low);
+}
+
+/* Links */
+
+.link {
+  text-decoration: none;
+  transition: ease .3s;
+}
+
+.link:hover {
+  color: var(--color-blue-low);
+}
+
+/* Title */
+
+.title {
+  font-family: var(--font-myriad);
+  font-style: normal;
+  margin: 0;
+}
+
+.title--big {
+  font-size: calc(45px + 30 * ((100vw - 320px) / 960));
+}
+
+@media screen and (min-width: 1280px) {
+
+  .title--big {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title--big {
+    font-size: 45px;
+  }
+}
+
+.title--large {
+  font-size: calc(25px + 20 * ((100vw - 320px) / 960));
+}
+
+@media screen and (min-width: 1280px) {
+
+  .title--large {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title--large {
+    font-size: 25px;
+  }
+}
+
+.title--medium {
+  font-size: calc(20px + 5 * ((100vw - 320px) / 960));
+}
+
+@media screen and (min-width: 1280px) {
+
+  .title--medium {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title--medium {
+    font-size: 20px;
+  }
+}
+
+.title--small {
+  font-size: 16px;
+}
+
+.title--white {
+  color: var(--color-white);
+}
+
+.title--white-low-75 {
+  color: var(--color-white-low-75);
+}
+
+.title--white-low-65 {
+  color: var(--color-white-low-65);
+}
+
+.title--white-low-50 {
+  color: var(--color-white-low-50);
+}
+
+.title--white {
+  color: var(--color-white);
+}
+
+.title--w-regular {
+  font-weight: 400;
+}
+
+.title--w-semibold {
+  font-weight: 600;
+}
+
+.title--w-bold {
+  font-weight: bold;
+}
+
+.title--uppercase {
+  text-transform: uppercase;
+}
+
+.title--indent {
+  margin: 0 0 30px 0;
+}
+
+/* Text */
+
+.text {
+  font-family: var(--font-rubik);
+  font-style: normal;
+  margin: 0;
+}
+
+.text--white {
+  color: var(--color-white);
+}
+
+.text--big {
+  font-size: calc(20px + 2 * ((100vw - 320px) / 960));
+}
+
+@media screen and (min-width: 1280px) {
+
+  .text--big {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--big {
+    font-size: 20px;
+  }
+}
+
+.text--large {
+  font-size: calc(18px + 2 * ((100vw - 320px) / 960));
+}
+
+@media screen and (min-width: 1280px) {
+
+  .text--large {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--large {
+    font-size: 18px;
+  }
+}
+
+.text--normal {
+  font-size: calc(16px + 2 * ((100vw - 320px) / 960));
+}
+
+@media screen and (min-width: 1280px) {
+
+  .text--normal {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .text--normal {
+    font-size: 16px;
+  }
+}
+
+.text--small {
+  font-size: 14px;
+}
+
+.text--w-light {
+  font-weight: 300;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/* Blocks */
+
+/* Page */
+
+.page {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  line-height: 1.35;
+  overflow-x: hidden;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+  min-height: 100vh;
+}
+
+.page__container {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* Swiper Slider Examples*/
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* ANOTHER MODULES */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .hide-tablet {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hide-tabletSM {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container-full {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-full {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
