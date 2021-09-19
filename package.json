@@ -1,5 +1,5 @@
 {
-  "name": "template",
+  "name": "mba",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -56,10 +56,18 @@
       "@babel/preset-env"
     ]
   },
-  "description": "My template for web.",
+  "description": "",
   "browserslist": [
     "last 15 version",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flashgrinder/mba.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flashgrinder/mba/issues"
+  },
+  "homepage": "https://github.com/flashgrinder/mba#readme"
 }
