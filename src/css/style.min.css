@@ -1,7 +1,7 @@
 /* Fonts */
 
 @font-face {
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
   src: url("../fonts/MyriadPro/MyriadPro-Regular.eot");
   src: url("../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
   src: url("../fonts/MyriadPro/MyriadPro-Semibold.eot");
   src: url("../fonts/MyriadPro/MyriadPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Semibold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Semibold.ttf") format("truetype");
   font-weight: 600;
@@ -19,7 +19,7 @@
 }
 
 @font-face {
-  font-family: 'Myriad Pro';
+  font-family: "Myriad Pro";
   src: url("../fonts/MyriadPro/MyriadPro-Bold.eot");
   src: url("../fonts/MyriadPro/MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro/MyriadPro-Bold.woff") format("woff"), url("../fonts/MyriadPro/MyriadPro-Bold.ttf") format("truetype");
   font-weight: bold;
@@ -28,7 +28,7 @@
 }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   src: url("../fonts/Rubik/Rubik-Light.eot");
   src: url("../fonts/Rubik/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Light.woff") format("woff"), url("../fonts/Rubik/Rubik-Light.ttf") format("truetype");
   font-weight: 300;
@@ -77,7 +77,7 @@ img {
 /* Containers */
 
 .container {
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -138,7 +138,7 @@ img {
 
 .link {
   text-decoration: none;
-  transition: ease .3s;
+  transition: ease 0.3s;
 }
 
 .link:hover {
@@ -248,7 +248,7 @@ img {
 }
 
 .title--indent {
-  margin: 0 0 30px 0;
+  margin: 0 0 45px 0;
 }
 
 /* Text */
