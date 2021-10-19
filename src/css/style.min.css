@@ -36,6 +36,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik/Rubik-Bold.eot");
+  src: url("../fonts/Rubik/Rubik-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik/Rubik-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Variables */
 
 :root {
@@ -145,6 +154,12 @@ img {
   color: var(--color-blue-low);
 }
 
+/* Block Padding */
+
+.block-padding {
+  padding: 77px 0 78px;
+}
+
 /* Title */
 
 .title {
@@ -154,10 +169,10 @@ img {
 }
 
 .title--big {
-  font-size: calc(45px + 30 * ((100vw - 320px) / 960));
+  font-size: calc(45px + 30 * ((100vw - 320px) / 880));
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
   .title--big {
     font-size: 75px;
@@ -172,10 +187,10 @@ img {
 }
 
 .title--large {
-  font-size: calc(25px + 20 * ((100vw - 320px) / 960));
+  font-size: calc(25px + 20 * ((100vw - 320px) / 880));
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
   .title--large {
     font-size: 45px;
@@ -190,10 +205,10 @@ img {
 }
 
 .title--medium {
-  font-size: calc(20px + 5 * ((100vw - 320px) / 960));
+  font-size: calc(20px + 5 * ((100vw - 320px) / 880));
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
   .title--medium {
     font-size: 25px;
@@ -264,10 +279,10 @@ img {
 }
 
 .text--big {
-  font-size: calc(20px + 2 * ((100vw - 320px) / 960));
+  font-size: calc(20px + 2 * ((100vw - 320px) / 880));
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
   .text--big {
     font-size: 22px;
@@ -282,10 +297,10 @@ img {
 }
 
 .text--large {
-  font-size: calc(18px + 2 * ((100vw - 320px) / 960));
+  font-size: calc(18px + 2 * ((100vw - 320px) / 880));
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
   .text--large {
     font-size: 20px;
@@ -300,10 +315,10 @@ img {
 }
 
 .text--normal {
-  font-size: calc(16px + 2 * ((100vw - 320px) / 960));
+  font-size: calc(16px + 2 * ((100vw - 320px) / 880));
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
 
   .text--normal {
     font-size: 18px;
@@ -354,6 +369,90 @@ img {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+}
+
+/* Capability */
+
+.capability__items {
+  max-width: 840px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+
+.capability__item {
+  position: relative;
+  max-width: 615px;
+}
+
+.capability__item ~ .capability__item {
+  margin-top: 60px;
+}
+
+.capability__item:nth-child(even) {
+  -webkit-align-self: flex-end;
+          align-self: flex-end;
+  text-align: right;
+}
+
+.capability__item::before {
+  position: absolute;
+  left: -60px;
+  top: -40px;
+  content: attr(data-num);
+  font-family: var(--font-rubik);
+  font-size: calc(75px + 80 * ((100vw - 320px) / 880));
+  line-height: 1;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+@media screen and (min-width: 1200px) {
+
+  .capability__item::before {
+    font-size: 155px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .capability__item::before {
+    font-size: 75px;
+  }
+}
+
+.capability__item:nth-child(even)::before {
+  right: -60px;
+  top: -55px;
+}
+
+.capability__headline {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+          align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.capability__icon {
+  margin-left: 12px;
+}
+
+.capability__item:nth-child(even) .capability__icon {
+  margin-right: 12px;
+  -webkit-order: -1;
+          order: -1;
+}
+
+.capability__svg {
+  display: block;
+}
+
+.capability__descr {
+  margin-top: 12px;
 }
 
 /* ANOTHER MODULES */

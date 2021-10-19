@@ -74,6 +74,11 @@
     color: var(--color-blue-low);
 }
 
+/* Block Padding */
+.block-padding {
+    padding: 77px 0 78px;
+}
+
 /* Title */
 
 .title {
@@ -82,15 +87,15 @@
     margin: 0;
     &--big {
         font-size: responsive 45px 75px;
-        font-range: 320px 1280px;
+        font-range: 320px 1200px;
     }
     &--large {
         font-size: responsive 25px 45px;
-        font-range: 320px 1280px;
+        font-range: 320px 1200px;
     }
     &--medium {
         font-size: responsive 20px 25px;
-        font-range: 320px 1280px;
+        font-range: 320px 1200px;
     }
     &--small {
         font-size: 16px;
@@ -139,15 +144,15 @@
 	}
 	&--big {
         font-size: responsive 20px 22px;
-        font-range: 320px 1280px;
+        font-range: 320px 1200px;
 	}
 	&--large {
         font-size: responsive 18px 20px;
-        font-range: 320px 1280px;
+        font-range: 320px 1200px;
 	}
 	&--normal {
         font-size: responsive 16px 18px;
-        font-range: 320px 1280px;
+        font-range: 320px 1200px;
 	}
 	&--small {
 		font-size: 14px;
