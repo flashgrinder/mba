@@ -489,7 +489,7 @@ img {
 /* Capability */
 
 .capability__items {
-  max-width: 840px;
+  max-width: 735px;
   margin: 0 auto;
   display: -webkit-flex;
   display: flex;
