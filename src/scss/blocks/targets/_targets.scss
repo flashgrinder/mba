@@ -1,5 +1,5 @@
 .targets__items {
-    max-width: 640px;
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     position: relative;
     display: inline-flex;
     align-items: center;
-    transition: color .2s ease-in-out;
+    transition: color .1s ease-in-out;
 }
 
 .targets__dot {
@@ -30,7 +30,7 @@
 
 .targets__svg-dot {
     fill: var(--color-white);
-    transition: fill .2s ease-in-out;
+    transition: fill .1s ease-in-out;
 }
 
 .targets__item:hover .targets__svg-dot {
@@ -43,13 +43,26 @@
 
 .targets__svg-icon {
     display: block;
-    fill: var(--color-white);
-    // stroke: var(--color-white);
-    transition: fill .2s ease-in-out;
 }
 
-.targets__item:hover .targets__svg-icon {
+.targets__svg-path--color-fill,
+.targets__svg-path--color-strike {
+    transition: fill .1s ease-in-out, stroke .1s ease-in-out;
+}
+
+.targets__svg-path--color-fill {
+    fill: var(--color-white);
+}
+
+.targets__svg-path--color-stroke {
+    stroke: var(--color-white);
+}
+
+.targets__item:hover .targets__svg-path--color-fill {
     fill: var(--color-blue);
+}
+
+.targets__item:hover .targets__svg-path--color-stroke {
     stroke: var(--color-blue);
 }
 
@@ -70,7 +83,7 @@
     visibility: hidden;
     opacity: 0;
     z-index: 9;
-    transition: visibility .2s ease-in-out, opacity .2s ease-in-out;
+    transition: visibility .1s ease-in-out, opacity .1s ease-in-out;
 }
 
 .targets__item:hover .targets__descr {
@@ -83,7 +96,7 @@
     position: absolute;
     top: -73px;
     left: -90px;
-    right: -25px;
+    right: -50px;
     bottom: -25px;
     background: rgba(31, 31, 31, 0.6);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
