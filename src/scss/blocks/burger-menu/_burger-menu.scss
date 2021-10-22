@@ -11,14 +11,14 @@
     position: relative;
     width: 30px;
     height: 2px;
-    background: var(--color-white);
+    background-color: var(--color-white);
 }
 
 .burger-menu__line,
 .burger-menu__line::before,
 .burger-menu__line::after {
     border-radius: 50px;
-    transition: rotate .3s ease-in-out, opacity .1s ease-in-out;
+    transition: transform .2s ease-in-out, top .2s ease-in-out, background-color .1s ease-in-out;
 }
 
 .burger-menu__line::before,
@@ -47,11 +47,11 @@
 }
 
 .burger-menu.is-open .burger-menu__line::before {
-    transform: rotate(45deg);
     top: 0;
+    animation: rotate-burger-before .2s linear .2s forwards;
 }
 
 .burger-menu.is-open .burger-menu__line::after {
-    transform: rotate(-45deg);
     top: 0;
+    animation: rotate-burger-after .2s linear .2s forwards;
 }

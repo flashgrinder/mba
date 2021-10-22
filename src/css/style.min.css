@@ -81,6 +81,56 @@ img {
 
 /* Animation */
 
+/* Burger-menu */
+
+@-webkit-keyframes rotate-burger-before {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@keyframes rotate-burger-before {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes rotate-burger-after {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
+@keyframes rotate-burger-after {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+}
+
 /* Base Classes */
 
 /* Containers */
@@ -431,6 +481,14 @@ img {
           backdrop-filter: blur(75px);
   z-index: 999;
   padding: 45px 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.header__menu-item {
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 /* Burger-menu */
@@ -450,14 +508,16 @@ img {
   position: relative;
   width: 30px;
   height: 2px;
-  background: var(--color-white);
+  background-color: var(--color-white);
 }
 
 .burger-menu__line,
 .burger-menu__line::before,
 .burger-menu__line::after {
   border-radius: 50px;
-  transition: rotate 0.3s ease-in-out, opacity 0.1s ease-in-out;
+  transition: top 0.2s ease-in-out, background-color 0.1s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, top 0.2s ease-in-out, background-color 0.1s ease-in-out;
+  transition: transform 0.2s ease-in-out, top 0.2s ease-in-out, background-color 0.1s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .burger-menu__line::before,
@@ -486,15 +546,15 @@ img {
 }
 
 .burger-menu.is-open .burger-menu__line::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
   top: 0;
+  -webkit-animation: rotate-burger-before 0.2s linear 0.2s forwards;
+          animation: rotate-burger-before 0.2s linear 0.2s forwards;
 }
 
 .burger-menu.is-open .burger-menu__line::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
   top: 0;
+  -webkit-animation: rotate-burger-after 0.2s linear 0.2s forwards;
+          animation: rotate-burger-after 0.2s linear 0.2s forwards;
 }
 
 /* Menu */
