@@ -399,9 +399,8 @@ img {
 /* Page */
 
 .page {
-  position: relative;
   margin: 0;
-  font-family: var(--font-roboto);
+  font-family: var(--font-rubik);
   font-size: 16px;
   line-height: 1.25;
   overflow-x: hidden;
@@ -411,14 +410,14 @@ img {
           flex-direction: column;
   -webkit-align-items: stretch;
           align-items: stretch;
-  min-height: 100vh;
 }
 
 .page__container {
-  max-width: 1920px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 /* Header */
