@@ -53,6 +53,7 @@
   --color-blue-low-65: rgba(7, 153, 235, 0.65);
   --color-blue-low-50: rgba(7, 153, 235, 0.5);
   --color-dark: #1F1F1F;
+  --color-dark-light: #2F2F2F;
   --color-black: #1C1C1C;
   --color-black-hight: #121212;
   --color-black-low: #252525;
@@ -173,6 +174,10 @@ img {
   background-color: var(--color-white);
 }
 
+.bg--dark-light {
+  background-color: var(--color-dark-light);
+}
+
 .bg--dark {
   background-color: var(--color-dark);
 }
@@ -272,6 +277,24 @@ img {
   }
 }
 
+.title--medium {
+  font-size: calc(18px + 4 * ((100vw - 320px) / 880));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .title--medium {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title--medium {
+    font-size: 18px;
+  }
+}
+
 .title--small {
   font-size: 16px;
 }
@@ -326,6 +349,10 @@ img {
 
 .text--white {
   color: var(--color-white);
+}
+
+.text--white-low-75 {
+  color: var(--color-white-low-75);
 }
 
 .text--very-big {
@@ -919,6 +946,83 @@ img {
 
 .capability__descr {
   margin-top: 12px;
+}
+
+/* Join-club */
+
+.join-club__items {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, 450px));
+  grid-gap: 45px;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.join-club__item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 45px 60px 45px 70px;
+  border-radius: 10px;
+}
+
+.join-club__list {
+  list-style: none;
+  padding: 0 0 0 40px;
+  margin: 0;
+}
+
+.join-club__list--features {
+  margin-top: 25px;
+}
+
+.join-club__point {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.join-club__point ~ .join-club__point {
+  margin-top: 25px;
+}
+
+.join-club__icon-point {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: -40px;
+}
+
+.join-club__icon-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.join-club__decr-point {
+  max-width: 275px;
+  margin-left: 15px;
+}
+
+.join-club__headline--features {
+  margin-top: 45px;
+}
+
+.join-club__actions {
+  margin-top: 45px;
+  text-align: center;
 }
 
 /* Footer */

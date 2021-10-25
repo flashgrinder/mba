@@ -46,6 +46,9 @@
     &--white {
         background-color: var(--color-white);
     }
+    &--dark-light {
+        background-color: var(--color-dark-light);
+    }
     &--dark {
         background-color: var(--color-dark);
     }
@@ -97,6 +100,10 @@
         font-size: responsive 20px 25px;
         font-range: 320px 1200px;
     }
+    &--medium {
+        font-size: responsive 18px 22px;
+        font-range: 320px 1200px;
+    }
     &--small {
         font-size: 16px;
     }
@@ -141,6 +148,9 @@
     margin: 0;
 	&--white {
 		color: var(--color-white);
+	}
+    &--white-low-75 {
+        color: var(--color-white-low-75);
 	}
 	&--very-big {
         font-size: responsive 22px 25px;

@@ -1,0 +1,64 @@
+.join-club__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(0px, 450px));
+    grid-gap: 45px;
+    justify-content: center;
+}
+
+.join-club__item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 45px 60px 45px 70px;
+    border-radius: 10px;
+}
+
+.join-club__list {
+    list-style: none;
+    padding: 0 0 0 40px;
+    margin: 0;
+}
+
+.join-club__list--features {
+    margin-top: 25px;
+}
+
+.join-club__point {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.join-club__point ~ .join-club__point {
+    margin-top: 25px;
+}
+
+.join-club__icon-point {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: -40px;
+}
+
+.join-club__icon-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.join-club__decr-point {
+    max-width: 275px;
+    margin-left: 15px;
+}
+
+.join-club__headline--features {
+    margin-top: 45px;
+}
+
+.join-club__actions {
+    margin-top: 45px;
+    text-align: center;
+}
