@@ -142,6 +142,10 @@
 	&--white {
 		color: var(--color-white);
 	}
+	&--very-big {
+        font-size: responsive 22px 25px;
+        font-range: 320px 1200px;
+	}
 	&--big {
         font-size: responsive 20px 22px;
         font-range: 320px 1200px;
@@ -159,6 +163,9 @@
 	}
 	&--w-light {
 		font-weight: 300;
+	}
+	&--w-bold {
+		font-weight: bold;
 	}
     &--uppercase {
 		text-transform: uppercase;

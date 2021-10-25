@@ -1,0 +1,88 @@
+.footer {
+    padding: 45px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__headline {
+    margin-bottom: 45px;
+}
+
+.footer__menu.menu {
+    font-size: 18px;
+}
+
+.footer__menu-list {
+    padding: 0;
+}
+
+.footer__lang {
+    margin-top: 45px;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 45px 0 0 0;
+}
+
+.footer__lang-item ~ .footer__lang-item {
+    margin-left: 15px;
+}
+
+.footer__lang-link{
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.footer__lang-link:hover {
+    color: var(--color-blue);
+}
+
+.footer__phone,
+.footer__email {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__phone:hover .footer__phone-num,
+.footer__email:hover .footer__email-line {
+    color: var(--color-blue);
+}
+
+.footer__phone-num,
+.footer__email-line {
+    margin-top: 5px;
+    transition: color .2s ease-in-out;
+}
+
+.footer__phone + .footer__email {
+    margin-top: 25px;
+}
+
+.footer__social {
+    margin-top: 15px;
+    display: flex;
+}
+
+.footer__social-icon ~ .footer__social-icon {
+    margin-left: 15px;
+}
+
+.footer__actions {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__btn ~ .footer__btn {
+    margin-left: 25px;
+}
