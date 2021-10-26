@@ -1,0 +1,113 @@
+/* Residents-slider Full */
+.residents-slider__inner-slide {
+    display: grid;
+    grid-template-columns: minmax(0, 316px) minmax(0, 1fr);
+    grid-gap: 60px;
+    justify-content: space-between;
+}
+
+.residents-slider__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.residents-slider__photo {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.residents-slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.residents-slider__rank {
+    margin-top: 25px;
+}
+
+.residents-slider__text {
+    margin-top: 45px;
+}
+
+/* Residents-slider Thumb */
+.residents-slider__inner-slider-thumb {
+    position: relative;
+    max-width: 1080px;
+    margin: 100px auto 0 auto;
+}
+
+.residents-slider__swiper-slide-thumb.swiper-slide-thumb-active .residents-slider__img-thumb {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.residents-slider__photo-thumb {
+    text-align: center;
+}
+
+.residents-slider__img-thumb {
+    display: inline-block;
+    transform: scale(0.9);
+    opacity: 0.65;
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    cursor: pointer;
+}
+
+.residents-slider__img-thumb:hover {
+    transform: scale(1);
+}
+
+.residents-slider__arrow {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.residents-slider__arrow--prev {
+    left: -40px;
+}
+
+.residents-slider__arrow--next {
+    right: -40px;
+}
+
+.residents-slider__arrow.swiper-button-disabled {
+    opacity: 0.1;
+}
+
+.residents-slider__pagination {
+    margin-top: 25px;
+    width: 100%;
+}
+
+.residents-slider__bullet {
+    display: inline-block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(69, 69, 69, 0.85);
+    border: 1px solid var(--color-white-low-45);
+    transform: scale(1);
+    transition: border .2s ease-in-out, transform .2s ease-in-out;
+}
+
+.residents-slider__bullet:hover {
+    transform: scale(1.2);
+    border: 1px solid var(--color-white-low-75);
+}
+
+.residents-slider__bullet--active {
+    border: 1px solid var(--color-white-low-75);
+}
+
+.residents-slider__bullet ~ .residents-slider__bullet {
+    margin-left: 10px;
+}
