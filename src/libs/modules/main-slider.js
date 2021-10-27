@@ -9,7 +9,7 @@ function init() {
         edgeSwipeThreshold: 150,
         edgeSwipeThreshold: 150,
         effect: 'fade',
-        speed: 500,
+        speed: 1000,
         fadeEffect: {
             crossFade: true
         },
