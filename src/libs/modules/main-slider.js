@@ -15,10 +15,15 @@ function init() {
         },
         pagination: {
             el: '.main-slider__pagination',
-            type: 'bullets',
             clickable: true,
             bulletActiveClass: 'main-slider__bullet--active',
+            currentClass: 'main-slider__bullet--current',
             bulletClass: 'main-slider__bullet',
+            // renderBullet: function (index, className) {
+            //     let activeBullet = 'main-slider__bullet--active';
+            //     className = activeBullet;
+            //     return `<span class="main-slider__bullet ${className}">${index}</span>`;
+            // }
         }
     });
 

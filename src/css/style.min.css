@@ -137,6 +137,56 @@ img {
   }
 }
 
+/* About svg animation */
+
+@-webkit-keyframes rotate-clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-clockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-counterclockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-counterclockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
 /* Base Classes */
 
 /* Containers */
@@ -1419,6 +1469,28 @@ button.swiper-pagination-bullet {
 
 .main-slider__bullet ~ .main-slider__bullet {
   margin-top: 10px;
+}
+
+/* About */
+
+.about__description {
+  max-width: 835px;
+}
+
+.about__outer {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.about__anim-block {
+  text-align: center;
+}
+
+.about__svg,
+.about__svg-word {
+  transform-box: view-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
 }
 
 /* Targets */

@@ -1,0 +1,26 @@
+.about__description {
+    max-width: 835px;
+}
+
+.about__outer {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.about__anim-block {
+    text-align: center;
+}
+
+.about__svg,
+.about__svg-word {
+    transform-box: view-box;
+    transform-origin: center;
+}
+
+.about__svg-word--long {
+    // animation: rotate-counterclockwise 12s linear infinite forwards;
+}
+
+.about__svg-word--short {
+    // animation: rotate-clockwise 12s linear infinite forwards;
+}
