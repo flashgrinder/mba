@@ -1483,14 +1483,104 @@ button.swiper-pagination-bullet {
 }
 
 .about__anim-block {
+  position: relative;
   text-align: center;
 }
 
-.about__svg,
-.about__svg-word {
-  transform-box: view-box;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+.about__svg {
+  max-width: 657px;
+}
+
+.about__plunk {
+  position: absolute;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.about__plunk:hover .about__text,
+.about__plunk:hover .about__svg-dot {
+  fill: var(--color-blue);
+  color: var(--color-blue);
+}
+
+.about__text {
+  transition: color 0.2s ease-in-out;
+}
+
+.about__svg-dot {
+  transition: fill 0.2s ease-in-out;
+}
+
+.about__plunk--top-left {
+  top: 32px;
+  left: 28px;
+}
+
+.about__plunk--bottom-left {
+  bottom: 100px;
+  left: 10px;
+}
+
+.about__plunk--top-right {
+  top: 32px;
+  right: 203px;
+}
+
+.about__plunk--middle-right {
+  top: 260px;
+  right: 18px;
+}
+
+.about__plunk--bottom-right {
+  right: 26px;
+  bottom: 40px;
+}
+
+.about__plunk:nth-of-type(1) .about__text,
+.about__plunk:nth-of-type(2) .about__text {
+  margin-right: 25px;
+}
+
+.about__plunk:nth-of-type(3) .about__text,
+.about__plunk:nth-of-type(4) .about__text,
+.about__plunk:nth-of-type(5) .about__text {
+  margin-left: 25px;
+}
+
+.about__svg-dot {
+  display: block;
+  fill: var(--color-white);
+}
+
+.about__plate {
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 25px;
+  background: rgba(95, 95, 95, 0.05);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
+  border-radius: 10px;
+  max-width: 390px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.about__plate-decr {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.about__plate.is-visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Targets */
