@@ -1,0 +1,28 @@
+.mba-anim {
+    position: absolute;
+    left: -8%;
+    bottom: 36%;
+}
+
+.mba-anim__outer {
+    position: relative;
+}
+
+.mba-anim__word--short {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mba-anim__svg--long {
+    animation: rotate-counterclockwise 12s linear infinite forwards;
+}
+
+.mba-anim__word {
+    position: absolute;
+}
+
+.mba-anim__svg--short {
+    animation: rotate-clockwise 12s linear infinite forwards;
+}

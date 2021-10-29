@@ -1,4 +1,8 @@
 /* Residents-slider Full */
+.residents-slider {
+    position: relative;
+}
+
 .residents-slider__inner-slide {
     display: grid;
     grid-template-columns: minmax(0, 316px) minmax(0, 1fr);

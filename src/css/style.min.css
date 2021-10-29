@@ -1786,6 +1786,10 @@ button.swiper-pagination-bullet {
 
 /* Residents-slider Full */
 
+.residents-slider {
+  position: relative;
+}
+
 .residents-slider__inner-slide {
   display: -ms-grid;
   display: grid;
@@ -1919,6 +1923,40 @@ button.swiper-pagination-bullet {
 
 .residents-slider__bullet ~ .residents-slider__bullet {
   margin-left: 10px;
+}
+
+/* MBA-anim */
+
+.mba-anim {
+  position: absolute;
+  left: -8%;
+  bottom: 36%;
+}
+
+.mba-anim__outer {
+  position: relative;
+}
+
+.mba-anim__word--short {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mba-anim__svg--long {
+  -webkit-animation: rotate-counterclockwise 12s linear infinite forwards;
+          animation: rotate-counterclockwise 12s linear infinite forwards;
+}
+
+.mba-anim__word {
+  position: absolute;
+}
+
+.mba-anim__svg--short {
+  -webkit-animation: rotate-clockwise 12s linear infinite forwards;
+          animation: rotate-clockwise 12s linear infinite forwards;
 }
 
 /* Invite-news */
