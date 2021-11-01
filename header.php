@@ -42,7 +42,7 @@
                         <ul class="menu__list">
                             <li class="menu__item header__menu-item">
                                 <a href="" class="menu__link menu__link--home">
-                                    Главная1
+                                    Главная
                                 </a>
                             </li>
                             <li class="menu__item header__menu-item">
