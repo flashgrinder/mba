@@ -5,15 +5,23 @@
 .about__outer {
     margin: 0 auto;
     max-width: 1100px;
+    @include large(margin, 50px auto 0 auto);
+    @include tabletSM(max-width, 738px);
 }
 
 .about__anim-block {
     position: relative;
     text-align: center;
+    @include tabletSM-block {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .about__svg {
     max-width: 657px;
+    @include large(max-width, 450px);
+    @include tabletSM(display, none);
 }
 
 .about__plunk {
@@ -21,6 +29,13 @@
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    @include tabletSM-block {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        left: auto;
+    }
 }
 
 .about__plunk:hover .about__text,
@@ -40,37 +55,129 @@
 .about__plunk--top-left {
     top: 32px;
     left: 28px;
+    @include large-block {
+        top: 14px;
+        left: 110px;
+    }
+    @include tablet-block {
+        left: 50px;
+    }
 }
 
 .about__plunk--bottom-left {
     bottom: 100px;
     left: 10px;
+    @include large-block {
+        bottom: 64px;
+        left: 105px;
+    }
+    @include tablet-block {
+        left: 45px;
+    }
 }
 
 .about__plunk--top-right {
     top: 32px;
     right: 203px;
+    @include large-block {
+        top: 16px;
+        right: 260px;
+    }
+    @include tablet-block {
+        right: 188px;
+    }
 }
 
 .about__plunk--middle-right {
     top: 260px;
     right: 18px;
+    @include large-block {
+        top: 171px;
+        right: 120px;
+    }
+    @include tablet-block {
+        right: 56px;
+    }
 }
 
 .about__plunk--bottom-right {
     right: 26px;
     bottom: 40px;
+    @include large-block {
+        bottom: 21px;
+        right: 90px;
+    }
+    @include tablet-block {
+        right: 26px;
+    }
 }
 
-.about__plunk:nth-of-type(1) .about__text,
-.about__plunk:nth-of-type(2) .about__text {
+.about__item {
+    @include mobileXS(position, relative);
+}
+
+.about__item ~ .about__item {
+    @include tabletSM(margin-top, 25px);
+    @include mobileXS(margin-top, 100px);
+}
+
+.about__item:nth-of-type(1) .about__plunk .about__text,
+.about__item:nth-of-type(2) .about__plunk .about__text {
     margin-right: 25px;
+    order: -1;
+    @include tablet-block {
+        margin-right: 15px;
+    }
+    @include tabletSM(order, 0);
 }
 
-.about__plunk:nth-of-type(3) .about__text,
-.about__plunk:nth-of-type(4) .about__text,
-.about__plunk:nth-of-type(5) .about__text {
+.about__item:nth-of-type(3) .about__plunk .about__text,
+.about__item:nth-of-type(4) .about__plunk .about__text,
+.about__item:nth-of-type(5) .about__plunk .about__text {
     margin-left: 25px;
+    @include tablet-block {
+        margin-left: 15px;
+    }
+}
+
+.about__item:nth-child(even) {
+    @include tabletSM(align-self, flex-start);
+    @include mobileXS-block {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+.about__item:nth-child(odd) {
+    @include tabletSM(align-self, flex-end);
+    @include mobileXS-block {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+.about__item:nth-child(even) .about__plunk .about__text {
+    @include tabletSM(margin-left, 15px);
+    @include tabletSM-block {
+        margin-right: 15px;
+        margin-left: 15px;
+        text-align: left;
+    }
+}
+
+.about__item:nth-child(odd) .about__plunk .about__text {
+    @include tabletSM(margin-right, 15px);
+    @include tabletSM-block {
+        margin-left: 15px;
+        margin-right: 15px;
+        order: -1;
+    }
+}
+
+.about__item:nth-child(odd) .about__plate .about__plate-decr {
+    @include mobileXS-block {
+        text-align: right;
+    }
 }
 
 .about__svg-dot {
@@ -80,9 +187,9 @@
 
 .about__plate {
     position: absolute;
-    left: 45%;
-    bottom: 0;
-    transform: translateX(-50%);
+    left: 45.5%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
     padding: 25px;
     background: rgba(95, 95, 95, 0.05);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
@@ -91,12 +198,32 @@
     max-width: 390px;
     opacity: 0;
     visibility: hidden;
+    z-index: 101;
     transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
+    @include large-block {
+        left: 47%;
+        padding: 15px;
+        max-width: 370px;
+    }
+    @include tabletSM-block {
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, 50%);
+    }
+    @include mobileXS-block {
+        transform: translate(0, 0);
+        height: max-content;
+        width: 100%;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+    }
 }
 
 .about__plate-decr {
     margin-top: 30px;
     text-align: left;
+    @include large(margin-top, 15px);
 }
 
 .about__plate.is-visible {

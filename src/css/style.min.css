@@ -1539,14 +1539,16 @@ button.swiper-pagination-bullet {
   bottom: 40px;
 }
 
-.about__plunk:nth-of-type(1) .about__text,
-.about__plunk:nth-of-type(2) .about__text {
+.about__item:nth-of-type(1) .about__plunk .about__text,
+.about__item:nth-of-type(2) .about__plunk .about__text {
   margin-right: 25px;
+  -webkit-order: -1;
+          order: -1;
 }
 
-.about__plunk:nth-of-type(3) .about__text,
-.about__plunk:nth-of-type(4) .about__text,
-.about__plunk:nth-of-type(5) .about__text {
+.about__item:nth-of-type(3) .about__plunk .about__text,
+.about__item:nth-of-type(4) .about__plunk .about__text,
+.about__item:nth-of-type(5) .about__plunk .about__text {
   margin-left: 25px;
 }
 
@@ -1557,10 +1559,10 @@ button.swiper-pagination-bullet {
 
 .about__plate {
   position: absolute;
-  left: 45%;
-  bottom: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 45.5%;
+  bottom: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
   padding: 25px;
   background: rgba(95, 95, 95, 0.05);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
@@ -1570,6 +1572,7 @@ button.swiper-pagination-bullet {
   max-width: 390px;
   opacity: 0;
   visibility: hidden;
+  z-index: 101;
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
@@ -2176,6 +2179,51 @@ button.swiper-pagination-bullet {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1200px) {
+  .about__outer {
+    margin: 50px auto 0 auto;
+  }
+
+  .about__svg {
+    max-width: 450px;
+  }
+
+  .about__plunk--top-left {
+    top: 14px;
+    left: 110px;
+  }
+
+  .about__plunk--bottom-left {
+    bottom: 64px;
+    left: 105px;
+  }
+
+  .about__plunk--top-right {
+    top: 16px;
+    right: 260px;
+  }
+
+  .about__plunk--middle-right {
+    top: 171px;
+    right: 120px;
+  }
+
+  .about__plunk--bottom-right {
+    bottom: 21px;
+    right: 90px;
+  }
+
+  .about__plate {
+    left: 47%;
+    padding: 15px;
+    max-width: 370px;
+  }
+
+  .about__plate-decr {
+    margin-top: 15px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .hide-tablet {
     display: none !important;
@@ -2193,11 +2241,113 @@ button.swiper-pagination-bullet {
     left: auto;
     right: auto;
   }
+
+  .about__plunk--top-left {
+    left: 50px;
+  }
+
+  .about__plunk--bottom-left {
+    left: 45px;
+  }
+
+  .about__plunk--top-right {
+    right: 188px;
+  }
+
+  .about__plunk--middle-right {
+    right: 56px;
+  }
+
+  .about__plunk--bottom-right {
+    right: 26px;
+  }
+
+  .about__item:nth-of-type(1) .about__plunk .about__text,
+  .about__item:nth-of-type(2) .about__plunk .about__text {
+    margin-right: 15px;
+  }
+
+  .about__item:nth-of-type(3) .about__plunk .about__text,
+  .about__item:nth-of-type(4) .about__plunk .about__text,
+  .about__item:nth-of-type(5) .about__plunk .about__text {
+    margin-left: 15px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .hide-tabletSM {
     display: none !important;
+  }
+
+  .about__outer {
+    max-width: 738px;
+  }
+
+  .about__anim-block {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .about__svg {
+    display: none;
+  }
+
+  .about__plunk {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+  }
+
+  .about__item ~ .about__item {
+    margin-top: 25px;
+  }
+
+  .about__item:nth-of-type(1) .about__plunk .about__text,
+  .about__item:nth-of-type(2) .about__plunk .about__text {
+    -webkit-order: 0;
+            order: 0;
+  }
+
+  .about__item:nth-child(even) {
+    -webkit-align-self: flex-start;
+            align-self: flex-start;
+  }
+
+  .about__item:nth-child(odd) {
+    -webkit-align-self: flex-end;
+            align-self: flex-end;
+  }
+
+  .about__item:nth-child(even) .about__plunk .about__text {
+    margin-left: 15px;
+  }
+
+  .about__item:nth-child(even) .about__plunk .about__text {
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: left;
+  }
+
+  .about__item:nth-child(odd) .about__plunk .about__text {
+    margin-right: 15px;
+  }
+
+  .about__item:nth-child(odd) .about__plunk .about__text {
+    margin-left: 15px;
+    margin-right: 15px;
+    -webkit-order: -1;
+            order: -1;
+  }
+
+  .about__plate {
+    left: 50%;
+    bottom: 50%;
+    -webkit-transform: translate(-50%, 50%);
+            transform: translate(-50%, 50%);
   }
 }
 
@@ -2239,6 +2389,40 @@ button.swiper-pagination-bullet {
 
   .wysiwyg ul {
     padding-left: 20px;
+  }
+
+  .about__item {
+    position: relative;
+  }
+
+  .about__item ~ .about__item {
+    margin-top: 100px;
+  }
+
+  .about__item:nth-child(even) {
+    width: 100%;
+    text-align: left;
+  }
+
+  .about__item:nth-child(odd) {
+    width: 100%;
+    text-align: right;
+  }
+
+  .about__item:nth-child(odd) .about__plate .about__plate-decr {
+    text-align: right;
+  }
+
+  .about__plate {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
   }
 }
 
