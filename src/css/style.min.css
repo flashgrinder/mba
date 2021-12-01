@@ -1729,24 +1729,11 @@ button.swiper-pagination-bullet {
   top: -40px;
   content: attr(data-num);
   font-family: var(--font-rubik);
-  font-size: calc(75px + 80 * ((100vw - 320px) / 880));
+  font-size: 155px;
   line-height: 1;
+  font-range: 320px 1200px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.05);
-}
-
-@media screen and (min-width: 1200px) {
-
-  .capability__item::before {
-    font-size: 155px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-
-  .capability__item::before {
-    font-size: 75px;
-  }
 }
 
 .capability__item:nth-child(even)::before {
@@ -2277,6 +2264,10 @@ button.swiper-pagination-bullet {
   .targets__descr {
     max-width: 600px;
   }
+
+  .capability__items {
+    max-width: 576px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2392,6 +2383,10 @@ button.swiper-pagination-bullet {
     left: -5px;
     right: -5px;
   }
+
+  .capability__items {
+    max-width: 400px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -2441,6 +2436,22 @@ button.swiper-pagination-bullet {
     max-width: 100%;
     top: 0;
     left: 0;
+  }
+
+  .capability__items {
+    max-width: 290px;
+  }
+
+  .capability__item {
+    max-width: 290px;
+  }
+
+  .capability__item::before {
+    left: -20px;
+  }
+
+  .capability__item:nth-child(even)::before {
+    right: -20px;
   }
 }
 

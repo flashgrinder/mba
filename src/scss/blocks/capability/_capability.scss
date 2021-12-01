@@ -3,11 +3,15 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    @include tablet(max-width, 576px);
+    @include mobile(max-width, 400px);
+    @include mobileXS(max-width, 290px);
 }
 
 .capability__item {
     position: relative;
     max-width: 615px;
+    @include mobileXS(max-width, 290px);
 }
 
 .capability__item ~ .capability__item {
@@ -25,16 +29,18 @@
     top: -40px;
     content: attr(data-num);
     font-family: var(--font-rubik);
-    font-size: responsive 75px 155px;
+    font-size: 155px;
     line-height: 1;
     font-range: 320px 1200px;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.05);
+    @include mobileXS(left, -20px);
 }
 
 .capability__item:nth-child(even)::before {
     right: -60px;
     top: -55px;
+    @include mobileXS(right, -20px);
 }
 
 .capability__headline {
