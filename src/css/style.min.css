@@ -1589,7 +1589,7 @@ button.swiper-pagination-bullet {
 /* Targets */
 
 .targets__items {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   display: -webkit-flex;
   display: flex;
@@ -1616,11 +1616,7 @@ button.swiper-pagination-bullet {
 }
 
 .targets__dot {
-  position: absolute;
-  left: -70px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  margin-right: 20px;
 }
 
 .targets__svg-dot {
@@ -1664,7 +1660,7 @@ button.swiper-pagination-bullet {
 .targets__headline,
 .targets__descr {
   width: 100%;
-  max-width: 620px;
+  max-width: 900px;
 }
 
 .targets__item:hover .targets__headline {
@@ -1689,7 +1685,7 @@ button.swiper-pagination-bullet {
 .targets__descr::before {
   content: "";
   position: absolute;
-  top: -73px;
+  top: -80px;
   left: -90px;
   right: -50px;
   bottom: -25px;
@@ -2272,6 +2268,15 @@ button.swiper-pagination-bullet {
   .about__item:nth-of-type(5) .about__plunk .about__text {
     margin-left: 15px;
   }
+
+  .targets__items {
+    max-width: 600px;
+  }
+
+  .targets__headline,
+  .targets__descr {
+    max-width: 600px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2373,6 +2378,19 @@ button.swiper-pagination-bullet {
 
   .main-slider__pagination {
     right: 15px;
+  }
+
+  .targets__items {
+    max-width: 576px;
+  }
+
+  .targets__descr {
+    padding: 5px;
+  }
+
+  .targets__descr::before {
+    left: -5px;
+    right: -5px;
   }
 }
 

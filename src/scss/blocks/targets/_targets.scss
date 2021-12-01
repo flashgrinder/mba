@@ -1,8 +1,10 @@
 .targets__items {
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    @include tablet(max-width, 600px);
+    @include mobile(max-width, 576px);
 }
 
 .targets__item {
@@ -22,10 +24,7 @@
 }
 
 .targets__dot {
-    position: absolute;
-    left: -70px;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-right: 20px;
 }
 
 .targets__svg-dot {
@@ -69,7 +68,8 @@
 .targets__headline,
 .targets__descr {
     width: 100%;
-    max-width: 620px;
+    max-width: 900px;
+    @include tablet(max-width, 600px);
 }
 
 .targets__item:hover .targets__headline {
@@ -84,6 +84,7 @@
     opacity: 0;
     z-index: 9;
     transition: visibility .1s ease-in-out, opacity .1s ease-in-out;
+    @include mobile(padding, 5px);
 }
 
 .targets__item:hover .targets__descr {
@@ -94,7 +95,7 @@
 .targets__descr::before {
     content: '';
     position: absolute;
-    top: -73px;
+    top: -80px;
     left: -90px;
     right: -50px;
     bottom: -25px;
@@ -103,4 +104,8 @@
     backdrop-filter: blur(55px);
     border-radius: 10px;
     z-index: -1;
+    @include mobile-block {
+        left: -5px;
+        right: -5px;
+    }
 }
