@@ -133,113 +133,123 @@
                         <path d="M475 255L500.536 280.536C501.473 281.473 502.745 282 504.071 282H656.5" stroke="white" stroke-opacity="0.25" stroke-linecap="round"/>
                     </g>
                 </svg>
-                <span class="about__plunk js-plunk about__plunk--top-left">
-                    <div class="about__text text text--big text--white text--w-light right">
-                        Площадка 
-                        <br>
-                        для коммуникаций
+                <div class="about__item">
+                    <span class="about__plunk js-plunk about__plunk--top-left">
+                        <div class="about__dot">
+                            <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
+                                <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
+                                <circle cx="22" cy="22" r="10"/>
+                            </svg>
+                        </div>
+                        <div class="about__text text text--big text--white text--w-light right">
+                            Площадка 
+                            <br>
+                            для коммуникаций
+                        </div>
+                    </span>
+                    <div class="about__plate js-plate">
+                        <h4 class="about__plate-title text text--very-big text--white text--w-light">
+                            Площадка 
+                            <br>
+                            для коммуникаций
+                        </h4>
+                        <p class="about__plate-decr text text--normal text--white text--w-light">
+                            Какое-то краткое описание выражения в несколько строчек
+                        </p>
                     </div>
-                    <div class="about__dot">
-                        <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
-                            <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
-                            <circle cx="22" cy="22" r="10"/>
-                        </svg>
-                    </div>
-                </span>
-                <div class="about__plate js-plate">
-                    <h4 class="about__plate-title text text--very-big text--white text--w-light">
-                        Площадка 
-                        <br>
-                        для коммуникаций
-                    </h4>
-                    <p class="about__plate-decr text text--normal text--white text--w-light">
-                        Какое-то краткое описание выражения в несколько строчек
-                    </p>
                 </div>
-                <span class="about__plunk js-plunk about__plunk--bottom-left">
-                    <div class="about__text text text--big text--white text--w-light right">
-                        Живое общение
+                <div class="about__item">
+                    <span class="about__plunk js-plunk about__plunk--bottom-left">
+                        <div class="about__dot">
+                            <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
+                                <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
+                                <circle cx="22" cy="22" r="10"/>
+                            </svg>
+                        </div>
+                        <div class="about__text text text--big text--white text--w-light right">
+                            Живое общение
+                        </div>
+                    </span>
+                    <div class="about__plate js-plate">
+                        <h4 class="about__plate-title text text--very-big text--white text--w-light">
+                            Живое общение
+                        </h4>
+                        <p class="about__plate-decr text text--normal text--white text--w-light">
+                            Какое-то краткое описание выражения в несколько строчек
+                        </p>
                     </div>
-                    <div class="about__dot">
-                        <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
-                            <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
-                            <circle cx="22" cy="22" r="10"/>
-                        </svg>
-                    </div>
-                </span>
-                <div class="about__plate js-plate">
-                    <h4 class="about__plate-title text text--very-big text--white text--w-light">
-                        Живое общение
-                    </h4>
-                    <p class="about__plate-decr text text--normal text--white text--w-light">
-                        Какое-то краткое описание выражения в несколько строчек
-                    </p>
                 </div>
-                <span class="about__plunk js-plunk about__plunk--top-right">
-                    <div class="about__dot">
-                        <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
-                            <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
-                            <circle cx="22" cy="22" r="10"/>
-                        </svg>
+                <div class="about__item">
+                    <span class="about__plunk js-plunk about__plunk--top-right">
+                        <div class="about__dot">
+                            <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
+                                <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
+                                <circle cx="22" cy="22" r="10"/>
+                            </svg>
+                        </div>
+                        <div class="about__text text text--big text--white text--w-light left">
+                            Нетворкинг
+                        </div>
+                    </span>
+                    <div class="about__plate js-plate">
+                        <h4 class="about__plate-title text text--very-big text--white text--w-light">
+                            Нетворкинг
+                        </h4>
+                        <p class="about__plate-decr text text--normal text--white text--w-light">
+                            Какое-то краткое описание выражения в несколько строчек
+                        </p>
                     </div>
-                    <div class="about__text text text--big text--white text--w-light left">
-                        Нетворкинг
-                    </div>
-                </span>
-                <div class="about__plate js-plate">
-                    <h4 class="about__plate-title text text--very-big text--white text--w-light">
-                        Нетворкинг
-                    </h4>
-                    <p class="about__plate-decr text text--normal text--white text--w-light">
-                        Какое-то краткое описание выражения в несколько строчек
-                    </p>
                 </div>
-                <span class="about__plunk js-plunk about__plunk--middle-right">
-                    <div class="about__dot">
-                        <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
-                            <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
-                            <circle cx="22" cy="22" r="10"/>
-                        </svg>
+                <div class="about__item">
+                    <span class="about__plunk js-plunk about__plunk--middle-right">
+                        <div class="about__dot">
+                            <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
+                                <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
+                                <circle cx="22" cy="22" r="10"/>
+                            </svg>
+                        </div>
+                        <div class="about__text text text--big text--white text--w-light left">
+                            Обмен опытом
+                        </div>
+                    </span>
+                    <div class="about__plate js-plate">
+                        <h4 class="about__plate-title text text--very-big text--white text--w-light">
+                            Обмен опытом
+                        </h4>
+                        <p class="about__plate-decr text text--normal text--white text--w-light">
+                            Какое-то краткое описание выражения в несколько строчек
+                        </p>
                     </div>
-                    <div class="about__text text text--big text--white text--w-light left">
-                        Обмен опытом
-                    </div>
-                </span>
-                <div class="about__plate js-plate">
-                    <h4 class="about__plate-title text text--very-big text--white text--w-light">
-                        Обмен опытом
-                    </h4>
-                    <p class="about__plate-decr text text--normal text--white text--w-light">
-                        Какое-то краткое описание выражения в несколько строчек
-                    </p>
                 </div>
-                <span class="about__plunk js-plunk about__plunk--bottom-right">
-                    <div class="about__dot">
-                        <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
-                            <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
-                            <circle cx="22" cy="22" r="10"/>
-                        </svg>
+                <div class="about__item">
+                    <span class="about__plunk js-plunk about__plunk--bottom-right">
+                        <div class="about__dot">
+                            <svg class="about__svg-dot" width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="22" cy="22" r="22" fill-opacity="0.25"/>
+                                <circle cx="22" cy="22" r="16" fill-opacity="0.45"/>
+                                <circle cx="22" cy="22" r="10"/>
+                            </svg>
+                        </div>
+                        <div class="about__text text text--big text--white text--w-light left">
+                            Возможность проводить
+                            <br>
+                            совместные мероприятия
+                        </div>
+                    </span>
+                    <div class="about__plate js-plate">
+                        <h4 class="about__plate-title text text--very-big text--white text--w-light">
+                            Возможность проводить
+                            <br>
+                            совместные мероприятия
+                        </h4>
+                        <p class="about__plate-decr text text--normal text--white text--w-light">
+                            Какое-то краткое описание выражения в несколько строчек
+                        </p>
                     </div>
-                    <div class="about__text text text--big text--white text--w-light left">
-                        Возможность проводить
-                        <br>
-                        совместные мероприятия
-                    </div>
-                </span>
-                <div class="about__plate js-plate">
-                    <h4 class="about__plate-title text text--very-big text--white text--w-light">
-                        Возможность проводить
-                        <br>
-                        совместные мероприятия
-                    </h4>
-                    <p class="about__plate-decr text text--normal text--white text--w-light">
-                        Какое-то краткое описание выражения в несколько строчек
-                    </p>
                 </div>
             </div>
         </div>
