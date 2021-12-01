@@ -2406,8 +2406,28 @@ button.swiper-pagination-bullet {
     padding-right: 10px;
   }
 
+  .page {
+    padding-top: 60px;
+  }
+
   .wysiwyg ul {
     padding-left: 20px;
+  }
+
+  .header__img-logo {
+    max-height: 40px;
+  }
+
+  .header__btn {
+    font-size: 16px;
+  }
+
+  .header__btn ~ .header__btn {
+    margin-left: 15px;
+  }
+
+  .header__burger-menu {
+    margin-left: 30px;
   }
 
   .about__item {

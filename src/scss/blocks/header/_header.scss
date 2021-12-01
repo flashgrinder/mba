@@ -22,6 +22,7 @@
 
 .header__img-logo {
     display: block;
+    @include mobileXS(max-height, 40px);
 }
 
 .header__inner {
@@ -31,14 +32,17 @@
 
 .header__btn {
     text-decoration: none;
+    @include mobileXS(font-size, 16px);
 }
 
 .header__btn ~ .header__btn {
     margin-left: 25px;
+    @include mobileXS(margin-left, 15px);
 }
 
 .header__burger-menu {
     margin-left: 55px;
+    @include mobileXS(margin-left, 30px);
 }
 
 .header__wrapper-menu {
