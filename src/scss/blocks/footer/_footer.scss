@@ -6,10 +6,26 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @include mobileXS-block {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.footer__logo {
+    @include mobileXS(margin-bottom, 45px);
+}
+
+.footer__nav-wrapper {
+    @include mobileXS(margin-bottom, 45px);
 }
 
 .footer__headline {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-white);
     margin-bottom: 45px;
+    @include mobileXS(margin-bottom, 25px);
 }
 
 .footer__menu.menu {
@@ -26,6 +42,18 @@
     list-style: none;
     padding: 0;
     margin: 45px 0 0 0;
+}
+
+.footer__lang--desktop {
+    @include mobileXS(display, none);
+}
+
+.footer__lang--mobile {
+    display: none;
+    @include mobileXS-block {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .footer__lang-item ~ .footer__lang-item {
@@ -71,6 +99,10 @@
 .footer__social {
     margin-top: 15px;
     display: flex;
+    @include mobileXS-block {
+        margin-top: 25px;
+        justify-content: center;
+    }
 }
 
 .footer__social-icon ~ .footer__social-icon {
@@ -81,8 +113,17 @@
     margin-top: 150px;
     display: flex;
     justify-content: center;
+    @include mobileXS-block {
+        margin-top: 45px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__btn ~ .footer__btn {
     margin-left: 25px;
+    @include mobileXS-block {
+        margin-left: 0;
+        margin-top: 25px;
+    }
 }
