@@ -72,10 +72,10 @@
                     </a>
                     <div class="footer__social">
                         <a href="" class="footer__social-icon">
-                            <img src="<?php echo STANDART_DIR; ?>icons/soc-icon-fb.svg" alt="" class="footer__social-img">
+                            <img src="<?php echo STANDART_DIR; ?>img/icons/soc-icon-fb.svg" alt="" class="footer__social-img">
                         </a>
                         <a href="" class="footer__social-icon">
-                            <img src="<?php echo STANDART_DIR; ?>icons/soc-icon-inst.svg" alt="" class="footer__social-img">
+                            <img src="<?php echo STANDART_DIR; ?>img/icons/soc-icon-inst.svg" alt="" class="footer__social-img">
                         </a>
                     </div>
                     <ul class="footer__lang footer__lang--mobile text text--normal text--white text--w-light hide">
