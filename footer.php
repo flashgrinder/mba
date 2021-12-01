@@ -5,9 +5,9 @@
     <footer class="footer bg--black-hight">
         <div class="footer__body container">
             <div class="footer__inner">
-                <div class="footer__logo">
+                <a href="<?php echo home_url(); ?>" class="footer__logo">
                     <img src="<?php echo STANDART_DIR; ?>img/logo-footer.png" alt="" class="footer__img-logo">
-                </div>
+                </a>
                 <div class="footer__nav-wrapper">
                     <h3 class="footer__headline text text--very-big text--white text--w-bold">
                         Навигация
@@ -41,7 +41,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <ul class="footer__lang text text--normal text--white text--w-light hide">
+                    <ul class="footer__lang footer__lang--desktop text text--normal text--white text--w-light hide">
                         <li class="footer__lang-item">
                             <a href="" class="footer__lang-link">En</a>
                         </li>
@@ -78,6 +78,14 @@
                             <img src="<?php echo STANDART_DIR; ?>icons/soc-icon-inst.svg" alt="" class="footer__social-img">
                         </a>
                     </div>
+                    <ul class="footer__lang footer__lang--mobile text text--normal text--white text--w-light hide">
+                        <li class="footer__lang-item">
+                            <a href="" class="footer__lang-link">En</a>
+                        </li>
+                        <li class="footer__lang-item">
+                            <a href="" class="footer__lang-link">Ru</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="footer__actions">
