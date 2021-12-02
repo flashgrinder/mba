@@ -2006,6 +2006,10 @@ button.swiper-pagination-bullet {
           justify-content: space-between;
 }
 
+.invite-news__descr.wysiwyg > p:first-child {
+  margin-top: 0;
+}
+
 /* Join-club */
 
 .join-club__items {
@@ -2495,6 +2499,16 @@ button.swiper-pagination-bullet {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+
+  .invite-news__card {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .invite-news__actions {
+    text-align: center;
+    margin-top: 25px;
   }
 }
 
