@@ -2418,6 +2418,10 @@ button.swiper-pagination-bullet {
     display: none !important;
   }
 
+  .block-padding {
+    padding: 50px 0;
+  }
+
   .main-slider__slide-img {
     min-height: 340px;
     max-height: 340px;
