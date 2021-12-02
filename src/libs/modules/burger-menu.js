@@ -62,4 +62,4 @@ function destroy() {
     burger.removeEventListener('click', toggle)
 }
 
-export default {init, destroy, toggle}
+export default {init, destroy, toggle, close}
