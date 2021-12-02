@@ -2510,6 +2510,10 @@ button.swiper-pagination-bullet {
     text-align: center;
     margin-top: 25px;
   }
+
+  .join-club__item {
+    padding: 35px 25px 45px;
+  }
 }
 
 @media screen and (max-width: 576px) {

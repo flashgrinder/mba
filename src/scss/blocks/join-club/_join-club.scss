@@ -12,6 +12,7 @@
     justify-content: space-between;
     padding: 45px 60px 45px 70px;
     border-radius: 10px;
+    @include mobile(padding, 35px 25px 45px);
 }
 
 .join-club__list {
