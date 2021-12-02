@@ -1,11 +1,30 @@
 .mba-anim {
     position: absolute;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+.mba-anim--front-page {
     left: -8%;
     bottom: 36%;
+    @include tablet-block {
+        bottom: auto;
+        top: 50%;
+    }
+    @include mobile-block {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        padding-top: 110px;
+    }
 }
 
 .mba-anim__outer {
     position: relative;
+    @include mobile(min-height, 424px);
+    @include mobileXS(min-height, 290px);
 }
 
 .mba-anim__word--short {
@@ -17,6 +36,7 @@
 
 .mba-anim__svg--long {
     animation: rotate-counterclockwise 12s linear infinite forwards;
+    @include mobileXS(max-height, 290px);
 }
 
 .mba-anim__word {
@@ -25,4 +45,14 @@
 
 .mba-anim__svg--short {
     animation: rotate-clockwise 12s linear infinite forwards;
+    @include mobileXS(max-height, 140px);
+}
+
+.mba-anim__word--long,
+.mba-anim__word--short {
+    @include mobile-block {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

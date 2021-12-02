@@ -6,13 +6,18 @@ function init() {
 
     const residentsSliderThumb = new Swiper(".residents-slider__swiper-thumb", {
         loop: true,
-        slidesPerView: 6,
-        spaceBetween: 30,
+        slidesPerView: 3,
+        spaceBetween: 10,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
         breakpoints: {
-            320: {
-                spaceBetween: 10
+            768: {
+                spaceBetween: 10,
+                slidesPerView: 4
+            },
+            1025: {
+                spaceBetween: 30,
+                slidesPerView: 6
             }
         }
     });

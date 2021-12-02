@@ -542,15 +542,25 @@
                 <div class="residents-slider__swiper-wrapper swiper-wrapper">
                     <div class="residents-slider__swiper-slide swiper-slide">
                         <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__photo">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-1.png" alt="" class="residents-slider__img">
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-1.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
                                         Елена Омелченко
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
                                         Актриса, звезда сериала "Я не шучу"
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
@@ -567,15 +577,25 @@
                     </div>
                     <div class="residents-slider__swiper-slide swiper-slide">
                         <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__photo">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-2.png" alt="" class="residents-slider__img">
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-2.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
                                         Елена Омелченко
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
                                         Актриса, звезда сериала "Я не шучу"
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
@@ -592,15 +612,25 @@
                     </div>
                     <div class="residents-slider__swiper-slide swiper-slide">
                         <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__photo">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-3.png" alt="" class="residents-slider__img">
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-3.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
                                         Елена Омелченко
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
                                         Актриса, звезда сериала "Я не шучу"
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
@@ -617,15 +647,25 @@
                     </div>
                     <div class="residents-slider__swiper-slide swiper-slide">
                         <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__photo">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-4.png" alt="" class="residents-slider__img">
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-4.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
                                         Елена Омелченко
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
                                         Актриса, звезда сериала "Я не шучу"
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
@@ -642,15 +682,25 @@
                     </div>
                     <div class="residents-slider__swiper-slide swiper-slide">
                         <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__photo">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-5.png" alt="" class="residents-slider__img">
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-5.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
                                         Елена Омелченко
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
                                         Актриса, звезда сериала "Я не шучу"
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
@@ -667,15 +717,25 @@
                     </div>
                     <div class="residents-slider__swiper-slide swiper-slide">
                         <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__photo">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-6.png" alt="" class="residents-slider__img">
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-6.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
                                         Елена Омелченко
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
                                         Актриса, звезда сериала "Я не шучу"
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
@@ -693,7 +753,7 @@
                 </div>
             </div>
             <div class="residents-slider__inner-slider-thumb">
-                <div class="residents-slider__swiper-thumb swiper-container">
+                <div class="residents-slider__swiper-thumb swiper-container hide-mobile">
                     <div class="residents-slider__swiper-wrapper-thumb swiper-wrapper">
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
                             <div class="residents-slider__photo-thumb">
@@ -728,7 +788,7 @@
                     </div>
                 </div>
                 <div class="residents-slider__pagination swiper-pagination"></div>
-                <div class="residents-slider__navigation">
+                <div class="residents-slider__navigation hide-mobile">
                     <div class="residents-slider__arrow residents-slider__arrow--prev">
                         <svg class="residents-slider__arrow-svg" width="23" height="48" viewBox="0 0 23 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M21.5 1.70898L2.53553 20.6735C0.582911 22.6261 0.582912 25.7919 2.53553 27.7445L21.5 46.709" stroke="white" stroke-opacity="0.45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -743,7 +803,7 @@
             </div>
         </div>
         <!-- MBA-anim -->
-        <div class="mba-anim">
+        <div class="mba-anim mba-anim--front-page">
             <div class="mba-anim__outer">
                 <div class="mba-anim__word mba-anim__word--long">
                     <div class="mba-anim__word mba-anim__word--short">
