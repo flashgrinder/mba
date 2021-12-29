@@ -1,3 +1,7 @@
+.main-slider__info {
+    position: relative;
+}
+
 .main-slider__slide-pic {
     position: relative;
 }
@@ -16,47 +20,35 @@
 .main-slider__slide-img {
     display: block;
     width: 100%;
-    height: 65vh;
+    height: calc(100vh - 90px);
     object-fit: cover;
-    @include tablet-block {
-        height: 100%;
-        min-height: 500px;
-        max-height: 500px;
-    }
-    @include mobile-block {
-        min-height: 340px;
-        max-height: 340px;
-    }
-    @include mobileXSS-block {
-        min-height: 320px;
-        max-height: 320px;
-    }
-}
-
-.main-slider__overlay {
-    background: linear-gradient(180deg, rgba(31, 31, 31, 0.5525) 0%, rgba(31, 31, 31, 0.85) 100%);
-    backdrop-filter: blur(45px);
-    position: absolute;
-    left: -9999%;
-    right: -9999%;
-    bottom: 0;
-    top: 0;
 }
 
 .main-slider__inner-info {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
+}
+
+.main-slider__info-wrapp {
+    position: absolute;
+    left: auto;
+    bottom: 45px;
     @include tablet-block {
-        position: relative;
-        bottom: auto;
-        left: auto;
-        right: auto;
+        right: 30px;
+        left: 30px;
+        bottom: 30px;
     }
+}
+
+.main-slider__info-wrapp::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    bottom: -25px;
+    left: -25px;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.35), rgba(18, 18, 18, 0.35));
+    backdrop-filter: blur(45px);
+    border-radius: 10px;
 }
 
 .main-slider__header {
@@ -83,7 +75,7 @@
 }
 
 .main-slider__time {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .main-slider__pagination {
