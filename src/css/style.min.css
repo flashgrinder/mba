@@ -2211,48 +2211,6 @@ button.swiper-pagination-bullet {
           animation: rotate-clockwise 12s linear infinite forwards;
 }
 
-/* Invite-news */
-
-.invite-news__card {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: minmax(0, 550px) 25px minmax(0, 620px);
-  grid-template-columns: minmax(0, 550px) minmax(0, 620px);
-  grid-gap: 25px;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-}
-
-.invite-news__pic {
-  overflow: hidden;
-  border-radius: 10px;
-  -webkit-filter: drop-shadow(5px 5px 25px rgba(0, 0, 0, 0.05));
-          filter: drop-shadow(5px 5px 25px rgba(0, 0, 0, 0.05));
-}
-
-.invite-news__img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.invite-news__info {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-}
-
-.invite-news__descr.wysiwyg > p:first-child {
-  margin-top: 0;
-}
-
 /* Join-club */
 
 .join-club__items {
@@ -2750,16 +2708,6 @@ button.swiper-pagination-bullet {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-  }
-
-  .invite-news__card {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .invite-news__actions {
-    text-align: center;
-    margin-top: 25px;
   }
 
   .join-club__item {
