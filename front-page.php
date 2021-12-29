@@ -851,7 +851,7 @@
 <!-- /. Residents-slider -->
 
 <!-- Invite-news -->
-<section class="invite-news bg--dark block-padding">
+<section class="invite-news bg--dark block-padding hide">
     <div class="invite-news__body container">
         <h2 class="invite-news__heading title title--large title--white-low-75 title--w-semibold title--indent">
             Приглашаем принять участие в бизнес-регате выпускников МВА ЭФ МГУ!
