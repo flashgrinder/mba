@@ -10,7 +10,7 @@ const modalService = () => {
     const d = document;
     const body = d.querySelector('body');
     const buttons = d.querySelectorAll('[data-modal-trigger]');
-    const header = d.querySelector('.header__wrapper-menu');
+    // const header = d.querySelector('.header');
 
     for(let button of buttons) {
         triggerEvent(button);
@@ -35,9 +35,9 @@ const modalService = () => {
                         modal.classList.remove('is-open');
                     }, 400);
                     
-                    setTimeout(() => {
-                        header.classList.remove('is-open');
-                    }, 800);
+                    // setTimeout(() => {
+                    //     header.classList.remove('is-open');
+                    // }, 800);
                 } )
                 
                 body.addEventListener('keydown', (e) => {
@@ -51,9 +51,9 @@ const modalService = () => {
                             modal.classList.remove('is-open');
                         }, 400);
                         
-                        setTimeout(() => {
-                            header.classList.remove('is-open');
-                        }, 800);
+                        // setTimeout(() => {
+                        //     header.classList.remove('is-open');
+                        // }, 800);
                     }
 
                 });
@@ -62,8 +62,8 @@ const modalService = () => {
             function openTrigger() {
 
                 modal.classList.add('is-open');
-                header.classList.add('is-open');
-                burgerMenu.close();
+                // header.classList.add('is-open');
+                // burgerMenu.close();
                 
                 setTimeout(() => {
                     

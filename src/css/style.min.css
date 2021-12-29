@@ -296,6 +296,24 @@ img {
   }
 }
 
+.title--av-large {
+  font-size: calc(30px + 5 * ((100vw - 320px) / 880));
+}
+
+@media screen and (min-width: 1200px) {
+
+  .title--av-large {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .title--av-large {
+    font-size: 30px;
+  }
+}
+
 .title--large {
   font-size: calc(25px + 20 * ((100vw - 320px) / 880));
 }
@@ -1143,7 +1161,6 @@ button.swiper-pagination-bullet {
           align-items: center;
   overflow-y: auto;
   background-color: transparent;
-  padding-top: 100px;
   z-index: 999;
   top: 0;
   bottom: 0;
@@ -1180,11 +1197,12 @@ button.swiper-pagination-bullet {
   display: flex;
   -webkit-flex-direction: column;
           flex-direction: column;
+  background: rgba(31, 31, 31, 0.75);
   max-width: 555px;
   width: 100%;
-  padding: 30px 50px 50px 50px;
+  padding: 200px 35px 28px;
   overflow-x: hidden;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .modal__close {
@@ -1192,15 +1210,16 @@ button.swiper-pagination-bullet {
   position: absolute;
   right: 15px;
   top: 15px;
-  width: 13px;
-  height: 13px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
 .modal__close-svg {
-  width: 13px;
-  height: 13px;
-  fill: var(--color-black);
+  width: 30px;
+  height: 30px;
+  fill: var(--color-white);
+  stroke: var(--color-white);
 }
 
 .modal__title {
@@ -1216,7 +1235,7 @@ button.swiper-pagination-bullet {
 }
 
 .modal__field ~ .modal__field {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .modal__input {
@@ -1225,10 +1244,11 @@ button.swiper-pagination-bullet {
   line-height: 17px;
   width: 100%;
   padding: 18px 15px;
-  background: #FBFBFB;
-  border: 1px solid rgba(18, 18, 18, 0.1);
-  color: var(--color-dark-gray);
-  border-radius: 50px;
+  background: rgba(141, 141, 141, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.04);
+  color: rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
 }
 
 .modal__input:focus,
@@ -1239,39 +1259,56 @@ button.swiper-pagination-bullet {
 }
 
 .modal__input::-webkit-input-placeholder {
-  color: rgba(18, 18, 18, 0.25);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .modal__input::-moz-placeholder {
-  color: rgba(18, 18, 18, 0.25);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .modal__input:-ms-input-placeholder {
-  color: rgba(18, 18, 18, 0.25);
+  color: rgba(255, 255, 255, 0.35);
 }
 
 .modal__input::placeholder {
-  color: rgba(18, 18, 18, 0.25);
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.modal__birthday {
+  margin-top: 30px;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.modal__birthday .modal__field + .modal__field {
+  margin-top: 0;
+  margin-left: 15px;
+}
+
+.modal__field--monthday {
+  width: 60%;
+}
+
+.modal__field--years {
+  width: 40%;
 }
 
 .modal__actions {
   position: relative;
-  margin-top: 35px;
+  margin-top: 100px;
   text-align: center;
 }
 
-.modal__btn {
-  padding: 11px 53px;
-  cursor: pointer;
-}
-
 .modal__policy {
-  margin-top: 15px;
-  color: rgba(18, 18, 18, 0.35);
+  margin-top: 20px;
+  color: var(--color-white-low-45);
 }
 
 .modal__link-policy {
-  color: rgba(30, 188, 127, 0.55);
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: var(--color-blue);
 }
 
 .modal__actions .wpcf7-spinner {

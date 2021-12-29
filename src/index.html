@@ -33,16 +33,13 @@
     </div>
     <!-- Modal -->
     <div class="modal js-modal" data-modal="join-club">
-        <div class="modal__body bg--white">
+        <div class="modal__body">
             <div class="modal__close">
                 <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L12 12M12 1L1 12" stroke="#121212" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
             </div>
-            <div class="modal__logo modal__field--anim center">
-                <img src="img/logo-header.png" alt="Логотип" class="modal__img-logo">
-            </div>
-            <h3 class="modal__title modal__field--anim title title--large title--black title--w-bold center">
+            <h3 class="modal__title modal__field--anim title title--av-large title--white-low-65 title--w-semibold center">
 
             Стать резидентом клуба
 
@@ -53,14 +50,24 @@
                     <ul></ul>
                 </div>
                 <form action="/#wpcf7-f382-o1" method="post" class="modal__form wpcf7-form init" novalidate="novalidate" data-status="init">
-                    <div class="modal__field modal__field--anim">
-                        <input type="text" class="modal__input" aria-required="true" aria-invalid="false" placeholder="ФИО">
-                    </div>
-                    <div class="modal__field modal__field--anim">
-                        <input type="email" class="modal__input" aria-required="true" placeholder="E-mail">
-                    </div>
-                    <div class="modal__actions modal__field--anim">
-                        <input type="submit" value="Отправить" class="modal__btn button button--green"><span class="ajax-loader"></span>
+                    <div class="modal__wrapper-one">
+                        <div class="modal__field modal__field--anim">
+                            <input type="text" class="modal__input" aria-required="true" aria-invalid="false" placeholder="ФИО">
+                        </div>
+                        <div class="modal__field modal__field--anim">
+                            <input type="email" class="modal__input" aria-required="true" placeholder="E-mail">
+                        </div>
+                        <div class="modal__birthday">
+                            <div class="modal__field modal__field--monthday modal__field--anim">
+                                <input type="text" class="modal__input" aria-required="true" aria-invalid="false" placeholder="Дата рождения">
+                            </div>
+                            <div class="modal__field modal__field--years modal__field--anim">
+                                <input type="date" class="modal__input" aria-required="true" placeholder="Год рождения">
+                            </div>
+                        </div>
+                        <div class="modal__actions modal__field--anim">
+                            <input type="button" value="Далее >" class="modal__btn button button--blue"><span class="ajax-loader"></span>
+                        </div>
                     </div>
                     <div class="wpcf7-response-output" aria-hidden="true"></div>
                     <span class="wpa_hidden_field" style="display:none;height:0;width:0;">
