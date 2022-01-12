@@ -19,7 +19,7 @@ jQuery(function ($) {
             el: '.pagination',
             clickable: true,
             renderBullet: function (index, className) {
-              return '<span class="text text--white text--w-light ' + className + '">' + (names[index*3]) + '-' +  (names[index*3+2]) + '</span>';
+              return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*3]) + '-' +  (names[index*3+2]) + '</span>';
             },
         }
     });
@@ -69,9 +69,13 @@ jQuery(function ($) {
 
    $(document).mouseup(function(e) {
       var popup = $('.filter-popup__wrapp');
+      var pupupClose = $('.filter-popup__close-svg');
       if (e.target!=popup[0]&&popup.has(e.target).length === 0) {
-          $('.filter-popup').fadeOut();
+            $('.filter-popup').fadeOut();
       }
+      pupupClose.on('click', function() {
+            $('.filter-popup').fadeOut();
+      })
    })
 
    function dataFilterCat(){
@@ -143,7 +147,7 @@ jQuery(function ($) {
                         el: '.pagination',
                         clickable: true,
                         renderBullet: function (index, className) {
-                          return '<span class="' + className + '">' + (names[index*3]) + '-' +  (names[index*3+2]) + '</span>';
+                          return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*3]) + '-' +  (names[index*3+2]) + '</span>';
                         },
                     }
                 });

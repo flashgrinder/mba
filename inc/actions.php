@@ -31,6 +31,16 @@
             'labels'             => array(
     	        'name'                  => 'События',
     	        'singular_name'         => 'Событие',
+                'add_new'            => 'Добавить событие',
+                'add_new_item'       => 'Добавить событие',
+                'edit_item'          => 'Редактировать событие',
+                'new_item'           => 'Новое событие',
+                'view_item'          => 'Посмотреть событие',
+                'search_items'       => 'Найти событие',
+                'not_found'          => 'Событий не найдено',
+                'not_found_in_trash' => 'В корзине не найдено событий',
+                'parent_item_colon'  => '',
+                'menu_name'          => 'События'
     	    ),
     		'public'             => true,
             'publicly_queryable' => true,

@@ -29,7 +29,7 @@
         <div class="swiper-slide" data-title="'.$months[$month].'">
     		<div class="calendar__item calendar-item">
     			<div class="calendar__head text text--white text--w-light">' . $months[$month] . '</div>
-    			<table>
+    			<table class="calendar__table">
                     <thead>
                         <tr class="calendar__day-week">
                             <th><span class="calendar__cell text text--white text--w-light">Пн</span></th>

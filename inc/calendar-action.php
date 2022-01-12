@@ -15,27 +15,31 @@ function get_event() {
     if ( $arrayEventsPopup->have_posts() ) :
         ?>
         <span class="calendar__popup-cross">
-            Х
+            <svg class="calendar__popup-close" width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 30.7017L32 1.00003" stroke="white" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 1.29785L32 30.9995" stroke="white" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 1.29785L32 30.9995" stroke="white" stroke-opacity="0.75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </span>
         <div class="calendar__popup-list">
             <?php while ( $arrayEventsPopup->have_posts() ) : $arrayEventsPopup->the_post(); ?>
                 <div class="calendar__popup-item">
-                    <p class="calendar__popup-title">
+                    <p class="calendar__popup-title text text--blue text--w-light center">
                         <?php the_field('date_text') ?>
                     </p>
-                    <div class="calendar__popup-text">
+                    <div class="calendar__popup-text text text--large text--white text--w-light">
                         <?php the_field('desc') ?>
                     </div>
                     <div class="calendar__popup-bot">
-                        <p class="calendar__popup-location">
+                        <p class="calendar__popup-location text text--small text--white-low-45 text--w-light">
                             <?php the_field('location') ?>
                         </p>
-                        <span class="calendar__popup-time">
+                        <span class="calendar__popup-time text text--small text--white-low-45 text--w-light">
                             <?php the_field('time') ?>
                         </span>
                     </div>
                     <div class="calendar__popup-link-wrapp">
-                        <a href="<?php the_permalink() ?>" class="calendar__popup-link">
+                        <a href="<?php the_permalink() ?>" class="calendar__popup-link text text--small text--white-low-45 text--w-light">
                             Подробнее >
                         </a>
                     </div>

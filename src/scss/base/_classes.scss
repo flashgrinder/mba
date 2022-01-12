@@ -154,8 +154,20 @@
 	&--white {
 		color: var(--color-white);
 	}
+	&--blue {
+		color: var(--color-blue);
+	}
     &--white-low-75 {
         color: var(--color-white-low-75);
+	}
+    &--white-low-45 {
+        color: var(--color-white-low-45);
+	}
+    &--white-low-35 {
+        color: var(--color-white-low-35);
+	}
+    &--white-low-25 {
+        color: var(--color-white-low-25);
 	}
 	&--very-big {
         font-size: responsive 22px 25px;
