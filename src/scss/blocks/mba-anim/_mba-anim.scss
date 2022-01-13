@@ -21,6 +21,11 @@
     }
 }
 
+.mba-anim--event-content {
+    top: 0;
+    left: -120px;
+}
+
 .mba-anim__outer {
     position: relative;
     @include mobile(min-height, 424px);

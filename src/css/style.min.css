@@ -2584,6 +2584,11 @@ button.swiper-pagination-bullet {
   bottom: 36%;
 }
 
+.mba-anim--event-content {
+  top: 0;
+  left: -120px;
+}
+
 .mba-anim__outer {
   position: relative;
 }
@@ -2685,6 +2690,69 @@ button.swiper-pagination-bullet {
 .join-club__actions {
   margin-top: 45px;
   text-align: center;
+}
+
+/* Event-screen */
+
+.event-screen__img {
+  display: block;
+  margin: 0;
+  max-height: 908px;
+  width: 100%;
+  height: 100%;
+}
+
+.event-screen__outer {
+  background: #1f1f1f;
+  -webkit-backdrop-filter: blur(45px);
+          backdrop-filter: blur(45px);
+  margin-top: -150px;
+  padding-bottom: 30px;
+}
+
+.event-screen__head {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-align-items: center;
+          align-items: center;
+  border-bottom: 1px solid var(--color-white-low-25);
+  padding: 40px 0 30px;
+  margin-bottom: 40px;
+}
+
+.event-screen__action {
+  margin-left: 30px;
+}
+
+.event-screen__location,
+.event-screen__add-info {
+  margin-bottom: 20px;
+}
+
+/* Event-content */
+
+.event-content {
+  position: relative;
+  padding: 30px 0;
+}
+
+.event-content__rectangle {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.event-content__svg {
+  display: block;
+  width: 100vw;
+  height: 100%;
+}
+
+.event-content__wysiwyg {
+  position: relative;
+  z-index: 10;
 }
 
 /* Footer */
