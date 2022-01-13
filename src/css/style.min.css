@@ -2702,8 +2702,8 @@ button.swiper-pagination-bullet {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .event-screen__outer {

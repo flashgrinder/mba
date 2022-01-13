@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="event-screen__info">
-                    <h3 class="event-screen__location title title title--big title--white title--w-semibold">
+                    <h3 class="event-screen__location title title title--large title--white title--w-semibold">
                         <?php the_field('sity'); ?>
                     </h3>
                     <p class="event-screen__add-info text text--big text--white text--w-light">
