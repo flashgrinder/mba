@@ -26,13 +26,10 @@
                 </div>
                 <div class="event-screen__info">
                     <h3 class="event-screen__location title title title--big title--white title--w-semibold">
-                        START HUB MOSCOW <?php the_field('event_place'); ?>
+                        <?php the_field('sity'); ?>
                     </h3>
                     <p class="event-screen__add-info text text--big text--white text--w-light">
-                        <?php the_field('event_add-info'); ?>
-                        Берсеневская набережная, 6, стр.3, 4-й этаж
-                        <br>
-                        Дресс-код: casual
+                        <?php the_field('location'); ?>
                     </p>
                     <div class="event-screen__date text text--big text--white text--w-light">
                         <?php echo get_the_date('j F Y', $before); ?>

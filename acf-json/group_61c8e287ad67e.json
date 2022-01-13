@@ -55,11 +55,30 @@
             "placeholder": "",
             "maxlength": "",
             "rows": 3,
-            "new_lines": ""
+            "new_lines": "br"
+        },
+        {
+            "key": "field_61dfca61a4fac",
+            "label": "Город\/Местность",
+            "name": "sity",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
             "key": "field_61ca55d1f2822",
-            "label": "Локация",
+            "label": "Адресс(Доп. Инфо)",
             "name": "location",
             "type": "textarea",
             "instructions": "",
@@ -74,7 +93,7 @@
             "placeholder": "",
             "maxlength": "",
             "rows": 2,
-            "new_lines": ""
+            "new_lines": "br"
         },
         {
             "key": "field_61ca55faf2823",
@@ -114,5 +133,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1640785041
+    "modified": 1642056354
 }
