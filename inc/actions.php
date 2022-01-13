@@ -46,12 +46,14 @@
             'publicly_queryable' => true,
             'show_ui'            => true,
             'show_in_menu'       => true,
+            'show_in_rest'       => true,
             'query_var'          => true,
             'capability_type'    => 'post',
             'has_archive'        => false,
             'hierarchical'       => false,
             'menu_position'      => null,
-            'supports'           => array( 'title'),
+            'rewrite'            => array('slug' => 'sobitiya', 'with_front' => false),
+            'supports'           => array('title', 'editor','thumbnail','author','custom-fields','revisions'),
         ) );
 
         register_taxonomy(

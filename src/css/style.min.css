@@ -2697,33 +2697,30 @@ button.swiper-pagination-bullet {
 .event-screen__img {
   display: block;
   margin: 0;
-  max-height: 908px;
+  max-height: 680px;
   width: 100%;
-  height: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 
 .event-screen__outer {
   background: #1f1f1f;
   -webkit-backdrop-filter: blur(45px);
           backdrop-filter: blur(45px);
-  margin-top: -150px;
   padding-bottom: 30px;
 }
 
 .event-screen__head {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-          justify-content: space-between;
-  -webkit-align-items: center;
-          align-items: center;
   border-bottom: 1px solid var(--color-white-low-25);
   padding: 40px 0 30px;
   margin-bottom: 40px;
 }
 
 .event-screen__action {
-  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .event-screen__location,
