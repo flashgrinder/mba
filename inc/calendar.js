@@ -80,7 +80,7 @@ jQuery(function ($) {
 
    function dataFilterCat(){
        var cats = [];
-       $(".filter-popup__input.tax input:checked").each(function() {
+       $(".filter-popup__field.tax input:checked").each(function() {
            var cat = $(this).val();
            cats.push(cat);
        });
@@ -89,7 +89,7 @@ jQuery(function ($) {
 
    function dataFilterTime(){
        var times = [];
-       $(".filter-popup__input.time input:checked").each(function() {
+       $(".filter-popup__field.time input:checked").each(function() {
            var time = $(this).val();
            times.push(time);
        });
