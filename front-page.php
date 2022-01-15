@@ -546,7 +546,7 @@
                         <div class="residents-slider__inner-slide">
                             <div class="residents-slider__wrapper-pic">
                                 <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-1.png" alt="" class="residents-slider__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-1.png" alt="" class="residents-slider__img">
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
@@ -581,7 +581,7 @@
                         <div class="residents-slider__inner-slide">
                             <div class="residents-slider__wrapper-pic">
                                 <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-2.png" alt="" class="residents-slider__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-2.png" alt="" class="residents-slider__img">
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
@@ -616,7 +616,7 @@
                         <div class="residents-slider__inner-slide">
                             <div class="residents-slider__wrapper-pic">
                                 <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-3.png" alt="" class="residents-slider__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-3.png" alt="" class="residents-slider__img">
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
@@ -651,7 +651,7 @@
                         <div class="residents-slider__inner-slide">
                             <div class="residents-slider__wrapper-pic">
                                 <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-4.png" alt="" class="residents-slider__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-4.png" alt="" class="residents-slider__img">
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
@@ -686,7 +686,7 @@
                         <div class="residents-slider__inner-slide">
                             <div class="residents-slider__wrapper-pic">
                                 <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-5.png" alt="" class="residents-slider__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-5.png" alt="" class="residents-slider__img">
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
@@ -721,7 +721,147 @@
                         <div class="residents-slider__inner-slide">
                             <div class="residents-slider__wrapper-pic">
                                 <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/uploads/resident-slider-img-6.png" alt="" class="residents-slider__img">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-6.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
+                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                    </div>
+                                </div>
+                                <div class="residents-slider__actions">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                        Стать резидентом клуба
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="residents-slider__swiper-slide swiper-slide">
+                        <div class="residents-slider__inner-slide">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-7.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
+                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                    </div>
+                                </div>
+                                <div class="residents-slider__actions">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                        Стать резидентом клуба
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="residents-slider__swiper-slide swiper-slide">
+                        <div class="residents-slider__inner-slide">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-8.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
+                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                    </div>
+                                </div>
+                                <div class="residents-slider__actions">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                        Стать резидентом клуба
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="residents-slider__swiper-slide swiper-slide">
+                        <div class="residents-slider__inner-slide">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-9.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Елена Омелченко
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
+                                        Актриса, звезда сериала "Я не шучу"
+                                    </div>
+                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
+                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                    </div>
+                                </div>
+                                <div class="residents-slider__actions">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                        Стать резидентом клуба
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="residents-slider__swiper-slide swiper-slide">
+                        <div class="residents-slider__inner-slide">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-10.png" alt="" class="residents-slider__img">
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
@@ -759,32 +899,52 @@
                     <div class="residents-slider__swiper-wrapper-thumb swiper-wrapper">
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
                             <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/residents-slider-thumb-1.png" alt="" class="residents-slider__img-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-1.png" alt="" class="residents-slider__img-thumb">
                             </div>
                         </div>
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
                             <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/residents-slider-thumb-2.png" alt="" class="residents-slider__img-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-2.png" alt="" class="residents-slider__img-thumb">
                             </div>
                         </div>
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
                             <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/residents-slider-thumb-3.png" alt="" class="residents-slider__img-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-3.png" alt="" class="residents-slider__img-thumb">
                             </div>
                         </div>
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
                             <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/residents-slider-thumb-4.png" alt="" class="residents-slider__img-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-4.png" alt="" class="residents-slider__img-thumb">
                             </div>
                         </div>
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
                             <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/residents-slider-thumb-5.png" alt="" class="residents-slider__img-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-5.png" alt="" class="residents-slider__img-thumb">
                             </div>
                         </div>
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
                             <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/uploads/residents-slider-thumb-6.png" alt="" class="residents-slider__img-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-6.png" alt="" class="residents-slider__img-thumb">
+                            </div>
+                        </div>
+                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
+                            <div class="residents-slider__photo-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-7.png" alt="" class="residents-slider__img-thumb">
+                            </div>
+                        </div>
+                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
+                            <div class="residents-slider__photo-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-8.png" alt="" class="residents-slider__img-thumb">
+                            </div>
+                        </div>
+                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
+                            <div class="residents-slider__photo-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-9.png" alt="" class="residents-slider__img-thumb">
+                            </div>
+                        </div>
+                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
+                            <div class="residents-slider__photo-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-10.png" alt="" class="residents-slider__img-thumb">
                             </div>
                         </div>
                     </div>

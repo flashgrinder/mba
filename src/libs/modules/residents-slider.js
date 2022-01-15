@@ -17,7 +17,7 @@ function init() {
             },
             1025: {
                 spaceBetween: 30,
-                slidesPerView: 6
+                slidesPerView: 10
             }
         }
     });
