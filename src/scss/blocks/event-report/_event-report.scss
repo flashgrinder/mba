@@ -1,0 +1,42 @@
+.event-report {
+    padding: 30px 0 78px;
+}
+
+.event-report__body {
+    position: relative;
+    z-index: 10;
+}
+
+.event-report__gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-auto-flow: dense;
+}
+
+.event-report__full-img {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.event-report__thumb-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.horizontal {
+    grid-column: span 2;
+}
+
+.vertical {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}

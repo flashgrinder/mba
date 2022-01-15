@@ -4,6 +4,7 @@ import burgerMenu from '../libs/modules/burger-menu.js';
 import mainSlider from '../libs/modules/main-slider.js';
 import aboutAnimation from '../libs/modules/about-animation.js';
 import residentsSlider from '../libs/modules/residents-slider.js';
+import eventReportGallery from '../libs/modules/event-report-gallery.js';
 
 document.addEventListener('DOMContentLoaded', function(e) {
 
@@ -36,4 +37,5 @@ document.addEventListener('DOMContentLoaded', function(e) {
     mainSlider.init();
     aboutAnimation.init();
     residentsSlider.init();
+    eventReportGallery.init();
 });
