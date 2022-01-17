@@ -98,4 +98,28 @@
 </section>
 <!-- /. Event-content -->
 
+<!-- Event-report -->
+<section class="event-report bg--dark-light">
+    <div class="event-report__body container">
+        <div id="event-report__gallery" class="event-report__gallery">
+        <?php if( have_rows('event-report') ): ?>
+            <?php while( have_rows('event-report') ): the_row(); ?>
+            <?php 
+
+                $event_report_media = get_sub_field('event-report_media');
+                $event_report_class = get_sub_field('event-report_class');
+            
+            ?>
+                <?php if( !empty( $event_report_media ) ): ?>
+                    <a href="<?php echo esc_url($event_report_media['url']); ?>" class="event-report__full-img <?php echo $event_report_class; ?>">
+                        <img class="event-report__thumb-img" src="<?php echo esc_url($event_report_media['sizes']['large']); ?>"  alt="<?php echo esc_url($event_report_media['alt']); ?>" />
+                    </a>
+                <?php endif; ?>
+            <?php endwhile; ?>
+        <?php endif; ?>
+        </div>
+    </div>
+</section>
+<!-- /. Event-report -->
+
 <?php get_footer(); ?>
