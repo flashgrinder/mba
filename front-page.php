@@ -6,76 +6,74 @@
     <div class="main-slider__body">
         <div class="main-slider__swiper swiper-container">
             <div class="main-slider__swiper-wrapper swiper-wrapper">
-                <div class="main-slider__swiper-slide swiper-slide">
-                    <article class="main-slider__info">
-                        <div class="main-slider__slide-pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/uploads/main-slider-slide-1.jpg" alt="" class="main-slider__slide-img">
-                        </div>
-                        <div class="main-slider__inner-info container">
-                            <div class="main-slider__info-wrapp">
-                                <div class="main-slider__header">
-                                    <h2 class="main-slider__heading title title--big title--white title--w-semibold">
-                                        Бизнес-регата 1
-                                    </h2>
-                                    <div class="main-slider__action">
-                                        <a href="javascript:;" class="main-slider__btn button button--blue">
-                                            Принять участие
-                                        </a>
+            <?php
+
+                $args = array(
+                    'post_type' => 'events',
+                    'posts_per_page' => 16,
+                    'orderby'     => 'date',
+                    'order'       => 'DESC',
+                    'suppress_filters' => true
+                );
+
+                $wp_query = new WP_Query( $args );
+
+
+                if( have_posts() ) : 
+                    while( have_posts() ) : the_post(); ?>
+                    <div class="main-slider__swiper-slide swiper-slide">
+                        <article class="main-slider__info">
+                            <div class="main-slider__slide-pic">
+                                <?php
+                                    $default_attr = [
+                                        'class'	=> "main-slider__slide-img",
+                                        'alt'   => get_the_title()
+                                    ];
+                                                
+                                    echo get_the_post_thumbnail( $post->ID, 'full', $default_attr ) ?>
+                            </div>
+                            <div class="main-slider__inner-info container">
+                                <div class="main-slider__info-wrapp">
+                                    <div class="main-slider__header">
+                                        <h2 class="main-slider__heading title title--big title--white title--w-semibold">
+                                            <?php the_title(); ?>
+                                        </h2>
+                                        <div class="main-slider__action">
+                                            <a href="javascript:;" class="main-slider__btn button button--blue">
+                                                Принять участие
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="main-slider__text">
-                                    <h3 class="main-slider__headline title title--large title--white title--w-semibold">
-                                        Яхт-клуб "Сила ветра"
-                                    </h3>
-                                    <p class="main-slider__place text text--large text--white text--w-light">
-                                        Московская область, Пироговское водохранилище, санаторий "Березки", яхт-клуб "Сила ветра"
-                                    </p>
-                                    <div class="main-slider__date text text--large text--white text--w-light">
-                                        15 августа 2021
-                                    </div>
-                                    <div class="main-slider__time text text--large text--white text--w-light">
-                                        15.30
+                                    <div class="main-slider__text">
+                                        <?php 
+                                        
+                                            $idPost = get_the_ID(); 
+                                            $event_sity = get_field( 'sity', $idPost );
+                                            $event_location = get_field( 'location', $idPost );
+                                            $event_date = get_field( 'date', $idPost );
+                                            $event_time = get_field( 'time', $idPost );
+                                        
+                                        ?>
+                                        <h3 class="main-slider__headline title title--large title--white title--w-semibold">
+                                            <?php echo $event_sity; ?>
+                                        </h3>
+                                        <p class="main-slider__place text text--large text--white text--w-light">
+                                            <?php echo $event_location; ?>
+                                        </p>
+                                        <div class="main-slider__date text text--large text--white text--w-light">
+                                            <?php echo $event_date; ?>
+                                        </div>
+                                        <div class="main-slider__time text text--large text--white text--w-light">
+                                            <?php echo $event_time; ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="main-slider__swiper-slide swiper-slide">
-                    <article class="main-slider__info">
-                        <div class="main-slider__slide-pic">
-                            <img src="<?php echo STANDART_DIR; ?>img/uploads/invite-news-1.jpg" alt="" class="main-slider__slide-img">
-                        </div>
-                        <div class="main-slider__inner-info container">
-                            <div class="main-slider__info-wrapp">
-                                <div class="main-slider__header">
-                                    <h2 class="main-slider__heading title title--big title--white title--w-semibold">
-                                        Бизнес-регата 2
-                                    </h2>
-                                    <div class="main-slider__action">
-                                        <a href="javascript:;" class="main-slider__btn button button--blue">
-                                            Принять участие
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="main-slider__text">
-                                    <h3 class="main-slider__headline title title--large title--white title--w-semibold">
-                                        Яхт-клуб "Гольфстрим"
-                                    </h3>
-                                    <p class="main-slider__place text text--large text--white text--w-light">
-                                        Саратовская область, Энгельское водохранилище, санаторий "Сосновки", яхт-клуб "Гольфстрим"
-                                    </p>
-                                    <div class="main-slider__date text text--large text--white text--w-light">
-                                        24 августа 2022
-                                    </div>
-                                    <div class="main-slider__time text text--large text--white text--w-light">
-                                        17.30
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+                    </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
         <div class="main-slider__pagination"></div>
