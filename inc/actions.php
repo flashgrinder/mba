@@ -46,15 +46,15 @@
             'publicly_queryable' => true,
             'show_ui'            => true,
             'show_in_menu'       => true,
-            // 'show_in_rest'       => true,
+            'show_in_rest'       => true,
             'query_var'          => true,
             'capability_type'    => 'post',
             'has_archive'        => false,
             'hierarchical'       => false,
             'menu_position'      => null,
-            // 'rewrite'            => array('slug' => 'sobitiya', 'with_front' => false),
+            'rewrite'            => array('slug' => 'sobitiya', 'with_front' => false),
             'supports'           => array('title', 'editor','thumbnail','author','custom-fields','revisions'),
-            // 'taxonomies'         => ['events-category'],
+            'taxonomies'         => ['events-category'],
         ) );
 
         register_taxonomy(
@@ -62,37 +62,37 @@
             'events',
             array(
                 'label' => 'Категории',
-                // 'labels' => array(
-                //     'name'                       => 'Категории',
-                //     'singular_name'              => 'Категория',
-                //     'menu_name'                  => 'Категории' ,
-                //     'all_items'                  => 'Все категории',
-                //     'edit_item'                  => 'Редактировать категорию',
-                //     'view_item'                  => 'Посмотреть категорию',
-                //     'update_item'                => 'Сохранить категорию',
-                //     'add_new_item'               => 'Добавить новую категорию',
-                //     'new_item_name'              => 'Новая категория',          
-                //     'parent_item'                => 'Родительская категория',
-                //     'parent_item_colon'          => 'Родительская категория:',
-                //     'search_items'               => 'Поиск по категориям',
-                //     'popular_items'              => 'Популярные Метки',
-                //     'separate_items_with_commas' => 'Список Меток (разделяются запятыми)',
-                //     'add_or_remove_items'        => 'Добавить или удалить Метку',
-                //     'choose_from_most_used'      => 'Выбрать Метку',
-                //     'add_or_remove_items'        => 'Добавить или удалить Метку',
-                //     'not_found'                  => 'Меток не найдено',
-                //     'back_to_items'              => 'Назад на страницу рубрик',
-                // ),
+                'labels' => array(
+                    'name'                       => 'Категории',
+                    'singular_name'              => 'Категория',
+                    'menu_name'                  => 'Категории' ,
+                    'all_items'                  => 'Все категории',
+                    'edit_item'                  => 'Редактировать категорию',
+                    'view_item'                  => 'Посмотреть категорию',
+                    'update_item'                => 'Сохранить категорию',
+                    'add_new_item'               => 'Добавить новую категорию',
+                    'new_item_name'              => 'Новая категория',          
+                    'parent_item'                => 'Родительская категория',
+                    'parent_item_colon'          => 'Родительская категория:',
+                    'search_items'               => 'Поиск по категориям',
+                    'popular_items'              => 'Популярные Метки',
+                    'separate_items_with_commas' => 'Список Меток (разделяются запятыми)',
+                    'add_or_remove_items'        => 'Добавить или удалить Метку',
+                    'choose_from_most_used'      => 'Выбрать Метку',
+                    'add_or_remove_items'        => 'Добавить или удалить Метку',
+                    'not_found'                  => 'Меток не найдено',
+                    'back_to_items'              => 'Назад на страницу рубрик',
+                ),
     			'meta_box_cb' => 'post_categories_meta_box',
-                // 'show_admin_column'     => true,
-                // 'public'                => true,
-                // 'show_in_nav_menus'     => false, // равен аргументу public
-                // 'show_ui'               => true, // равен аргументу public
-                // 'show_in_menu'          => true, // равен аргументу show_ui
-                // 'show_in_rest'          => true,
-                // 'show_tagcloud'         => true, // равен аргументу show_ui
-                // 'hierarchical'          => true,
-                // 'query_var'             => true,
+                'show_admin_column'     => true,
+                'public'                => true,
+                'show_in_nav_menus'     => false, // равен аргументу public
+                'show_ui'               => true, // равен аргументу public
+                'show_in_menu'          => true, // равен аргументу show_ui
+                'show_in_rest'          => true,
+                'show_tagcloud'         => true, // равен аргументу show_ui
+                'hierarchical'          => true,
+                'query_var'             => true,
             )
         );
 
