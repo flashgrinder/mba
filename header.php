@@ -21,7 +21,7 @@
                     <?php endif; ?>
                 </a>
                 <div class="header__inner">
-                    <div class="header__actions">
+                    <div class="header__actions hide">
                         <a href="" class="header__btn header__btn--login text text--big text--white text--w-light">
                             Войти
                         </a>
