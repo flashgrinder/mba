@@ -555,23 +555,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        Константин Волков
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        СТО Ешь Деревенское Esh-derevenskoe.ru
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        Константин Волков
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        СТО Ешь Деревенское Esh-derevenskoe.ru
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -590,23 +590,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        Анна Кровякова
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Управляющий партнер международной консалтинговой компании FINCOM group
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        Анна Кровякова
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Управляющий партнер международной консалтинговой компании FINCOM group
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                        Президент фонда экономического развития “Инвестиции и регионы”, руководитель общественной приемной при Уполномоченном по защите прав предпринимателей в городе Москве по вопросам молодежного предпринимательства.
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -625,23 +625,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        ?
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        ?
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        ?
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        ?
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -663,7 +663,7 @@
                                         Елена Омелченко
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Исполнительный директор ООО «НПП «Монитор»
                                     </div>
                                 </div>
                             </div>
@@ -673,10 +673,10 @@
                                         Елена Омелченко
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Исполнительный директор ООО «НПП «Монитор»
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                        
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -695,23 +695,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        ?
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        ?
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        ?
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        ?
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                        ?
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -730,23 +730,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        ?
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        ?
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        ?
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        ?
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                        
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -765,23 +765,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        Анна Ершова
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Senior Finance manager компании P&G
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        Анна Ершова
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Senior Finance manager компании P&G
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                        
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -800,23 +800,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        Дина Куркова
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Экономический факультет МГУ имени М.В. Ломоносова
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        Дина Куркова
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Экономический факультет МГУ имени М.В. Ломоносова
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -835,23 +835,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        Юрий Сидякин
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        Юрий Сидякин
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                        
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
@@ -870,23 +870,23 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
+                                        Наталия Терешина
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Преподаватель высшей школы, кандидат экономических наук, MBA, профессиональный ведущий деловых игр tnatalyv.com
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
+                                        Наталия Терешина
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Актриса, звезда сериала "Я не шучу"
+                                        Преподаватель высшей школы, кандидат экономических наук, MBA, профессиональный ведущий деловых игр tnatalyv.com
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Какой-то текст Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.
+                                        
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
