@@ -10,7 +10,7 @@
 
                 $args = array(
                     'post_type' => 'events',
-                    'posts_per_page' => 16,
+                    'posts_per_page' => -1,
                     'orderby'     => 'date',
                     'order'       => 'DESC',
                     'suppress_filters' => true
@@ -18,9 +18,20 @@
 
                 $wp_query = new WP_Query( $args );
 
-
+                $today = date("d.m.Y");
                 if( have_posts() ) : 
+
                     while( have_posts() ) : the_post(); ?>
+                    <?php 
+                                        
+                        $idPost = get_the_ID(); 
+                        $event_sity = get_field( 'sity', $idPost );
+                        $event_location = get_field( 'location', $idPost );
+                        $event_time = get_field( 'time', $idPost );
+                        $date = get_field('date');
+                        
+                    ?>
+                    <?php if (strtotime($today) < strtotime($date)) : ?>
                     <div class="main-slider__swiper-slide swiper-slide">
                         <article class="main-slider__info">
                             <div class="main-slider__slide-pic">
@@ -45,15 +56,7 @@
                                         </div>
                                     </div>
                                     <div class="main-slider__text">
-                                        <?php 
-                                        
-                                            $idPost = get_the_ID(); 
-                                            $event_sity = get_field( 'sity', $idPost );
-                                            $event_location = get_field( 'location', $idPost );
-                                            $event_date = get_field( 'date', $idPost );
-                                            $event_time = get_field( 'time', $idPost );
-                                        
-                                        ?>
+                                       
                                         <h3 class="main-slider__headline title title--large title--white title--w-semibold">
                                             <?php echo $event_sity; ?>
                                         </h3>
@@ -61,7 +64,10 @@
                                             <?php echo $event_location; ?>
                                         </p>
                                         <div class="main-slider__date text text--large text--white text--w-light">
-                                            <?php echo $event_date; ?>
+                                            <?php 
+                                                $unixtimestamp = strtotime( get_field('date') ); 
+                                                echo date_i18n( "d F, Y", $unixtimestamp ); 
+                                            ?>
                                         </div>
                                         <div class="main-slider__time text text--large text--white text--w-light">
                                             <?php echo $event_time; ?>
@@ -71,6 +77,7 @@
                             </div>
                         </article>
                     </div>
+                    <?php endif ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
