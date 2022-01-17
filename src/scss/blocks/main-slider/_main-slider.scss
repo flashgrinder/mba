@@ -22,6 +22,7 @@
     width: 100%;
     height: calc(100vh - 90px);
     object-fit: cover;
+    @include mobileXS(height, calc(100vh - 60px));
 }
 
 .main-slider__inner-info {
@@ -32,23 +33,18 @@
     position: absolute;
     left: auto;
     bottom: 45px;
+    padding: 25px;
+    margin-left: -25px;
+    max-width: 1200px;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.35), rgba(18, 18, 18, 0.35));
+    backdrop-filter: blur(45px);
+    border-radius: 10px;
+    z-index: 101;
     @include tablet-block {
         right: 30px;
         left: 30px;
         bottom: 30px;
     }
-}
-
-.main-slider__info-wrapp::before {
-    content: '';
-    position: absolute;
-    top: -25px;
-    right: -25px;
-    bottom: -25px;
-    left: -25px;
-    background: linear-gradient(0deg, rgba(18, 18, 18, 0.35), rgba(18, 18, 18, 0.35));
-    backdrop-filter: blur(45px);
-    border-radius: 10px;
 }
 
 .main-slider__header {
