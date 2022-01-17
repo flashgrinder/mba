@@ -19,7 +19,7 @@
                         <?php the_title(); ?>
                     </h1>
                     <div class="event-screen__action">
-                        <a href="" class="event-screen__btn button button--blue">
+                        <a href="#event-report" class="event-screen__btn button button--blue">
                             Посмотреть отчёт
                         </a>
                     </div>
@@ -99,7 +99,7 @@
 <!-- /. Event-content -->
 
 <!-- Event-report -->
-<section class="event-report bg--dark-light">
+<section class="event-report bg--dark-light" id="event-report">
     <div class="event-report__body container">
         <div id="event-report__gallery" class="event-report__gallery">
         <?php if( have_rows('event-report') ): ?>
