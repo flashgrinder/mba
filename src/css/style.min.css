@@ -2592,28 +2592,28 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 .about__plunk--top-left {
-  top: 32px;
+  top: 42px;
   left: 28px;
 }
 
 .about__plunk--bottom-left {
-  bottom: 100px;
+  bottom: 39px;
   left: 10px;
 }
 
 .about__plunk--top-right {
-  top: 32px;
+  top: 44px;
   right: 203px;
 }
 
 .about__plunk--middle-right {
-  top: 260px;
+  top: 273px;
   right: 18px;
 }
 
 .about__plunk--bottom-right {
   right: 26px;
-  bottom: 40px;
+  bottom: -22px;
 }
 
 .about__item:nth-of-type(1) .about__plunk .about__text,
@@ -3742,27 +3742,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .about__plunk--top-left {
-    top: 14px;
+    top: 20px;
     left: 110px;
   }
 
   .about__plunk--bottom-left {
-    bottom: 64px;
-    left: 105px;
+    bottom: 23px;
+    left: 100px;
   }
 
   .about__plunk--top-right {
-    top: 16px;
+    top: 23px;
     right: 260px;
   }
 
   .about__plunk--middle-right {
-    top: 171px;
+    top: 180px;
     right: 120px;
   }
 
   .about__plunk--bottom-right {
-    bottom: 21px;
+    bottom: -22px;
     right: 90px;
   }
 
@@ -3789,11 +3789,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .about__plunk--top-left {
-    left: 50px;
+    top: 21px;
+    left: 44px;
   }
 
   .about__plunk--bottom-left {
-    left: 45px;
+    bottom: 22px;
+    left: 33px;
   }
 
   .about__plunk--top-right {

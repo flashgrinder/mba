@@ -53,34 +53,36 @@
 }
 
 .about__plunk--top-left {
-    top: 32px;
+    top: 42px;
     left: 28px;
     @include large-block {
-        top: 14px;
+        top: 20px;
         left: 110px;
     }
     @include tablet-block {
-        left: 50px;
+        top: 21px;
+        left: 44px;
     }
 }
 
 .about__plunk--bottom-left {
-    bottom: 100px;
+    bottom: 39px;
     left: 10px;
     @include large-block {
-        bottom: 64px;
-        left: 105px;
+        bottom: 23px;
+        left: 100px;
     }
     @include tablet-block {
-        left: 45px;
+        bottom: 22px;
+        left: 33px;
     }
 }
 
 .about__plunk--top-right {
-    top: 32px;
+    top: 44px;
     right: 203px;
     @include large-block {
-        top: 16px;
+        top: 23px;
         right: 260px;
     }
     @include tablet-block {
@@ -89,10 +91,10 @@
 }
 
 .about__plunk--middle-right {
-    top: 260px;
+    top: 273px;
     right: 18px;
     @include large-block {
-        top: 171px;
+        top: 180px;
         right: 120px;
     }
     @include tablet-block {
@@ -102,9 +104,9 @@
 
 .about__plunk--bottom-right {
     right: 26px;
-    bottom: 40px;
+    bottom: -22px;
     @include large-block {
-        bottom: 21px;
+        bottom: -22px;
         right: 90px;
     }
     @include tablet-block {
