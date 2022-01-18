@@ -2033,9 +2033,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   background: rgba(31, 31, 31, 0.75);
   max-width: 555px;
   width: 100%;
-  padding: 200px 35px 28px;
+  padding: 50px 35px 28px;
   overflow-x: hidden;
   border-radius: 10px;
+  margin-top: 90px;
 }
 
 .modal__close {
@@ -2065,14 +2066,66 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   width: 100%;
   max-width: 555px;
   margin: 0 auto;
+  display: -webkit-flex;
+  display: flex;
 }
 
 .modal__field ~ .modal__field {
   margin-top: 30px;
 }
 
+.modal__field--choice {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 17px;
+  color: var(--color-white-low-35);
+}
+
+.modal__field-text {
+  margin-bottom: 25px;
+}
+
+.modal__field--choice .wpcf7-list-item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: start;
+          justify-content: start;
+  -webkit-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.modal__field--choice .wpcf7-list-item input {
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-white-low-45);
+  transition: border 0.2s ease-in-out;
+  outline: none;
+}
+
+.modal__field--choice .wpcf7-list-item input:checked,
+.modal__field--choice .wpcf7-list-item input:focus,
+.modal__field--choice .wpcf7-list-item input:target,
+.modal__field--choice .wpcf7-list-item input:hover {
+  border: 6px solid var(--color-blue-low-75);
+}
+
+.modal__field--choice .wpcf7-list-item-label {
+  margin-left: 20px;
+}
+
+.modal__field--choice .wpcf7-list-item ~ .wpcf7-list-item {
+  margin-top: 25px;
+}
+
 .modal__input {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 17px;
   width: 100%;
@@ -2105,25 +2158,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 .modal__input::placeholder {
   color: rgba(255, 255, 255, 0.35);
-}
-
-.modal__birthday {
-  margin-top: 30px;
-  display: -webkit-flex;
-  display: flex;
-}
-
-.modal__birthday .modal__field + .modal__field {
-  margin-top: 0;
-  margin-left: 15px;
-}
-
-.modal__field--monthday {
-  width: 60%;
-}
-
-.modal__field--years {
-  width: 40%;
 }
 
 .modal__actions {
