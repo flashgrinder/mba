@@ -44,37 +44,96 @@
             Стать резидентом клуба
 
         </h3>
-            <div role="form" class="wpcf7" id="wpcf7-f382-o1" lang="ru-RU" dir="ltr">
-                <div class="screen-reader-response">
-                    <p role="status" aria-live="polite" aria-atomic="true"></p>
-                    <ul></ul>
-                </div>
-                <form action="/#wpcf7-f382-o1" method="post" class="modal__form wpcf7-form init" novalidate="novalidate" data-status="init">
-                    <div class="modal__wrapper-one">
+            <div role="form" class="wpcf7">
+                <form class="modal__form wpcf7-form init">
+                    <div class="modal__wrapper-one is-open js-wrapper-first">
                         <div class="modal__field modal__field--anim">
-                            <input type="text" class="modal__input" aria-required="true" aria-invalid="false" placeholder="ФИО">
+                            <input type="text" class="modal__input" placeholder="ФИО">
                         </div>
                         <div class="modal__field modal__field--anim">
-                            <input type="email" class="modal__input" aria-required="true" placeholder="E-mail">
+                            <input type="email" class="modal__input" placeholder="E-mail">
                         </div>
-                        <div class="modal__birthday">
-                            <div class="modal__field modal__field--monthday modal__field--anim">
-                                <input type="text" class="modal__input" aria-required="true" aria-invalid="false" placeholder="Дата рождения">
-                            </div>
-                            <div class="modal__field modal__field--years modal__field--anim">
-                                <input type="date" class="modal__input" aria-required="true" placeholder="Год рождения">
-                            </div>
+                        <div class="modal__field modal__field--monthday modal__field--anim">
+                            <input type="text" class="modal__input" placeholder="Дата рождения">
+                        </div>
+                        <div class="modal__field modal__field--choice modal__field--anim">
+                            <p class="modal__field-text text text--normal text--white-low-45">
+                                Хотели бы вы стать членом Клуба на новых условиях, оплачивая ежегодный взнос?
+                            </p>
+                            <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--pay">
+
+                            <span class="wpcf7-form-control wpcf7-radio">
+
+                                <span class="wpcf7-list-item first">
+
+                                    <span class="wpcf7-list-item-label">Да</span>
+                            <input type="radio" name="modal__field-choice--pay" value="Да">
+                            </span>
+                            <span class="wpcf7-list-item last">
+
+                                    <span class="wpcf7-list-item-label">Нет</span>
+                            <input type="radio" name="modal__field-choice--pay" value="Нет" checked="checked">
+                            </span>
+                            </span>
+                            </span>
                         </div>
                         <div class="modal__actions modal__field--anim">
-                            <input type="button" value="Далее >" class="modal__btn button button--blue"><span class="ajax-loader"></span>
+                            <input type="button" value="Далее >" class="modal__btn modal__btn--next button button--blue">
                         </div>
                     </div>
-                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                    <span class="wpa_hidden_field" style="display:none;height:0;width:0;">
+                    <div class="modal__wrapper-two is-close js-wrapper-last">
+                        <div class="modal__field modal__field--anim">
+                            <input type="text" class="modal__input" placeholder="Какую компанию вы представляете?">
+                        </div>
+                        <div class="modal__field modal__field--anim">
+                            <input type="text" class="modal__input" placeholder="Какую должность вы занимаете?">
+                        </div>
+                        <div class="modal__field modal__field--choice modal__field--anim">
+                            <p class="modal__field-text text text--normal text--white-low-45">
+                                Готовы ли вы выступать в качестве спикера на мероприятиях Клуба?
+                            </p>
+                            <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--speaker">
 
-                    <input type="text" name="field2423" value="89079">
+                            <span class="wpcf7-form-control wpcf7-radio">
 
-                </span>
+                                <span class="wpcf7-list-item first">
+
+                                    <span class="wpcf7-list-item-label">Да</span>
+                            <input type="radio" name="modal__field-choice--speaker" value="Да">
+                            </span>
+                            <span class="wpcf7-list-item last">
+
+                                    <span class="wpcf7-list-item-label">Нет</span>
+                            <input type="radio" name="modal__field-choice--speaker" value="Нет" checked="checked">
+                            </span>
+                            </span>
+                            </span>
+                        </div>
+                        <div class="modal__field modal__field--choice modal__field--anim">
+                            <p class="modal__field-text text text--normal text--white-low-45">
+                                Готовы ли вы предоставлять материалы для новостных статей на сайт и дайджест?
+                            </p>
+                            <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--news">
+
+                            <span class="wpcf7-form-control wpcf7-radio">
+
+                                <span class="wpcf7-list-item first">
+
+                                    <span class="wpcf7-list-item-label">Да</span>
+                            <input type="radio" name="modal__field-choice--news" value="Да">
+                            </span>
+                            <span class="wpcf7-list-item last">
+
+                                    <span class="wpcf7-list-item-label">Нет</span>
+                            <input type="radio" name="modal__field-choice--news" value="Нет" checked="checked">
+                            </span>
+                            </span>
+                            </span>
+                        </div>
+                        <div class="modal__actions modal__field--anim">
+                            <input type="button" value="Далее >" class="modal__btn modal__btn--next button button--blue">
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="modal__policy text text--small text--w-light center modal__field--anim">
