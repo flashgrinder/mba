@@ -169,6 +169,9 @@
     &--white-low-25 {
         color: var(--color-white-low-25);
 	}
+    &--dark-low {
+        color: var(--color-dark-low);
+	}
 	&--very-big {
         font-size: responsive 22px 25px;
         font-range: 320px 1200px;
