@@ -1856,6 +1856,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   color: var(--color-white-low-75);
 }
 
+.wysiwyg--content {
+  color: var(--color-white);
+}
+
 .wysiwyg--rubik {
   font-family: var(--font-rubik);
 }
