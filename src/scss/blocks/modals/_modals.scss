@@ -111,6 +111,32 @@
     display: flex;
 }
 
+.modal__wrapper-one,
+.modal__wrapper-two {
+    position: relative;
+    transition: margin-right .3s ease, margin-left .3s ease, left .3s ease, right .3s ease;
+}
+
+.modal__wrapper-one {
+    margin-left: 0;
+    left: 0;
+}
+
+.modal__wrapper-two {
+    margin-right: -100%;
+    right: -100%;
+}
+
+.modal__wrapper-one.is-close {
+    margin-left: -100%;
+    left: -100%;
+}
+
+.modal__wrapper-two.is-open {
+    margin-right: 0;
+    right: 0;
+}
+
 .modal__field ~ .modal__field {
     margin-top: 30px;
 }
@@ -239,7 +265,7 @@
 
 .modal__actions {
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 
