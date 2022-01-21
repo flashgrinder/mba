@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column nowrap;
+    overflow-scrolling: touch;
     overflow-y: auto;
     background-color: transparent;
     z-index: 999;
@@ -14,23 +16,50 @@
     background-color: rgba(0,0,0,0.25);
     backdrop-filter: blur(25px);
     visibility: hidden;
+    overflow: hidden;
     opacity: 0;
     transition:  visibility .3s ease-in-out, opacity .3s ease-in-out;
     transition-delay: .3s;
     position: fixed;
 }
 
-.modal.is-open {
+// .modal.is-open-modal {
+//     visibility: visible;
+//     opacity: 1;
+//     position: fixed;
+//     transition-delay: 0s;
+// }
+.modal.hystmodal--active {
     visibility: visible;
     opacity: 1;
     position: fixed;
     transition-delay: 0s;
 }
 
-.modal__field--anim {
-    opacity: 0;
-    transform: translateX(-100px);
-}
+
+
+// .modal.is-open .modal__field--anim {
+//     opacity: 1;
+//     transform: translateX(0);
+// }
+
+// .modal__field--anim {
+//     opacity: 0;
+//     transform: translateX(-100px);
+//     transition-property: transform, opacity;
+//     transition-duration: 0.3s, 0.3s;
+//     transition-timing-function: ease-in-out;
+// }
+
+// @for $i from 1 through 10 {
+//     .modal.is-open .modal__field--anim {
+//         &:nth-child(#{$i}) {
+//             transition-delay: $i * (2s / 20);
+//         }
+//     }
+// }
+
+
 
 .modal__body {
     position: relative;
@@ -45,9 +74,8 @@
     margin-top: 90px;
     @include mobileXS-block {
         padding: 16px 15px 30px;
-        max-width: 320px;
+        max-width: 100%;
     }
-    @include mobile(max-width, 450px);
 }
 
 .modal__close {
@@ -77,6 +105,9 @@
     width: 100%;
     max-width: 555px;
     margin: 0 auto;
+}
+
+.modal__form--steps {
     display: flex;
 }
 
@@ -129,6 +160,57 @@
 
 .modal__field--choice .wpcf7-list-item ~ .wpcf7-list-item {
     margin-top: 25px;
+}
+
+.modal__select .ss-single-selected {
+    height: auto;
+}
+
+.modal__select .ss-single-selected {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 17px;
+    width: 100%;
+    padding: 18px 15px;
+    background: rgba(141, 141, 141, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.04);
+    color: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+}
+
+.modal__select .ss-content {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.modal__select .ss-content,
+.modal__select .ss-content .ss-list {
+    border-radius: 0 0 10px 10px;
+}
+
+.modal__select .ss-content,
+.modal__select .ss-content .ss-list,
+.modal__select .ss-content .ss-list .ss-option {
+    background: rgba(71, 71, 71, 0.1);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.04);
+    color: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(55px);
+    transition: background .2s ease-in-out;
+}
+
+.modal__select .ss-content .ss-list .ss-option {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 18px 15px;
+}
+
+.modal__select .ss-content .ss-list .ss-option:hover {
+    background: rgba(71, 71, 71, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 18px 15px;
+}
+
+.modal__select .ss-content .ss-list .ss-option:last-child {
+    border-bottom: 1px solid transparent;
 }
 
 .modal__input {
