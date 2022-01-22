@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     overflow-y: auto;
     background-color: transparent;
     z-index: 999;
@@ -23,43 +23,12 @@
     position: fixed;
 }
 
-// .modal.is-open-modal {
-//     visibility: visible;
-//     opacity: 1;
-//     position: fixed;
-//     transition-delay: 0s;
-// }
 .modal.hystmodal--active {
     visibility: visible;
     opacity: 1;
     position: fixed;
     transition-delay: 0s;
 }
-
-
-
-// .modal.is-open .modal__field--anim {
-//     opacity: 1;
-//     transform: translateX(0);
-// }
-
-// .modal__field--anim {
-//     opacity: 0;
-//     transform: translateX(-100px);
-//     transition-property: transform, opacity;
-//     transition-duration: 0.3s, 0.3s;
-//     transition-timing-function: ease-in-out;
-// }
-
-// @for $i from 1 through 10 {
-//     .modal.is-open .modal__field--anim {
-//         &:nth-child(#{$i}) {
-//             transition-delay: $i * (2s / 20);
-//         }
-//     }
-// }
-
-
 
 .modal__body {
     position: relative;

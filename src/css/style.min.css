@@ -2565,7 +2565,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
           align-items: center;
   -webkit-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   background-color: transparent;
   z-index: 999;
