@@ -2931,6 +2931,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
           align-items: center;
 }
 
+.header__social {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  margin: 0 auto;
+}
+
+.header__social-link ~ .header__social-link {
+  margin-left: 15px;
+}
+
+.header__social-icon {
+  display: block;
+}
+
 .header__btn {
   text-decoration: none;
 }
