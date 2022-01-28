@@ -1147,7 +1147,7 @@
                     </ul>
                 </div>
                 <div class="join-club__actions">
-                    <a href="javascript:;" class="join-club__btn button button--blue">
+                    <a href="javascript:;" class="join-club__btn button button--blue" data-hystmodal="#join-club">
                         Вступить в клуб
                     </a>
                 </div>
@@ -1214,7 +1214,7 @@
                     </ul>
                 </div>
                 <div class="join-club__actions">
-                    <a href="javascript:;" class="join-club__btn button button--blue">
+                    <a href="javascript:;" class="join-club__btn button button--blue" data-hystmodal="#become-reident">
                         Стать резидентом
                     </a>
                 </div>

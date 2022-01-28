@@ -89,10 +89,10 @@
                 </div>
             </div>
             <div class="footer__actions">
-                <a href="javascript:;" class="footer__btn button button--white">
+                <a href="javascript:;" class="footer__btn button button--white" data-hystmodal="#become-reident">
                     Стать резидентом
                 </a>
-                <a href="javascript:;" class="footer__btn button button--dark">
+                <a href="javascript:;" class="footer__btn button button--dark" data-hystmodal="#contact-us">
                     Связаться с нами
                 </a>
             </div>
