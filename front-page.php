@@ -476,7 +476,7 @@
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -507,11 +507,11 @@
                                         Управляющий партнер международной консалтинговой компании FINCOM group
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Президент фонда экономического развития “Инвестиции и регионы”, руководитель общественной приемной при Уполномоченном по защите прав предпринимателей в городе Москве по вопросам молодежного предпринимательства.
+                                        Юрист, управляющий партнер FINCOM group, FINCOM group US, руководитель общественной приемной при Уполномоченном по защите прав предпринимателей в г. Москве по вопросам молодежного предпринимательства, президент фонда экономического развития “Инвестиции и регионы”. Опыт работы в консалтинге с 2006 года, стажировка в юридическом офисе Майами, США,  руководитель проектов по сопровождению процедур банкротства групп компаний, кредитных организаций. Специализация: общегражданское и корпоративное право,  уголовноправовая практика,  практика регулирования в сфере земельных отношений,  практика сопровождения процедур банкротства.
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -526,27 +526,27 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        ?
+                                        Алексей Шигин
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        ?
+                                        Финансовый директор компании  “Голутвинская слобода” https://golutvino.ru
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        ?
+                                        Алексей Шигин
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        ?
+                                        Финансовый директор компании  “Голутвинская слобода” https://golutvino.ru
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
 
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -577,11 +577,11 @@
                                         Исполнительный директор ООО «НПП «Монитор»
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        
+                                        Компания  уже более 20 лет успешно осуществляет деятельность по разработке и производству приборов для функциональной диагностики - прикроватные мониторы пациента, кардиографы и электрокардиографы, спирографы и спирометры.
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -596,27 +596,27 @@
                                 </div>
                                 <div class="residents-slider__info-mobile">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        ?
+                                        Александр Козинкин
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        ?
+                                        Начальник управления продаж ПАО РНКБ Банк www.rncb.ru
                                     </div>
                                 </div>
                             </div>
                             <div class="residents-slider__info">
                                 <div class="residents-slider__descr">
                                     <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        ?
+                                        Александр Козинкин
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        ?
+                                        Начальник управления продаж ПАО РНКБ Банк www.rncb.ru
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        ?
+                                        
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -651,7 +651,7 @@
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -686,7 +686,7 @@
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -714,14 +714,14 @@
                                         Дина Куркова
                                     </h3>
                                     <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Экономический факультет МГУ имени М.В. Ломоносова
+                                        Менеджер программ МВА, менеджер по международному сотрудничеству программ МВА ЭФ МГУ, менеджер по работе с выпускниками МВА
                                     </div>
                                     <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
 
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -756,7 +756,7 @@
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -791,7 +791,77 @@
                                     </div>
                                 </div>
                                 <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
+                                        Стать резидентом клуба
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="residents-slider__swiper-slide swiper-slide">
+                        <div class="residents-slider__inner-slide">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-11.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
+                                        Зульфия Дускабилова
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                        Налоговый консультант, руководитель налогового управления АО “Вертолеты” России.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Зульфия Дускабилова
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
+                                        Налоговый консультант, руководитель налогового управления АО “Вертолеты” России.
+                                    </div>
+                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
+                                        
+                                    </div>
+                                </div>
+                                <div class="residents-slider__actions">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
+                                        Стать резидентом клуба
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="residents-slider__swiper-slide swiper-slide">
+                        <div class="residents-slider__inner-slide">
+                            <div class="residents-slider__wrapper-pic">
+                                <div class="residents-slider__photo">
+                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-12.png" alt="" class="residents-slider__img">
+                                </div>
+                                <div class="residents-slider__info-mobile">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
+                                        Оксана Иванова
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                    Начальник управления международной финансовой отчетности и внутреннего контроля российской энергетической компании ПАО «Юнипро».
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="residents-slider__info">
+                                <div class="residents-slider__descr">
+                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                        Оксана Иванова
+                                    </h3>
+                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
+                                        Начальник управления международной финансовой отчетности и внутреннего контроля российской энергетической компании ПАО «Юнипро».
+                                    </div>
+                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
+                                        
+                                    </div>
+                                </div>
+                                <div class="residents-slider__actions">
+                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
                                         Стать резидентом клуба
                                     </a>
                                 </div>
@@ -851,6 +921,16 @@
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
                             <div class="residents-slider__photo-thumb">
                                 <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-10.png" alt="" class="residents-slider__img-thumb">
+                            </div>
+                        </div>
+                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
+                            <div class="residents-slider__photo-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-11.png" alt="" class="residents-slider__img-thumb">
+                            </div>
+                        </div>
+                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
+                            <div class="residents-slider__photo-thumb">
+                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-12.png" alt="" class="residents-slider__img-thumb">
                             </div>
                         </div>
                     </div>
