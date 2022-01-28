@@ -1,20 +1,12 @@
 .main-slider__info {
-    position: relative;
-}
-
-.main-slider__slide-pic {
-    position: relative;
-}
-
-.main-slider__slide-pic::before {
-    content: '';
-    position: absolute;
-    background: rgba(18, 18, 18, 0.25);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
+    display: grid;
+    grid-template-columns:  minmax(280px, 420px) minmax(500px, 1fr);
+    @include tablet-block {
+        grid-template-columns: repeat(auto-fit, minmax(512px, 1fr));
+    }
+    @include mobile-block {
+        grid-template-columns: 1fr;
+    }
 }
 
 .main-slider__slide-img {
@@ -22,29 +14,27 @@
     width: 100%;
     height: calc(100vh - 90px);
     object-fit: cover;
-    @include mobileXS(height, calc(100vh - 60px));
+    @include tablet(height, 50vh);
+    @include mobileXS(height, 34vh);
 }
 
 .main-slider__inner-info {
     width: 100%;
+    max-width: 1920px;
+    @include tablet(order, 1);
 }
 
 .main-slider__info-wrapp {
-    position: absolute;
-    left: auto;
-    bottom: 45px;
-    padding: 25px;
-    margin-left: -25px;
-    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
     background: linear-gradient(0deg, rgba(18, 18, 18, 0.35), rgba(18, 18, 18, 0.35));
-    backdrop-filter: blur(45px);
-    border-radius: 10px;
-    z-index: 101;
-    @include tablet-block {
-        right: 30px;
-        left: 30px;
-        bottom: 30px;
-    }
+    backdrop-filter: blur(55px);
+    height: 100%;
+    @include tablet(padding, 30px);
+    @include mobile(padding, 30px 15px);
+    @include mobileXS(padding, 30px 10px);
 }
 
 .main-slider__header {
@@ -52,22 +42,20 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-.main-slider__header,
-.main-slider__text {
-    position: relative;
-    z-index: 10;
-}
-
 .main-slider__heading {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .main-slider__text {
-    margin-top: 30px;
+    margin-top: 25px;
+}
+
+.main-slider__place {
+    margin-top: 25px;
 }
 
 .main-slider__date {
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .main-slider__time {

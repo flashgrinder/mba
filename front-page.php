@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <!-- Main-slider -->
-<section class="main-slider">
+<section class="main-slider bg--dark">
     <div class="main-slider__body">
         <div class="main-slider__swiper swiper-container">
             <div class="main-slider__swiper-wrapper swiper-wrapper">
@@ -31,53 +31,52 @@
                         $date = get_field('date');
                         
                     ?>
-                    <?php if (strtotime($today) < strtotime($date)) : ?>
-                    <div class="main-slider__swiper-slide swiper-slide">
-                        <article class="main-slider__info">
-                            <div class="main-slider__slide-pic">
-                                <?php
-                                    $default_attr = [
-                                        'class'	=> "main-slider__slide-img",
-                                        'alt'   => get_the_title()
-                                    ];
-                                                
-                                    echo get_the_post_thumbnail( $post->ID, 'full', $default_attr ) ?>
-                            </div>
-                            <div class="main-slider__inner-info container">
-                                <div class="main-slider__info-wrapp">
-                                    <div class="main-slider__header">
-                                        <h2 class="main-slider__heading title title--big title--white title--w-semibold">
-                                            <?php the_title(); ?>
-                                        </h2>
-                                        <div class="main-slider__action">
-                                            <a href="javascript:;" class="main-slider__btn button button--blue">
-                                                Принять участие
-                                            </a>
+                        <?php if (strtotime($today) < strtotime($date)) : ?>
+                        <div class="main-slider__swiper-slide swiper-slide">
+                            <article class="main-slider__info">
+                                <div class="main-slider__inner-info">
+                                    <div class="main-slider__info-wrapp">
+                                        <div class="main-slider__header">
+                                            <h2 class="main-slider__heading title title--av-large title--white title--w-semibold">
+                                                <?php the_title(); ?>
+                                            </h2>
+                                            <div class="main-slider__action">
+                                                <a href="javascript:;" class="main-slider__btn button button--blue" data-hystmodal="#participate">
+                                                    Принять участие
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="main-slider__text">
-                                       
-                                        <h3 class="main-slider__headline title title--large title--white title--w-semibold">
-                                            <?php echo $event_sity; ?>
-                                        </h3>
-                                        <p class="main-slider__place text text--large text--white text--w-light">
-                                            <?php echo $event_location; ?>
-                                        </p>
-                                        <div class="main-slider__date text text--large text--white text--w-light">
-                                            <?php 
-                                                $unixtimestamp = strtotime( get_field('date') ); 
-                                                echo date_i18n( "d F, Y", $unixtimestamp ); 
-                                            ?>
-                                        </div>
-                                        <div class="main-slider__time text text--large text--white text--w-light">
-                                            <?php echo $event_time; ?>
+                                        <div class="main-slider__text">
+                                            <h3 class="main-slider__headline title title--av-medium title--white title--w-semibold">
+                                                <?php echo $event_sity; ?>
+                                            </h3>
+                                            <p class="main-slider__place text text--normal text--white text--w-light">
+                                                <?php echo $event_location; ?>
+                                            </p>
+                                            <div class="main-slider__date text text--normal text--white text--w-light">
+                                                <?php 
+                                                    $unixtimestamp = strtotime( get_field('date') ); 
+                                                    echo date_i18n( "d F, Y", $unixtimestamp ); 
+                                                ?>
+                                            </div>
+                                            <div class="main-slider__time text text--normal text--white text--w-light">
+                                                <?php echo $event_time; ?>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </article>
-                    </div>
-                    <?php endif ?>
+                                <div class="main-slider__slide-pic">
+                                    <?php
+                                        $default_attr = [
+                                            'class'	=> "main-slider__slide-img",
+                                            'alt'   => get_the_title()
+                                        ];
+                                                    
+                                        echo get_the_post_thumbnail( $post->ID, 'full', $default_attr ) ?>
+                                </div>
+                            </article>
+                        </div>
+                        <?php endif ?>
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
