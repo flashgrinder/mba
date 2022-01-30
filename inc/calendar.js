@@ -6,13 +6,12 @@ jQuery(function ($) {
 
     });
 
+    console.log(names);
+
     var swiper = new Swiper(".swiper-calculator", {
-        slidesPerView: 3,
         spaceBetween: 25,
-        slidesPerGroup: 3,
-        slidesPerColumn: 1,
-        // slidesPerColumnFill: 'row',
         speed: 1000,
+        slidesPerView: 1,
         navigation: {
           nextEl: ".calendar__btn-next",
           prevEl: ".calendar__btn-prev",
@@ -26,21 +25,28 @@ jQuery(function ($) {
         },
         breakpoints: {
             320: {
-                slidesPerView: 3,
-                slidesPerColumn: 3,
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                pagination: {
+                    renderBullet: function (index, className) {
+                      return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index]) + '</span>';
+                    },
+                },
             },
             576: {
-                slidesPerView: 3,
-                slidesPerColumn: 3,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                pagination: {
+                    renderBullet: function (index, className) {
+                      return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*2]) + '-' +  (names[index*2+1]) + '</span>';
+                    },
+                },
             },
             768: {
-                slidesPerView: 1,
-                slidesPerColumn: 1,
-            },
-            1024: {
                 slidesPerView: 3,
-                slidesPerColumn: 1
+                slidesPerGroup: 3,
             }
+
         }
     });
 
@@ -177,11 +183,9 @@ jQuery(function ($) {
 
                 });
                 var swiper = new Swiper(".swiper-calculator", {
-                    slidesPerView: 3,
                     spaceBetween: 25,
-                    slidesPerGroup: 3,
-                    slidesPerColumnFill: 'row',
                     speed: 1000,
+                    slidesPerView: 1,
                     navigation: {
                       nextEl: ".calendar__btn-next",
                       prevEl: ".calendar__btn-prev",
@@ -194,21 +198,13 @@ jQuery(function ($) {
                         },
                     },
                     breakpoints: {
-                        320: {
-                            slidesPerView: 3,
-                            slidesPerColumn: 3,
-                        },
                         576: {
-                            slidesPerView: 3,
-                            slidesPerColumn: 3,
+                            slidesPerView: 2,
+                            slidesPerGroup: 2,
                         },
                         768: {
                             slidesPerView: 3,
-                            slidesPerColumn: 3,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            slidesPerColumn: 3
+                            slidesPerGroup: 3,
                         }
                     }
                 });
