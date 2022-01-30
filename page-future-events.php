@@ -81,7 +81,7 @@
             </span>
         </div>
         <?php
-        $per_page = 1;
+        $per_page = 10;
         $args = array(
             'post_type' => 'events',
             'posts_per_page' => $per_page,
@@ -117,14 +117,17 @@
                     <div class="events__inner">
                         <div class="events__heading">
                             <h3 class="events__headline text text--large text--white text--w-light">
-                                <?php the_title() ?>
+                                <?php the_title(); ?>
                             </h3>
                             <div class="events__date text text--normal text--dark-low text--w-light">
-                                <?php the_field('date_text') ?>
+                                <?php 
+                                    $unixtimestamp = strtotime( get_field('date') ); 
+                                    echo date_i18n( "d F Y", $unixtimestamp ); 
+                                ?>
                             </div>
                         </div>
                         <p class="events__excerpt text text--large text--white text--w-light">
-                            <?php the_field('desc') ?>
+                            <?php the_field('desc'); ?>
                         </p>
                     </div>
                 </a>

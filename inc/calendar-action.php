@@ -162,7 +162,7 @@ function get_past_event() {
 		array_push($tax_query, $bet);
 	}
 
-	$per_page = 1;
+	$per_page = 10;
     $arrayEvents = new WP_Query( array(
 		'post_type' 	   => 'events',
 		'posts_per_page'   => -1,
@@ -255,7 +255,7 @@ function get_future_event() {
 		array_push($tax_query, $bet);
 	}
 
-	$per_page = 1;
+	$per_page = 10;
     $arrayEvents = new WP_Query( array(
 		'post_type' 	   => 'events',
 		'posts_per_page'   => -1,

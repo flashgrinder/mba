@@ -63,7 +63,7 @@
                                             <div class="main-slider__date text text--normal text--white text--w-light">
                                                 <?php 
                                                     $unixtimestamp = strtotime( get_field('date') ); 
-                                                    echo date_i18n( "d F, Y", $unixtimestamp ); 
+                                                    echo date_i18n( "d F Y", $unixtimestamp ); 
                                                 ?>
                                             </div>
                                             <div class="main-slider__time text text--normal text--white text--w-light">
