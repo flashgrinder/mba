@@ -12,26 +12,6 @@ document.addEventListener('DOMContentLoaded', function(e) {
     gsap.config({
         nullTargetWarn: false
     });
-
-
-    // const tl = gsap.timeline();
-
-    // tl.to(".about__svg-word--long", {
-    //     rotation: 360,
-    //     transformOrigin: "50% 50%",
-    //     ease: "none",
-    //     repeat: -1,
-    //     smoothOrigin: false,
-    //     duration: 12,
-    //   })
-    // tl.to(".about__svg-word--short", {
-    //     rotation: -360,
-    //     transformOrigin: "50% 50%",
-    //     ease: "none",
-    //     repeat: -1,
-    //     smoothOrigin: false,
-    //     duration: 12,
-    //   })
     
     modalsForm.init();
     burgerMenu.init();
