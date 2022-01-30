@@ -103,81 +103,83 @@
                 Стать резидентом клуба
             </h3>
             <div role="form" class="wpcf7">
-                <form class="modal__form modal__form--steps wpcf7-form init">
-                    <div class="modal__wrapper-one js-wrapper-first">
-                        <div class="modal__field modal__field--anim">
-                            <input type="text" class="modal__input" placeholder="ФИО">
-                        </div>
-                        <div class="modal__field modal__field--anim">
-                            <input type="email" class="modal__input" placeholder="E-mail">
-                        </div>
-                        <div class="modal__field modal__field--monthday modal__field--anim">
-                            <input type="text" class="modal__input" placeholder="Дата рождения">
-                        </div>
-                        <div class="modal__field modal__field--choice modal__field--anim">
-                            <p class="modal__field-text text text--normal text--white-low-45">
-                                Хотели бы вы стать членом Клуба на новых условиях, оплачивая ежегодный взнос?
-                            </p>
-                            <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--pay">
-                                <span class="wpcf7-form-control wpcf7-radio">
-                                    <span class="wpcf7-list-item first">
-                                        <span class="wpcf7-list-item-label">Да</span>
-                                        <input type="radio" name="modal__field-choice--pay" value="Да">
-                                    </span>
-                                    <span class="wpcf7-list-item last">
-                                        <span class="wpcf7-list-item-label">Нет</span>
-                                        <input type="radio" name="modal__field-choice--pay" value="Нет" checked="checked">
-                                    </span>
-                                </span>
-                            </span>
-                        </div>
-                        <div class="modal__actions modal__field--anim">
-                            <input type="button" value="Далее >" class="modal__btn modal__btn--next button button--blue">
-                        </div>
-                    </div>
-                    <div class="modal__wrapper-two js-wrapper-last">
-                        <div class="modal__field modal__field--anim">
-                            <input type="text" class="modal__input" placeholder="Какую компанию вы представляете?">
-                        </div>
-                        <div class="modal__field modal__field--anim">
-                            <input type="text" class="modal__input" placeholder="Какую должность вы занимаете?">
-                        </div>
-                        <div class="modal__field modal__field--choice modal__field--anim">
-                            <p class="modal__field-text text text--normal text--white-low-45">
-                                Готовы ли вы выступать в качестве спикера на мероприятиях Клуба?
-                            </p>
-                            <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--speaker">
-                                <span class="wpcf7-form-control wpcf7-radio">
-                                    <span class="wpcf7-list-item first">
-                                        <span class="wpcf7-list-item-label">Да</span>
-                                        <input type="radio" name="modal__field-choice--speaker" value="Да">
-                                    </span>
-                                    <span class="wpcf7-list-item last">
-                                        <span class="wpcf7-list-item-label">Нет</span>
-                                        <input type="radio" name="modal__field-choice--speaker" value="Нет" checked="checked">
+                <form class="modal__form wpcf7-form init">
+                    <div class="modal__wrapp-steps">
+                        <div class="modal__wrapper-one js-wrapper-first">
+                            <div class="modal__field modal__field--anim">
+                                <input type="text" class="modal__input" placeholder="ФИО">
+                            </div>
+                            <div class="modal__field modal__field--anim">
+                                <input type="email" class="modal__input" placeholder="E-mail">
+                            </div>
+                            <div class="modal__field modal__field--monthday modal__field--anim">
+                                <input type="text" class="modal__input" placeholder="Дата рождения">
+                            </div>
+                            <div class="modal__field modal__field--choice modal__field--anim">
+                                <p class="modal__field-text text text--normal text--white-low-45">
+                                    Хотели бы вы стать членом Клуба на новых условиях, оплачивая ежегодный взнос?
+                                </p>
+                                <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--pay">
+                                    <span class="wpcf7-form-control wpcf7-radio">
+                                        <span class="wpcf7-list-item first">
+                                            <span class="wpcf7-list-item-label">Да</span>
+                                            <input type="radio" name="modal__field-choice--pay" value="Да">
+                                        </span>
+                                        <span class="wpcf7-list-item last">
+                                            <span class="wpcf7-list-item-label">Нет</span>
+                                            <input type="radio" name="modal__field-choice--pay" value="Нет" checked="checked">
+                                        </span>
                                     </span>
                                 </span>
-                            </span>
+                            </div>
+                            <div class="modal__actions modal__field--anim">
+                                <input type="button" value="Далее >" class="modal__btn modal__btn--next button button--blue">
+                            </div>
                         </div>
-                        <div class="modal__field modal__field--choice modal__field--anim">
-                            <p class="modal__field-text text text--normal text--white-low-45">
-                                Готовы ли вы предоставлять материалы для новостных статей на сайт и дайджест?
-                            </p>
-                            <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--news">
-                                <span class="wpcf7-form-control wpcf7-radio">
-                                    <span class="wpcf7-list-item first">
-                                        <span class="wpcf7-list-item-label">Да</span>
-                                        <input type="radio" name="modal__field-choice--news" value="Да">
-                                    </span>
-                                    <span class="wpcf7-list-item last">
-                                        <span class="wpcf7-list-item-label">Нет</span>
-                                        <input type="radio" name="modal__field-choice--news" value="Нет" checked="checked">
+                        <div class="modal__wrapper-two js-wrapper-last">
+                            <div class="modal__field modal__field--anim">
+                                <input type="text" class="modal__input" placeholder="Какую компанию вы представляете?">
+                            </div>
+                            <div class="modal__field modal__field--anim">
+                                <input type="text" class="modal__input" placeholder="Какую должность вы занимаете?">
+                            </div>
+                            <div class="modal__field modal__field--choice modal__field--anim">
+                                <p class="modal__field-text text text--normal text--white-low-45">
+                                    Готовы ли вы выступать в качестве спикера на мероприятиях Клуба?
+                                </p>
+                                <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--speaker">
+                                    <span class="wpcf7-form-control wpcf7-radio">
+                                        <span class="wpcf7-list-item first">
+                                            <span class="wpcf7-list-item-label">Да</span>
+                                            <input type="radio" name="modal__field-choice--speaker" value="Да">
+                                        </span>
+                                        <span class="wpcf7-list-item last">
+                                            <span class="wpcf7-list-item-label">Нет</span>
+                                            <input type="radio" name="modal__field-choice--speaker" value="Нет" checked="checked">
+                                        </span>
                                     </span>
                                 </span>
-                            </span>
-                        </div>
-                        <div class="modal__actions modal__field--anim">
-                            <input type="button" value="Отправить" class="modal__btn button button--blue">
+                            </div>
+                            <div class="modal__field modal__field--choice modal__field--anim">
+                                <p class="modal__field-text text text--normal text--white-low-45">
+                                    Готовы ли вы предоставлять материалы для новостных статей на сайт и дайджест?
+                                </p>
+                                <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--news">
+                                    <span class="wpcf7-form-control wpcf7-radio">
+                                        <span class="wpcf7-list-item first">
+                                            <span class="wpcf7-list-item-label">Да</span>
+                                            <input type="radio" name="modal__field-choice--news" value="Да">
+                                        </span>
+                                        <span class="wpcf7-list-item last">
+                                            <span class="wpcf7-list-item-label">Нет</span>
+                                            <input type="radio" name="modal__field-choice--news" value="Нет" checked="checked">
+                                        </span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="modal__actions modal__field--anim">
+                                <input type="button" value="Отправить" class="modal__btn button button--blue">
+                            </div>
                         </div>
                     </div>
                 </form>

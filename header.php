@@ -13,7 +13,7 @@
     <!-- Связаться с нами -->
     <div class="modal hystmodal" id="contact-us" aria-hidden="true">
         <div class="hystmodal__wrap">
-            <div class="modal__body hystmodal__window" role="modal window participate" aria-modal="true">
+            <div class="modal__body hystmodal__window" role="modal window contact-us" aria-modal="true">
                 <div class="modal__close" data-hystclose>
                     <svg class="modal__close-svg" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1 1L12 12M12 1L1 12" stroke-width="1.5" stroke-linecap="round"/>
@@ -22,19 +22,7 @@
                 <h3 class="modal__title modal__field--anim title title--av-large title--white-low-65 title--w-semibold center">
                     Связаться с нами
                 </h3>
-                <div role="form" class="wpcf7">
-                    <form class="modal__form wpcf7-form init">
-                        <div class="modal__field">
-                            <input type="text" class="modal__input" placeholder="ФИО">
-                        </div>
-                        <div class="modal__field">
-                            <input type="tel" class="modal__input" placeholder="Телефон">
-                        </div>
-                        <div class="modal__actions">
-                            <input type="button" value="Отправить" class="modal__btn button button--blue">
-                        </div>
-                    </form>
-                </div>
+                <?php echo do_shortcode( '[contact-form-7 id="47" title="Связаться с нами" html_class="modal__form"]' ); ?>
                 <div class="modal__policy text text--small text--w-light center">
                     Ваши данные находятся под защитой
                     <br>
@@ -60,25 +48,7 @@
                 <h3 class="modal__title modal__field--anim title title--av-large title--white-low-65 title--w-semibold center">
                     Форма заявки на участие
                 </h3>
-                <div role="form" class="wpcf7">
-                    <form class="modal__form wpcf7-form init">
-                        <div class="modal__field">
-                            <input type="text" class="modal__input" placeholder="ФИО">
-                        </div>
-                        <div class="modal__field">
-                            <input type="tel" class="modal__input" placeholder="Телефон">
-                        </div>
-                        <div class="modal__field">
-                            <select name="" id="" class="modal__select">
-                                <option value="Я участник клуба">Я участник клуба</option>
-                                <option value="Я выпускник МВА ЭФ МГУ">Я выпускник МВА ЭФ МГУ</option>
-                            </select>
-                        </div>
-                        <div class="modal__actions">
-                            <input type="button" value="Отправить" class="modal__btn button button--blue">
-                        </div>
-                    </form>
-                </div>
+                <?php echo do_shortcode( '[contact-form-7 id="48" title="Заявка на участие" html_class="modal__form"]' ); ?>
                 <div class="modal__policy text text--small text--w-light center">
                     Ваши данные находятся под защитой
                     <br>
@@ -104,28 +74,7 @@
                 <h3 class="modal__title modal__field--anim title title--av-large title--white-low-65 title--w-semibold center">
                     Вступить в клуб
                 </h3>
-                <div role="form" class="wpcf7">
-                    <form class="modal__form wpcf7-form init">
-                        <div class="modal__field">
-                            <input type="text" class="modal__input" placeholder="ФИО">
-                        </div>
-                        <div class="modal__field">
-                            <input type="email" class="modal__input" placeholder="E-mail">
-                        </div>
-                        <div class="modal__field">
-                            <input type="text" class="modal__input" placeholder="Телефон">
-                        </div>
-                        <div class="modal__field">
-                            <input type="tel" class="modal__input" placeholder="Укажите специальность, на которой вы обучались">
-                        </div>
-                        <div class="modal__field">
-                            <input type="tel" class="modal__input" placeholder="Укажите год выпуска">
-                        </div>
-                        <div class="modal__actions">
-                            <input type="button" value="Отправить" class="modal__btn button button--blue">
-                        </div>
-                    </form>
-                </div>
+                <?php echo do_shortcode( '[contact-form-7 id="49" title="Вступить в клуб" html_class="modal__form"]' ); ?>
                 <div class="modal__policy text text--small text--w-light center">
                     Ваши данные находятся под защитой
                     <br>
@@ -151,87 +100,8 @@
                 <h3 class="modal__title modal__field--anim title title--av-large title--white-low-65 title--w-semibold center">
                     Стать резидентом клуба
                 </h3>
-                <div role="form" class="wpcf7">
-                    <form class="modal__form modal__form--steps wpcf7-form init">
-                        <div class="modal__wrapper-one js-wrapper-first">
-                            <div class="modal__field modal__field--anim">
-                                <input type="text" class="modal__input" placeholder="ФИО">
-                            </div>
-                            <div class="modal__field modal__field--anim">
-                                <input type="email" class="modal__input" placeholder="E-mail">
-                            </div>
-                            <div class="modal__field modal__field--monthday modal__field--anim">
-                                <input type="text" class="modal__input" placeholder="Дата рождения">
-                            </div>
-                            <div class="modal__field modal__field--choice modal__field--anim">
-                                <p class="modal__field-text text text--normal text--white-low-45">
-                                    Хотели бы вы стать членом Клуба на новых условиях, оплачивая ежегодный взнос?
-                                </p>
-                                <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--pay">
-                                    <span class="wpcf7-form-control wpcf7-radio">
-                                        <span class="wpcf7-list-item first">
-                                            <span class="wpcf7-list-item-label">Да</span>
-                                            <input type="radio" name="modal__field-choice--pay" value="Да">
-                                        </span>
-                                        <span class="wpcf7-list-item last">
-                                            <span class="wpcf7-list-item-label">Нет</span>
-                                            <input type="radio" name="modal__field-choice--pay" value="Нет" checked="checked">
-                                        </span>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="modal__actions modal__field--anim">
-                                <input type="button" value="Далее >" class="modal__btn modal__btn--next button button--blue">
-                            </div>
-                        </div>
-                        <div class="modal__wrapper-two js-wrapper-last">
-                            <div class="modal__field modal__field--anim">
-                                <input type="text" class="modal__input" placeholder="Какую компанию вы представляете?">
-                            </div>
-                            <div class="modal__field modal__field--anim">
-                                <input type="text" class="modal__input" placeholder="Какую должность вы занимаете?">
-                            </div>
-                            <div class="modal__field modal__field--choice modal__field--anim">
-                                <p class="modal__field-text text text--normal text--white-low-45">
-                                    Готовы ли вы выступать в качестве спикера на мероприятиях Клуба?
-                                </p>
-                                <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--speaker">
-                                    <span class="wpcf7-form-control wpcf7-radio">
-                                        <span class="wpcf7-list-item first">
-                                            <span class="wpcf7-list-item-label">Да</span>
-                                            <input type="radio" name="modal__field-choice--speaker" value="Да">
-                                        </span>
-                                        <span class="wpcf7-list-item last">
-                                            <span class="wpcf7-list-item-label">Нет</span>
-                                            <input type="radio" name="modal__field-choice--speaker" value="Нет" checked="checked">
-                                        </span>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="modal__field modal__field--choice modal__field--anim">
-                                <p class="modal__field-text text text--normal text--white-low-45">
-                                    Готовы ли вы предоставлять материалы для новостных статей на сайт и дайджест?
-                                </p>
-                                <span class="wpcf7-form-control-wrap modal__field-choice modal__field-choice--news">
-                                    <span class="wpcf7-form-control wpcf7-radio">
-                                        <span class="wpcf7-list-item first">
-                                            <span class="wpcf7-list-item-label">Да</span>
-                                            <input type="radio" name="modal__field-choice--news" value="Да">
-                                        </span>
-                                        <span class="wpcf7-list-item last">
-                                            <span class="wpcf7-list-item-label">Нет</span>
-                                            <input type="radio" name="modal__field-choice--news" value="Нет" checked="checked">
-                                        </span>
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="modal__actions modal__field--anim">
-                                <input type="button" value="Отправить" class="modal__btn button button--blue">
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal__policy text text--small text--w-light center modal__field--anim">
+                <?php echo do_shortcode( '[contact-form-7 id="50" title="Стать резидентом" html_class="modal__form"]' ); ?>
+                <div class="modal__policy text text--small text--w-light center">
                     Ваши данные находятся под защитой
                     <br>
                     <a href="https://mba-mgu.club/politika-konfidenczialnosti/" class="modal__link-policy text text--small text--w-light center" target="_blank">

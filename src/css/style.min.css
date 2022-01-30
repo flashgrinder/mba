@@ -67,6 +67,9 @@
   --color-white-low-35: rgba(255, 255, 255, 0.35);
   --color-white-low-25: rgba(255, 255, 255, 0.25);
   --color-white-low-5: rgba(255, 255, 255, 0.05);
+  --color-green-light: #1EBC7F;
+  --color-invalid: #e61d1d;
+  --color-yellow: #EEFF00;
   --font-myriad: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-rubik: "Rubik", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -189,6 +192,32 @@ img {
   100% {
     -webkit-transform: rotate(-360deg);
             transform: rotate(-360deg);
+  }
+}
+
+/* Rotate */
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -2637,7 +2666,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   margin: 0 auto;
 }
 
-.modal__form--steps {
+.modal__wrapp-steps {
   display: -webkit-flex;
   display: flex;
 }
@@ -2775,6 +2804,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 .modal__input {
+  position: relative;
   font-size: 16px;
   font-weight: 300;
   line-height: 17px;
@@ -2848,21 +2878,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
           transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  border: 3px solid var(--color-green-light);
+  border: 3px solid var(--color-blue);
   border-top: 3px solid #595959;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: rotate 1s infinite linear;
-          animation: rotate 1s infinite linear;
+  -webkit-animation: rotate 1s infinite linear backwards;
+          animation: rotate 1s infinite linear backwards;
 }
 
 .modal .wpcf7 form .wpcf7-response-output {
-  font-family: var(--font-rubik);
+  font-family: var(--font-roboto);
   font-size: calc(14px + 2 * ((100vw - 768px) / 256));
   margin: 20px 0 0;
   padding: 15px 1em;
   border: 2px solid var(--color-yellow);
-  color: var(--color-dark-gray);
+  color: var(--color-white);
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 1024px){
@@ -2884,12 +2915,22 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   border: 1px solid var(--color-yellow);
 }
 
+.modal .wpcf7 form.sent .wpcf7-response-output {
+  border-color: var(--color--green-light);
+}
+
 .modal__form .wpcf7-not-valid-tip {
   text-align: center;
-  font-family: var(--font-rubik);
+  font-family: var(--font-roboto);
   font-size: 12px;
   margin-top: 5px;
   color: var(--color-invalid);
+  position: absolute;
+  width: 100%;
+  bottom: -37px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* Header */

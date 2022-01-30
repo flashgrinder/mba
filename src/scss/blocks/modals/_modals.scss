@@ -76,7 +76,7 @@
     margin: 0 auto;
 }
 
-.modal__form--steps {
+.modal__wrapp-steps {
     display: flex;
 }
 
@@ -209,6 +209,7 @@
 }
 
 .modal__input {
+    position: relative;
     font-size: 16px;
     font-weight: 300;
     line-height: 17px;
@@ -274,20 +275,21 @@
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    border: 3px solid var(--color-green-light);
+    border: 3px solid var(--color-blue);
     border-top: 3px solid #595959;
     transform-origin: center;
-    animation: rotate 1s infinite linear;
+    animation: rotate 1s infinite linear backwards;
 }
 
 .modal .wpcf7 form .wpcf7-response-output {
-    font-family: var(--font-rubik);
+    font-family: var(--font-roboto);
     font-size: responsive 14px 16px;
     font-range: 768px 1024px;
     margin: 20px 0 0;
     padding: 15px 1em;
     border: 2px solid var(--color-yellow);
-    color: var(--color-dark-gray);
+    color: var(--color-white);
+    border-radius: 10px;
 }
 
 .modal .wpcf7 form.invalid .wpcf7-response-output, 
@@ -295,10 +297,19 @@
     border: 1px solid var(--color-yellow);
 }
 
+.modal .wpcf7 form.sent .wpcf7-response-output {
+    border-color: var(--color--green-light);
+}
+
 .modal__form .wpcf7-not-valid-tip {
     text-align: center;
-    font-family: var(--font-rubik);
+    font-family: var(--font-roboto);
     font-size: 12px;
     margin-top: 5px;
     color: var(--color-invalid);
+    position: absolute;
+    width: 100%;
+    bottom: -37px;
+    left: 50%;
+    transform: translateX(-50%);
 }
