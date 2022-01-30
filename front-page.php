@@ -1021,7 +1021,7 @@
                     </svg>
                 </div>
                 <?php $yearsCalendar = get_terms('events-year') ?>
-                <select class="filter-popup__select">
+                <select class="filter-popup__select js-select-filter">
                     <option selected value="1">Все года</option>
                     <?php foreach ($yearsCalendar as $yearCalendar) { ?>
                         <option value="<?php echo $yearCalendar->name ?>"> <?php echo $yearCalendar->name ?></option>
