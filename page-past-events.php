@@ -121,7 +121,7 @@
                             <div class="events__date text text--normal text--dark-low text--w-light">
                                 <?php 
                                     $unixtimestamp = strtotime( get_field('date') ); 
-                                    echo date_i18n( "d F, Y", $unixtimestamp ); 
+                                    echo date_i18n( "d F Y", $unixtimestamp ); 
                                 ?>
                             </div>
                         </div>
