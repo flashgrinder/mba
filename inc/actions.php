@@ -19,7 +19,7 @@
     } );
 
     add_action( 'wp_enqueue_scripts', 'action_function_url', 99 );
-    
+
     function action_function_url(){
         wp_localize_script( 'calendar', 'mba', array(
             'ajax_url' => admin_url('admin-ajax.php'),
@@ -71,7 +71,7 @@
                     'view_item'                  => 'Посмотреть категорию',
                     'update_item'                => 'Сохранить категорию',
                     'add_new_item'               => 'Добавить новую категорию',
-                    'new_item_name'              => 'Новая категория',          
+                    'new_item_name'              => 'Новая категория',
                     'parent_item'                => 'Родительская категория',
                     'parent_item_colon'          => 'Родительская категория:',
                     'search_items'               => 'Поиск по категориям',
@@ -95,6 +95,15 @@
                 'query_var'             => true,
             )
         );
+        register_taxonomy(
+            'events-year',
+            'events',
+            array(
+                'label' => 'Год',
+    			'meta_box_cb' => 'post_categories_meta_box'
+            )
+        );
+
 
     }
 

@@ -62,9 +62,38 @@ function get_event_day() {
 	$query_data = $_GET;
     $dataFilterCat = ($query_data['dataFilterCat']) ? explode(',',$query_data['dataFilterCat']) : false;
     $dataFilterTime = ($query_data['dataFilterTime']) ? explode(',',$query_data['dataFilterTime']) : false;
+	$year = ($query_data['year']) ? explode(',',$query_data['year']) : false;
     $tax_query = array('relation' => 'AND',);
+    $meta_query = array('relation' => 'AND',);
 
+
+	$dataTime_query = array('relation' => 'OR');
     $today = date("m.d.y");
+
+	if ($year) {
+		$start = $year[0] . '-01-01';
+		$end =  $year[0] . '-12-31';
+		$bet = array(
+			'key' => 'date',
+			'value' => array($start, $end),
+			'compare' => 'BETWEEN',
+			'type' => 'DATE'
+		);
+		array_push($meta_query, $bet);
+	} else {
+		if ($dataFilterTime) {
+			foreach ($dataFilterTime as $key => $value) {
+				$bet = array(
+			        'key' => 'date',
+					'value' => date("Y-m-d"),
+					'compare' => $value,
+					'type' => 'DATE'
+			    );
+				array_push($dataTime_query, $bet);
+			}
+			array_push($meta_query, $dataTime_query);
+		}
+	}
 
     if ($dataFilterCat) {
 		$bet = array(
@@ -75,63 +104,223 @@ function get_event_day() {
 		array_push($tax_query, $bet);
 	}
 
-    if ($dataFilterTime) {
-		$position = $dataFilterTime[0] + $dataFilterTime[1];
-	}
+
 
     $arrayEvents = new WP_Query( array(
       'post_type' => 'events',
        'posts_per_page' => -1,
        'tax_query' =>$tax_query,
+	   'meta_query' => $meta_query,
    ));
 
-    $today = date("d.m.Y");
     $dateEvents = [];
     if ( $arrayEvents->have_posts() ) :
         while ( $arrayEvents->have_posts() ) : $arrayEvents->the_post();
-
-            $id = get_the_ID();
-            if ($dataFilterTime) {
-                if ($position == 1) {
-                    $date = get_field('date');
-                    if (strtotime($today) < strtotime($date)) {
-                        if (array_key_exists($date, $dateEvents)) {
-                            $dateEvents[$date] .= ',' . strval($id) ;
-                        } else {
-                            $dateEvents[$date] = strval($id);
-                        }
-                    }
-                } elseif ($position == -1) {
-                    $date = get_field('date');
-                    if (strtotime($today) > strtotime($date)) {
-                        if (array_key_exists($date, $dateEvents)) {
-                            $dateEvents[$date] .= ',' . strval($id) ;
-                        } else {
-                            $dateEvents[$date] = strval($id);
-                        }
-                    }
-                } elseif ($position == 0) {
-                    $date = get_field('date');
-                    if (array_key_exists($date, $dateEvents)) {
-                        $dateEvents[$date] .= ',' . strval($id) ;
-                    } else {
-                        $dateEvents[$date] = strval($id);
-                    }
-                }
-            } else {
-                $date = get_field('date');
-                if (array_key_exists($date, $dateEvents)) {
-                    $dateEvents[$date] .= ',' . strval($id) ;
-                } else {
-                    $dateEvents[$date] = strval($id);
-                }
-            }
-
+			$date = get_field('date');
+			$id = get_the_ID();
+			if (array_key_exists($date, $dateEvents)) {
+				$dateEvents[$date] .= ',' . strval($id) ;
+			} else {
+				$dateEvents[$date] = strval($id);
+			}
         endwhile;
         wp_reset_postdata();
     endif;
-    $startDate = date('n.Y', strtotime("last month"));
-    echo Calendar::getInterval($startDate, date('n.Y', strtotime('+10 month')), $dateEvents);
+	if ($year) {
+		echo Calendar::getInterval('01.'.$year[0], '12.'.$year[0], $dateEvents);
+	} else {
+		$startDate = date('n.Y', strtotime("last month"));
+		echo Calendar::getInterval($startDate, date('n.Y', strtotime('+10 month')), $dateEvents);
+	}
+
+    // $startDate = date('n.Y', strtotime("last month"));
+    // echo Calendar::getInterval($startDate, date('n.Y', strtotime('+10 month')), $dateEvents);
+
+	die();
+}
+
+
+
+
+add_action('wp_ajax_get_past_event', 'get_past_event');
+add_action('wp_ajax_nopriv_get_past_event', 'get_past_event');
+
+function get_past_event() {
+	$query_data = $_GET;
+    $dataFilterCat = ($query_data['dataFilterCat']) ? explode(',',$query_data['dataFilterCat']) : false;
+	$paged = (isset($query_data['paged']) ) ? intval($query_data['paged']) : 1;
+
+    $tax_query = array('relation' => 'AND',);
+
+
+    if ($dataFilterCat) {
+		$bet = array(
+	        'taxonomy' => 'events-category',
+	        'field' => 'id',
+	        'terms' => $dataFilterCat,
+	    );
+		array_push($tax_query, $bet);
+	}
+
+	$per_page = 1;
+    $arrayEvents = new WP_Query( array(
+		'post_type' 	   => 'events',
+		'posts_per_page'   => -1,
+		'orderby'          => 'date',
+		'order'       	   => 'DESC',
+		'suppress_filters' => true,
+		'posts_per_page'   => $per_page,
+		'paged' 		   => $paged,
+		'meta_query'  	   => array(
+			array(
+				'key' => 'date',
+				'value' => date("Y-m-d"),
+				'compare' => '<=',
+				'type' => 'DATE'
+			)
+		),
+		'orderby'		   => 'meta_value',
+		'order'   		   => 'ASC',
+		'tax_query'		   => $tax_query,
+   ));
+
+
+    if ( $arrayEvents->have_posts() ) :
+		?><div class="events__items"><?php
+        while ( $arrayEvents->have_posts() ) : $arrayEvents->the_post();
+
+            ?>
+			<a href="" class="events__item">
+				<div class="events__pic">
+					<img src="<?php echo STANDART_DIR; ?>img/uploads/event-photo-1.jpg" alt="" class="events__thumb">
+				</div>
+				<div class="events__inner">
+					<div class="events__heading">
+						<h3 class="events__headline text text--large text--white text--w-light">
+							<?php the_title() ?>
+						</h3>
+						<div class="events__date text text--normal text--dark-low text--w-light">
+							<?php the_field('date_text') ?>
+						</div>
+					</div>
+					<p class="events__excerpt text text--large text--white text--w-light">
+						<?php the_field('desc') ?>
+					</p>
+				</div>
+			</a>
+			<?php
+
+
+        endwhile;
+        wp_reset_postdata();
+		?></div>
+	    <nav class="events__navigation pagination" role="navigation">
+            <div class="nav-links text text--large text--white text--w-light">
+            <?php echo paginate_links(
+                $args = array(
+                    'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+                    'total'        => $arrayEvents->max_num_pages,
+                    'current'      => max( 1, $paged ),
+                    'format'       => '?paged=%#%',
+                    'prev_next' => false
+                )); ?>
+            </div>
+        </nav>
+		<?php
+    endif;
+
+	die();
+}
+
+
+
+
+add_action('wp_ajax_get_future_event', 'get_future_event');
+add_action('wp_ajax_nopriv_get_future_event', 'get_future_event');
+
+function get_future_event() {
+	$query_data = $_GET;
+    $dataFilterCat = ($query_data['dataFilterCat']) ? explode(',',$query_data['dataFilterCat']) : false;
+	$paged = (isset($query_data['paged']) ) ? intval($query_data['paged']) : 1;
+
+    $tax_query = array('relation' => 'AND',);
+
+
+    if ($dataFilterCat) {
+		$bet = array(
+	        'taxonomy' => 'events-category',
+	        'field' => 'id',
+	        'terms' => $dataFilterCat,
+	    );
+		array_push($tax_query, $bet);
+	}
+
+	$per_page = 1;
+    $arrayEvents = new WP_Query( array(
+		'post_type' 	   => 'events',
+		'posts_per_page'   => -1,
+		'orderby'          => 'date',
+		'order'       	   => 'DESC',
+		'suppress_filters' => true,
+		'posts_per_page'   => $per_page,
+		'paged' 		   => $paged,
+		'meta_query'  	   => array(
+			array(
+				'key' => 'date',
+				'value' => date("Y-m-d"),
+				'compare' => '>=',
+				'type' => 'DATE'
+			)
+		),
+		'orderby'		   => 'meta_value',
+		'order'   		   => 'ASC',
+		'tax_query'		   => $tax_query,
+   ));
+
+
+    if ( $arrayEvents->have_posts() ) :
+		?><div class="events__items"><?php
+        while ( $arrayEvents->have_posts() ) : $arrayEvents->the_post();
+
+            ?>
+			<a href="" class="events__item">
+				<div class="events__pic">
+					<img src="<?php echo STANDART_DIR; ?>img/uploads/event-photo-1.jpg" alt="" class="events__thumb">
+				</div>
+				<div class="events__inner">
+					<div class="events__heading">
+						<h3 class="events__headline text text--large text--white text--w-light">
+							<?php the_title() ?>
+						</h3>
+						<div class="events__date text text--normal text--dark-low text--w-light">
+							<?php the_field('date_text') ?>
+						</div>
+					</div>
+					<p class="events__excerpt text text--large text--white text--w-light">
+						<?php the_field('desc') ?>
+					</p>
+				</div>
+			</a>
+			<?php
+
+
+        endwhile;
+        wp_reset_postdata();
+		?></div>
+	    <nav class="events__navigation pagination" role="navigation">
+            <div class="nav-links text text--large text--white text--w-light">
+            <?php echo paginate_links(
+                $args = array(
+                    'base'         => str_replace( 999999999, '%#%', esc_url( get_pagenum_link( 999999999 ) ) ),
+                    'total'        => $arrayEvents->max_num_pages,
+                    'current'      => max( 1, $paged ),
+                    'format'       => '?paged=%#%',
+                    'prev_next' => false
+                )); ?>
+            </div>
+        </nav>
+		<?php
+    endif;
 
 	die();
 }

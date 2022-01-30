@@ -3,3 +3,38 @@ Template Name: MBA
 Version: 1.0.0
 Author: FCDigital
 */
+
+.filter-popup__top-left {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+}
+
+.filter-popup__clear {
+    margin-right: 25px;
+}
+
+.select {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+
+.select.is-active .select__body{
+    top: 100%;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.select__body {
+    position: absolute;
+    visibility: hidden;
+    background: #000;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
