@@ -11,6 +11,8 @@
     include_once(__DIR__ . '/inc/actions.php');
     /* Filters */
     include_once(__DIR__ . '/inc/filters.php');
+    /* Post Type Events */
+    include_once(__DIR__ . '/inc/post-type_events.php');
     /* Calendar-action */
     include_once(__DIR__ . '/inc/calendar-action.php');
     /* Calendar */
