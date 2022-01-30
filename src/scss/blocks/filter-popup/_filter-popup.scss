@@ -10,6 +10,7 @@
     background: #1F1F1F;
     z-index: 1000;
     display: none;
+    @include mobileXS(padding, 5px);
 }
 
 .filter-popup__wrapp {
@@ -18,17 +19,29 @@
     padding: 18px 25px 31px;
     max-width: 1024px;
     width: 100%;
+    @include mobileXS(padding, 18px 20px 25px);
 }
 
 .filter-popup__inner {
     display: flex;
     justify-content: space-between;
     margin: 0 0 40px 0;
+    @include mobileXS-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+    }
 }
 
 .filter-popup__top-left {
     display: flex;
     align-items: center;
+    @include mobileXS-block {
+        margin-top: 30px;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .filter-popup__clear {
@@ -36,6 +49,7 @@
     align-items: center;
     cursor: pointer;
     margin-right: 25px;
+    @include mobileXS(margin-right, 15px);
 }
 
 .filter-popup__clear-svg {
@@ -46,11 +60,17 @@
 .filter-popup__clear-name {
     margin-right: 15px;
     white-space: nowrap;
+    @include mobileXS(margin-right, 10px);
 }
 
 .filter-popup__close {
     display: flex;
     align-items: center;
+    @include mobileXS-block {
+        order: -1;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
 
 .filter-popup__close-title {
@@ -65,10 +85,18 @@
 .filter-popup__content {
     display: flex;
     margin-bottom: 50px;
+    @include mobileXS-block {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
 }
 
 .filter-popup__content>div:not(:last-child) {
     margin-right: 60px;
+    @include mobileXS-block {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
 }
 
 .filter-popup__field:not(:last-child) {
@@ -111,6 +139,10 @@
   border-color: var(--color-blue);
   background-color: var(--color-blue);
   background-image: url("../img/icons/check.png");
+}
+
+.filter-popup__select.ss-main {
+    @include mobileXS(width, auto);
 }
 
 .filter-popup__select .ss-single-selected {

@@ -5016,6 +5016,62 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     right: -20px;
   }
 
+  .filter-popup {
+    padding: 5px;
+  }
+
+  .filter-popup__wrapp {
+    padding: 18px 20px 25px;
+  }
+
+  .filter-popup__inner {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-right: auto;
+  }
+
+  .filter-popup__top-left {
+    margin-top: 30px;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    width: 100%;
+  }
+
+  .filter-popup__clear {
+    margin-right: 15px;
+  }
+
+  .filter-popup__clear-name {
+    margin-right: 10px;
+  }
+
+  .filter-popup__close {
+    -webkit-order: -1;
+            order: -1;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    width: 100%;
+  }
+
+  .filter-popup__content {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .filter-popup__content > div:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .filter-popup__select.ss-main {
+    width: auto;
+  }
+
   .mba-anim__outer {
     min-height: 290px;
   }
