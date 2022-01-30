@@ -118,15 +118,14 @@ jQuery(function ($) {
 
     function dataYear() {
         var year;
-        if ($('.select__item.choice').length) {
-            year = $('.select__item.choice').attr('data-year').trim()
+        if ($('.filter-popup__select').val() != 1) {
+            year = $('.filter-popup__select').val();
         }
         return year;
     }
     $('.filter-popup__clear').on('click', function() {
        $('.calendar__popup-event').empty();
-       $('.select__item').removeClass('choice');
-       $('.select__current').html('Все года');
+       $('.filter-popup__select option[value=1]').prop('selected', true);
        $('#time-frame').fadeIn();
        $(".filter-popup input[type=checkbox]").prop('checked', false);
         get_event_day();
@@ -142,11 +141,13 @@ jQuery(function ($) {
         $('#time-frame').fadeIn();
     })
 
-     $('.select__item-year').on('click', function() {
-         $(this).addClass('choice');
-         $('#time-frame').fadeOut();
-         $(".filter-popup #time-frame input[type=checkbox]").prop('checked', false);
-         $('.select__item').not(this).removeClass('choice');
+     $('.filter-popup__select').on('change', function() {
+        if ($(this).val() == 1) {
+            $('#time-frame').fadeIn();
+        } else {
+            $('#time-frame').fadeOut();
+            $(".filter-popup #time-frame input[type=checkbox]").prop('checked', false);
+        }
      })
 
 
@@ -227,82 +228,56 @@ jQuery(function ($) {
         });
    }
 
-    let select = function () {
-        let selectHeader = document.querySelectorAll('.select__header');
-        let selectItem = document.querySelectorAll('.select__item');
-
-        selectHeader.forEach((item) => {
-            item.addEventListener('click', selectToggle);
-        });
-
-        selectItem.forEach((item) => {
-            item.addEventListener('click', selectChoose);
-        });
-
-        function selectToggle() {
-            this.parentElement.classList.toggle('is-active');
-        }
-
-        function selectChoose() {
-
-            let text = this.innerHTML,
-            select = this.closest('.select');
-
-            currentText = select.querySelector('.select__current');
-            currentText.innerHTML = text;
-            select.classList.remove('is-active');
-        }
-   };
-   select();
 
 
 
 
 
 
-        $('.filter-popup__past-btn').on('click', function() {
-             get_past_event()
-        })
+
+    $('.filter-popup__past-btn').on('click', function() {
+         get_past_event()
+    })
 
 
-        $(document).on("click",".events__result-past .page-numbers",function(e){
-			e.preventDefault();
-			var url = $(this).attr('href');
-			var paged = url.split('&paged=');
-			if(~url.indexOf('&paged=')){
-				paged = url.split('&paged=');
-			} else {
-				paged = url.split('/page/');
-			}
-			get_past_event(paged[1]);
-		});
+    $(document).on("click",".events__result-past .page-numbers",function(e){
+		e.preventDefault();
+		var url = $(this).attr('href');
+		var paged = url.split('&paged=');
+		if(~url.indexOf('&paged=')){
+			paged = url.split('&paged=');
+		} else {
+			paged = url.split('/page/');
+		}
+		get_past_event(paged[1]);
+	});
 
 
-       function get_past_event(paged)
-       {
-           var ajax_url = mba.ajax_url;
-           $.ajax({
-               type: 'GET',
-               url: ajax_url,
-               data: {
-                 action: 'get_past_event',
-                 dataFilterCat: dataFilterCat,
-                 paged: paged,
-               },
-               beforeSend: function ()
-               {
-               },
-               success: function(data)
-               {
+    function get_past_event(paged)
+    {
+       var ajax_url = mba.ajax_url;
+       $.ajax({
+           type: 'GET',
+           url: ajax_url,
+           data: {
+             action: 'get_past_event',
+             dataFilterCat: dataFilterCat,
+             paged: paged,
+           },
+           beforeSend: function ()
+           {
+           },
+           success: function(data)
+           {
 
-                   $('.events__result').html(data)
-               },
-               error: function()
-               {
+               $('.events__result').html(data)
+           },
+           error: function()
+           {
 
-               },
-           });
-      }
+           },
+       });
+    }
 
 
     $('.filter-popup__future-btn').on('click', function() {

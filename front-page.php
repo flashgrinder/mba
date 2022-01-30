@@ -1021,22 +1021,12 @@
                     </svg>
                 </div>
                 <?php $yearsCalendar = get_terms('events-year') ?>
-                <div class="select select-dropdown">
-                  <div class="select__header">
-                    <span class="select__current">Все года</span>
-                  </div>
-                  <div class="select__body">
-                    <div class="select__item select__item-full">
-                      Все года
-                    </div>
+                <select class="filter-popup__select">
+                    <option selected value="1">Все года</option>
                     <?php foreach ($yearsCalendar as $yearCalendar) { ?>
-
-                        <div class="select__item select__item-year" data-year="<?php echo $yearCalendar->name ?>">
-                           <?php echo $yearCalendar->name ?>
-                        </div>
+                        <option value="<?php echo $yearCalendar->name ?>"> <?php echo $yearCalendar->name ?></option>
                     <?php } ?>
-                  </div>
-                </div>
+                </select>
             </div>
 
             <div class="filter-popup__close">
