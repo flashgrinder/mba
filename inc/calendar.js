@@ -12,31 +12,25 @@ jQuery(function ($) {
         spaceBetween: 25,
         speed: 1000,
         slidesPerView: 1,
+        slidesPerGroup: 1,
         navigation: {
           nextEl: ".calendar__btn-next",
           prevEl: ".calendar__btn-prev",
         },
-    	pagination: {
+        pagination: {
             el: '.pagination',
             clickable: true,
             renderBullet: function (index, className) {
-              return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*3]) + '-' +  (names[index*3+2]) + '</span>';
+              return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index]) + '</span>';
             },
         },
         breakpoints: {
-            320: {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-                pagination: {
-                    renderBullet: function (index, className) {
-                      return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index]) + '</span>';
-                    },
-                },
-            },
             576: {
                 slidesPerView: 2,
                 slidesPerGroup: 2,
                 pagination: {
+                    el: '.pagination',
+                    clickable: true,
                     renderBullet: function (index, className) {
                       return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*2]) + '-' +  (names[index*2+1]) + '</span>';
                     },
@@ -45,8 +39,14 @@ jQuery(function ($) {
             768: {
                 slidesPerView: 3,
                 slidesPerGroup: 3,
+                pagination: {
+                    el: '.pagination',
+                    clickable: true,
+                    renderBullet: function (index, className) {
+                      return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*3]) + '-' +  (names[index*3+2]) + '</span>';
+                    },
+                },
             }
-
         }
     });
 
@@ -186,25 +186,40 @@ jQuery(function ($) {
                     spaceBetween: 25,
                     speed: 1000,
                     slidesPerView: 1,
+                    slidesPerGroup: 1,
                     navigation: {
                       nextEl: ".calendar__btn-next",
                       prevEl: ".calendar__btn-prev",
                     },
-                	pagination: {
+                    pagination: {
                         el: '.pagination',
                         clickable: true,
                         renderBullet: function (index, className) {
-                          return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*3]) + '-' +  (names[index*3+2]) + '</span>';
+                          return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index]) + '</span>';
                         },
                     },
                     breakpoints: {
                         576: {
                             slidesPerView: 2,
                             slidesPerGroup: 2,
+                            pagination: {
+                                el: '.pagination',
+                                clickable: true,
+                                renderBullet: function (index, className) {
+                                  return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*2]) + '-' +  (names[index*2+1]) + '</span>';
+                                },
+                            },
                         },
                         768: {
                             slidesPerView: 3,
                             slidesPerGroup: 3,
+                            pagination: {
+                                el: '.pagination',
+                                clickable: true,
+                                renderBullet: function (index, className) {
+                                  return '<span class="calendar__cell text text--white text--w-light ' + className + '">' + (names[index*3]) + '-' +  (names[index*3+2]) + '</span>';
+                                },
+                            },
                         }
                     }
                 });
