@@ -129,8 +129,9 @@ function get_event_day() {
 	if ($year) {
 		echo Calendar::getInterval('01.'.$year[0], '12.'.$year[0], $dateEvents);
 	} else {
-		$startDate = date('n.Y', strtotime("last month"));
-		echo Calendar::getInterval($startDate, date('n.Y', strtotime('+10 month')), $dateEvents);
+        $startDate = date('n.Y', strtotime("last month"));
+        $endDate = date('n.Y', mktime(0, 0, 0, date("m") + 10, 15, date("Y")));
+        echo Calendar::getInterval($startDate, $endDate, $dateEvents);
 	}
 
     // $startDate = date('n.Y', strtotime("last month"));

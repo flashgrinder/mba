@@ -1124,7 +1124,8 @@
                     wp_reset_postdata();
                 endif;
                 $startDate = date('n.Y', strtotime("last month"));
-                echo Calendar::getInterval($startDate, date('n.Y', strtotime('+10 month')), $dateEvents);
+                $endDate = date('n.Y', mktime(0, 0, 0, date("m") + 10, 15, date("Y")));
+                echo Calendar::getInterval($startDate, $endDate, $dateEvents);
                  ?>
             </div>
             <div class="calendar__popup-wrapp bg--dark-light">
