@@ -7,8 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding-top: 90px;
-    @include mobileXS(padding-top, 60px);
     &__container {
         width: 100%;
         margin: 0 auto;

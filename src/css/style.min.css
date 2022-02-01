@@ -2368,7 +2368,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
           flex-direction: column;
   -webkit-align-items: stretch;
           align-items: stretch;
-  padding-top: 90px;
 }
 
 .page__container {
@@ -4950,10 +4949,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .container-full {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .page {
-    padding-top: 60px;
   }
 
   .wysiwyg ul {
