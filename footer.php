@@ -12,35 +12,15 @@
                     <h3 class="footer__headline text text--very-big text--white text--w-bold">
                         Навигация
                     </h3>
-                    <nav class="footer__menu menu">
-                        <ul class="footer__menu-list menu__list">
-                            <li class="menu__item footer__menu-item">
-                                <a href="" class="menu__link">
-                                    Главная
-                                </a>
-                            </li>
-                            <li class="menu__item footer__menu-item">
-                                <a href="" class="menu__link">
-                                    Резиденты
-                                </a>
-                            </li>
-                            <li class="menu__item footer__menu-item">
-                                <a href="" class="menu__link">
-                                    Календарь событий
-                                </a>
-                            </li>
-                            <li class="menu__item footer__menu-item">
-                                <a href="" class="menu__link">
-                                    Ближайшие мероприятия
-                                </a>
-                            </li>
-                            <li class="menu__item footer__menu-item">
-                                <a href="" class="menu__link">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <?php
+                        wp_nav_menu([
+                            'theme_location'  => 'footer-menu',
+                            'container'       => 'nav',
+                            'container_class' => 'footer__menu menu',
+                            'menu_class'      => '',
+                            'items_wrap'      => '<ul class="%2$s menu__list footer__menu-list">%3$s</ul>'
+                        ]);
+                    ?>
                     <ul class="footer__lang footer__lang--desktop text text--normal text--white text--w-light hide">
                         <li class="footer__lang-item">
                             <a href="" class="footer__lang-link">En</a>

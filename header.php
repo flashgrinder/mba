@@ -169,35 +169,15 @@
         <div class="header__wrapper-menu js-menu">
             <div class="header__menu container">
                 <div class="header__menu-inner">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item header__menu-item">
-                                <a href="" class="menu__link menu__link--home">
-                                    Главная
-                                </a>
-                            </li>
-                            <li class="menu__item header__menu-item">
-                                <a href="" class="menu__link menu__link--rezidents">
-                                    Резиденты
-                                </a>
-                            </li>
-                            <li class="menu__item header__menu-item">
-                                <a href="" class="menu__link menu__link--calendar">
-                                    Календарь событий
-                                </a>
-                            </li>
-                            <li class="menu__item header__menu-item">
-                                <a href="" class="menu__link menu__link--events">
-                                    Ближайшие мероприятия
-                                </a>
-                            </li>
-                            <li class="menu__item header__menu-item">
-                                <a href="" class="menu__link menu__link--contacts">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <?php
+                        wp_nav_menu([
+                            'theme_location'  => 'header-menu',
+                            'container'       => 'nav',
+                            'container_class' => 'menu',
+                            'menu_class'      => '',
+                            'items_wrap'      => '<ul class="%2$s header__menu-list menu__list ">%3$s</ul>'
+                        ]);
+                    ?>
                 </div>
             </div>
         </div>
