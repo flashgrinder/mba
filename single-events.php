@@ -36,7 +36,10 @@
                         <?php the_field('location'); ?>
                     </p>
                     <div class="event-screen__date text text--big text--white text--w-light">
-                        <?php echo get_the_date('j F Y', $before); ?>
+                        <?php 
+                            $unixtimestamp = strtotime( get_field('date') ); 
+                            echo date_i18n( "d F Y", $unixtimestamp ); 
+                        ?>
                     </div>
                 </div>
             </div>
