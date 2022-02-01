@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer__contacts-wrapper">
+                <div class="footer__contacts-wrapper" id="contacts">
                     <h3 class="footer__headline text text--very-big text--white text--w-bold">
                         Контакты
                     </h3>

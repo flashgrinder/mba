@@ -446,7 +446,7 @@
 <!-- /. Capability -->
 
 <!-- Residents-slider -->
-<section class="residents-slider bg--dark block-padding">
+<section class="residents-slider bg--dark block-padding" id="residents">
     <div class="residents-slider__body container">
         <h2 class="residents-slider__heading title title--large title--white-low-75 title--w-semibold title--indent">
             Резиденты клуба выпускников МВА ЭФ МГУ
@@ -1077,7 +1077,7 @@
 <!-- /. Filter-popup -->
 
 <!-- Calendar -->
-<section class="calendar bg--dark block-padding">
+<section class="calendar bg--dark block-padding" id="events-calendar">
     <div class="calendar__body container">
         <div class="calendar__wrapp">
             <div class="calendar__name-inner">
