@@ -71,11 +71,14 @@
                         </span>
                     </a>
                     <div class="footer__social">
-                        <a href="" class="footer__social-icon">
+                        <a href="https://www.facebook.com/Клуб-выпускников-МВА-ЭФ-МГУ-101460292001270/" class="footer__social-icon">
                             <img src="<?php echo STANDART_DIR; ?>img/icons/soc-icon-fb.svg" alt="" class="footer__social-img">
                         </a>
-                        <a href="" class="footer__social-icon">
+                        <a href="https://www.instagram.com/mba.ef.mgu.club/" class="footer__social-icon">
                             <img src="<?php echo STANDART_DIR; ?>img/icons/soc-icon-inst.svg" alt="" class="footer__social-img">
+                        </a>
+                        <a href="https://t.me/mba_ef_mgu_club" class="footer__social-icon">
+                            <img src="<?php echo STANDART_DIR; ?>img/icons/soc-icon-tg.svg" alt="" class="footer__social-img">
                         </a>
                     </div>
                     <ul class="footer__lang footer__lang--mobile text text--normal text--white text--w-light hide">
