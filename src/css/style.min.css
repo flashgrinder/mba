@@ -3951,6 +3951,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   padding: 10px;
   background: transparent;
   transition: background 0.2s ease-in-out;
+  z-index: 1199;
 }
 
 .calendar__btn:hover {
@@ -4644,6 +4645,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .about__plate-decr {
     margin-top: 15px;
+  }
+
+  .calendar__arrows {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-justify-content: center;
+            justify-content: center;
+    margin-top: 15px;
+  }
+
+  .calendar__btn {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    top: auto;
+    right: auto;
+    left: auto;
+  }
+
+  .calendar__btn:hover {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .calendar__btn.calendar__btn-prev {
+    margin-right: 10px;
+  }
+
+  .calendar__btn.calendar__btn-next {
+    margin-left: 10px;
   }
 }
 

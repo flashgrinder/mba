@@ -166,13 +166,19 @@
 		} while ($begin == true);
 		$out .= '</div>
        </div>
-       <div class="calendar__btn-next calendar__btn"><svg class="calendar__btn-svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <path d="M1 31L12.4645 19.5355C14.4171 17.5829 14.4171 14.4171 12.4645 12.4645L0.999999 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-       </svg></div>
-       <div class="calendar__btn-prev calendar__btn"><svg class="calendar__btn-svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <path d="M14 1L2.53553 12.4645C0.582912 14.4171 0.582911 17.5829 2.53553 19.5355L14 31" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-       </svg>
-       </div></div>';
+       <div class="calendar__arrows">
+            <div class="calendar__btn-next calendar__btn">
+                <svg class="calendar__btn-svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 31L12.4645 19.5355C14.4171 17.5829 14.4171 14.4171 12.4645 12.4645L0.999999 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="calendar__btn-prev calendar__btn">
+                <svg class="calendar__btn-svg" width="15" height="32" viewBox="0 0 15 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1L2.53553 12.4645C0.582912 14.4171 0.582911 17.5829 2.53553 19.5355L14 31" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+        </div>';
 		return $out;
 	}
 }
