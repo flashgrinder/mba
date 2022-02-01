@@ -18,11 +18,15 @@
                     <h1 class="event-screen__heading title title title--big title--white title--w-semibold">
                         <?php the_title(); ?>
                     </h1>
-                    <div class="event-screen__action">
-                        <a href="#event-report" class="event-screen__btn button button--blue">
-                            Посмотреть отчёт
-                        </a>
-                    </div>
+                    <?php 
+                        $event_report = the_field('event-report');
+                        if( !empty( $event_report ) ): ?>
+                        <div class="event-screen__action">
+                            <a href="#event-report" class="event-screen__btn button button--blue">
+                                Посмотреть отчёт
+                            </a>
+                        </div>
+                    <?php endif; ?>
                 </div>
                 <div class="event-screen__info">
                     <h3 class="event-screen__location title title title--large title--white title--w-semibold">
