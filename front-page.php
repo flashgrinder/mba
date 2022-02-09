@@ -24,7 +24,7 @@
                     ),
                 );
 
-                $wp_query = new WP_Query( $args );
+                $wp_events = new WP_Query( $args );
 
                 $today = date("d.m.Y");
                 if( have_posts() ) :
@@ -453,493 +453,77 @@
         </h2>
         <div class="residents-slider__container">
             <div class="residents-slider__swiper-full swiper-container">
-                <div class="residents-slider__swiper-wrapper swiper-wrapper">
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-1.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Константин Волков
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        СТО Ешь Деревенское Esh-derevenskoe.ru
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Константин Волков
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        СТО Ешь Деревенское Esh-derevenskoe.ru
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
+                <?php if( have_rows('residents-slider') ): ?>
+                    <div class="residents-slider__swiper-wrapper swiper-wrapper">
+                        <?php while( have_rows('residents-slider') ): the_row(); ?>
+                        <?php 
 
+                            $resident_photo = get_sub_field('resident_photo');
+                            $resident_name = get_sub_field('resident_name');
+                            $resident_rank = get_sub_field('resident_rank');
+                        
+                        ?>
+                        <div class="residents-slider__swiper-slide swiper-slide">
+                            <div class="residents-slider__inner-slide">
+                                <div class="residents-slider__wrapper-pic">
+                                    <?php if( !empty( $resident_photo ) ): ?>
+                                        <div class="residents-slider__photo">
+                                            <img src="<?php echo esc_url($resident_photo['url']); ?>" alt="<?php echo esc_url($resident_photo['alt']); ?>" class="residents-slider__img">
+                                        </div>
+                                    <?php endif; ?>
+                                    <div class="residents-slider__info-mobile">
+                                        <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
+                                            <?php echo $resident_name; ?>
+                                        </h3>
+                                        <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
+                                            <?php echo $resident_rank; ?>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
+                                <div class="residents-slider__info">
+                                    <div class="residents-slider__descr">
+                                        <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
+                                            <?php echo $resident_name; ?>
+                                        </h3>
+                                        <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
+                                            <?php echo $resident_rank; ?>
+                                        </div>
+                                        <div class="residents-slider__text text text--large text--white-low-75 text--w-light hide-mobile">
+                                            <?php echo $resident_descr; ?>
+                                        </div>
+                                    </div>
+                                    <div class="residents-slider__actions">
+                                        <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
+                                            Стать резидентом клуба
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <?php endwhile; ?>
                     </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-2.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Анна Кровякова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Управляющий партнер международной консалтинговой компании FINCOM group
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Анна Кровякова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Управляющий партнер международной консалтинговой компании FINCOM group
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Юрист, управляющий партнер FINCOM group, FINCOM group US, руководитель общественной приемной при Уполномоченном по защите прав предпринимателей в г. Москве по вопросам молодежного предпринимательства, президент фонда экономического развития “Инвестиции и регионы”. Опыт работы в консалтинге с 2006 года, стажировка в юридическом офисе Майами, США,  руководитель проектов по сопровождению процедур банкротства групп компаний, кредитных организаций. Специализация: общегражданское и корпоративное право,  уголовноправовая практика,  практика регулирования в сфере земельных отношений,  практика сопровождения процедур банкротства.
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-3.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Алексей Шигин
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Финансовый директор компании  “Голутвинская слобода” https://golutvino.ru
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Алексей Шигин
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Финансовый директор компании  “Голутвинская слобода” https://golutvino.ru
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-4.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Елена Омелченко
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Исполнительный директор ООО «НПП «Монитор»
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Елена Омелченко
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Исполнительный директор ООО «НПП «Монитор»
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        Компания  уже более 20 лет успешно осуществляет деятельность по разработке и производству приборов для функциональной диагностики - прикроватные мониторы пациента, кардиографы и электрокардиографы, спирографы и спирометры.
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-5.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Александр Козинкин
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Начальник управления продаж ПАО РНКБ Банк www.rncb.ru
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Александр Козинкин
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Начальник управления продаж ПАО РНКБ Банк www.rncb.ru
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-6.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        ?
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        ?
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        ?
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        ?
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-7.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Анна Ершова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Senior Finance manager компании P&G
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Анна Ершова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Senior Finance manager компании P&G
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-8.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Дина Куркова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Экономический факультет МГУ имени М.В. Ломоносова
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Дина Куркова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Менеджер программ МВА, менеджер по международному сотрудничеству программ МВА ЭФ МГУ, менеджер по работе с выпускниками МВА
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-9.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Юрий Сидякин
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Юрий Сидякин
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-10.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Наталия Терешина
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Преподаватель высшей школы, кандидат экономических наук, MBA, профессиональный ведущий деловых игр tnatalyv.com
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Наталия Терешина
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Преподаватель высшей школы, кандидат экономических наук, MBA, профессиональный ведущий деловых игр tnatalyv.com
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-11.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Зульфия Дускабилова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                        Налоговый консультант, руководитель налогового управления АО “Вертолеты” России.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Зульфия Дускабилова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Налоговый консультант, руководитель налогового управления АО “Вертолеты” России.
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="residents-slider__swiper-slide swiper-slide">
-                        <div class="residents-slider__inner-slide">
-                            <div class="residents-slider__wrapper-pic">
-                                <div class="residents-slider__photo">
-                                    <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-img-12.png" alt="" class="residents-slider__img">
-                                </div>
-                                <div class="residents-slider__info-mobile">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular">
-                                        Оксана Иванова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
-                                    Начальник управления международной финансовой отчетности и внутреннего контроля российской энергетической компании ПАО «Юнипро».
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="residents-slider__info">
-                                <div class="residents-slider__descr">
-                                    <h3 class="residents-slider__title title title--av-medium title--white title--w-regular hide-mobile">
-                                        Оксана Иванова
-                                    </h3>
-                                    <div class="residents-slider__rank text text--large text--white-low-75 text--w-light hide-mobile">
-                                        Начальник управления международной финансовой отчетности и внутреннего контроля российской энергетической компании ПАО «Юнипро».
-                                    </div>
-                                    <div class="residents-slider__text text text--large text--white-low-75 text--w-light">
-                                        
-                                    </div>
-                                </div>
-                                <div class="residents-slider__actions">
-                                    <a href="javascript:;" class="residents-slider__btn button button--blue" data-hystmodal="#become-reident">
-                                        Стать резидентом клуба
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endif; ?>
             </div>
             <div class="residents-slider__inner-slider-thumb">
                 <div class="residents-slider__swiper-thumb swiper-container hide-mobile">
+                    <?php if( have_rows('residents-slider') ): ?>
                     <div class="residents-slider__swiper-wrapper-thumb swiper-wrapper">
+                        <?php while( have_rows('residents-slider') ): the_row(); ?>
+                        <?php 
+
+                            $resident_photo = get_sub_field('resident_photo');
+                        
+                        ?>
                         <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-1.png" alt="" class="residents-slider__img-thumb">
-                            </div>
+                            <?php if( !empty( $resident_photo ) ): ?>
+                                <div class="residents-slider__photo-thumb">
+                                    <img src="<?php echo esc_url($resident_photo['url']); ?>" alt="<?php echo esc_url($resident_photo['alt']); ?>" class="residents-slider__img-thumb">
+                                </div>
+                            <?php endif; ?>
                         </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-2.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-3.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-4.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-5.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-6.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-7.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-8.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-9.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-10.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-11.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
-                        <div class="residents-slider__swiper-slide-thumb swiper-slide">
-                            <div class="residents-slider__photo-thumb">
-                                <img src="<?php echo STANDART_DIR; ?>img/residents/resident-slider-thumb-12.png" alt="" class="residents-slider__img-thumb">
-                            </div>
-                        </div>
+                        <?php endwhile; ?>
                     </div>
+                    <?php endif; ?>
                 </div>
                 <div class="residents-slider__pagination swiper-pagination"></div>
                 <div class="residents-slider__navigation hide-mobile">

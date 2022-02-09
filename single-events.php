@@ -19,7 +19,7 @@
                         <?php the_title(); ?>
                     </h1>
                     <?php 
-                        $event_report = the_field('event-report');
+                        $event_report = get_field('event-report');
                         if( !empty( $event_report ) ): ?>
                         <div class="event-screen__action">
                             <a href="#event-report" class="event-screen__btn button button--blue">
