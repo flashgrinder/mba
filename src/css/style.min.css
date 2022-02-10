@@ -3286,10 +3286,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 /* About */
 
-.about__description {
-  max-width: 835px;
-}
-
 .about__outer {
   margin: 0 auto;
   max-width: 1100px;
