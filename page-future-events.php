@@ -110,16 +110,22 @@
                 while( $futureEvents->have_posts() ) : $futureEvents->the_post(); ?>
 
 
-                <a href="" class="events__item">
+                <a href="<?php the_permalink(); ?>" class="events__item">
                     <div class="events__pic">
-                        <img src="<?php echo STANDART_DIR; ?>img/uploads/event-photo-1.jpg" alt="" class="events__thumb">
+                        <?php
+                            $default_attr = [
+                                'class'	=> "events__thumb",
+                                'alt'   => get_the_title()
+                            ];
+                                        
+                            echo get_the_post_thumbnail( $post->ID, 'thumbnail', $default_attr ) ?>
                     </div>
                     <div class="events__inner">
                         <div class="events__heading">
-                            <h3 class="events__headline text text--large text--white text--w-light">
+                            <h3 class="events__headline text text--very-big text--white text--w-bold">
                                 <?php the_title(); ?>
                             </h3>
-                            <div class="events__date text text--normal text--dark-low text--w-light">
+                            <div class="events__date text text--normal text--white-low-75 text--w-light">
                                 <?php 
                                     $unixtimestamp = strtotime( get_field('date') ); 
                                     echo date_i18n( "d F Y", $unixtimestamp ); 
