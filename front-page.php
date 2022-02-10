@@ -27,9 +27,9 @@
                 $wp_events = new WP_Query( $args );
 
                 $today = date("d.m.Y");
-                if( have_posts() ) :
+                if( $wp_events->have_posts() ) :
 
-                    while( have_posts() ) : the_post(); ?>
+                    while( $wp_events->have_posts() ) : $wp_events->the_post(); ?>
                     <?php
 
                         $idPost = get_the_ID();
@@ -84,8 +84,8 @@
                             </article>
                         </div>
                     <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
                 <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
             </div>
         </div>
         <div class="main-slider__pagination"></div>
