@@ -461,6 +461,7 @@
                             $resident_photo = get_sub_field('resident_photo');
                             $resident_name = get_sub_field('resident_name');
                             $resident_rank = get_sub_field('resident_rank');
+                            $resident_descr = get_sub_field('resident_descr');
                         
                         ?>
                         <div class="residents-slider__swiper-slide swiper-slide">
