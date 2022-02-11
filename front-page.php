@@ -461,6 +461,7 @@
                             $resident_photo = get_sub_field('resident_photo');
                             $resident_name = get_sub_field('resident_name');
                             $resident_rank = get_sub_field('resident_rank');
+                            $resident_additional = get_sub_field('resident_additional');
                             $resident_descr = get_sub_field('resident_descr');
                         
                         ?>
@@ -479,6 +480,9 @@
                                         <div class="residents-slider__rank text text--large text--white-low-75 text--w-light">
                                             <?php echo $resident_rank; ?>
                                         </div>
+                                        <div class="residents-slider__additional wysiwyg">
+                                            <?php echo $resident_additional; ?>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="residents-slider__info">
@@ -491,6 +495,9 @@
                                         </div>
                                         <div class="residents-slider__text text text--large text--white-low-75 text--w-light hide-mobile">
                                             <?php echo $resident_descr; ?>
+                                        </div>
+                                        <div class="residents-slider__additional wysiwyg hide-mobile">
+                                            <?php echo $resident_additional; ?>
                                         </div>
                                     </div>
                                     <div class="residents-slider__actions">

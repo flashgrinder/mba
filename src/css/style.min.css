@@ -2582,6 +2582,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   transition: ease 0.2s;
 }
 
+.wysiwyg a:hover {
+  text-decoration: underline;
+  color: var(--color-blue);
+  transition: ease 0.2s;
+}
+
 /* Modals */
 
 .modal {
@@ -3586,6 +3592,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 .residents-slider__rank {
   margin-top: 25px;
+}
+
+.residents-slider__additional {
+  margin-top: 20px;
 }
 
 .residents-slider__text {

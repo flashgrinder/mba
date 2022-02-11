@@ -76,3 +76,9 @@
     color: var(--color-white-low-75);
     transition: ease .2s;
 }
+
+.wysiwyg a:hover {
+    text-decoration: underline;
+    color: var(--color-blue);
+    transition: ease .2s;
+}
