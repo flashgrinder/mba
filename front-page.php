@@ -95,7 +95,7 @@
                                                 Клуб выпускников МВА экономического факультета МГУ
                                             </h2>
                                             <div class="main-slider__action">
-                                                <a href="javascript:;" class="main-slider__btn button button--blue" data-hystmodal="#become-reident">
+                                                <a href="#join" class="main-slider__btn button button--blue">
                                                     Стать резидентом
                                                 </a>
                                             </div>
@@ -751,7 +751,7 @@
 <!-- /. Calendar -->
 
 <!-- Join-club -->
-<section class="join-club bg--dark block-padding">
+<section class="join-club bg--dark block-padding" id="join">
     <div class="join-club__body container">
         <h2 class="join-club__heading title title--large title--white-low-75 title--w-semibold title--indent">
             Вступить в клуб
