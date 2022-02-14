@@ -27,9 +27,9 @@
                 $wp_events = new WP_Query( $args );
 
                 $today = date("d.m.Y");
-                if( $wp_events->have_posts() ) :
+                if( $wp_events->have_posts() ) : ?>
 
-                    while( $wp_events->have_posts() ) : $wp_events->the_post(); ?>
+                   <?php while( $wp_events->have_posts() ) : $wp_events->the_post(); ?>
                     <?php
 
                         $idPost = get_the_ID();
@@ -85,8 +85,30 @@
                         </div>
                     <?php endwhile; ?>
                     <?php wp_reset_postdata(); ?>
-                <?php endif; ?>
-            </div>
+                    <?php else : ?>
+                        <div class="main-slider__swiper-slide swiper-slide">
+                            <article class="main-slider__info main-slider__ionfo--plug">
+                                <div class="main-slider__inner-info">
+                                    <div class="main-slider__info-wrapp">
+                                        <div class="main-slider__header">
+                                            <h2 class="main-slider__heading title title--av-large title--white title--w-semibold">
+                                                Клуб выпускников МВА экономического факультета МГУ
+                                            </h2>
+                                            <div class="main-slider__action">
+                                                <a href="javascript:;" class="main-slider__btn button button--blue" data-hystmodal="#become-reident">
+                                                    Стать резидентом
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-slider__slide-pic">
+                                    <img class="main-slider__slide-img" src="<?php echo STANDART_DIR; ?>img/main-slider-plug.jpg" alt="">
+                                </div>
+                            </article>
+                        </div>
+                    <?php endif; ?>
+                </div>
         </div>
         <div class="main-slider__pagination"></div>
     </div>
