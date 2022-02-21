@@ -22,10 +22,24 @@
     @include mobileXS(padding, 18px 20px 25px);
 }
 
+.filter-popup__subtitle {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+  
+.filter-popup__icon-info {
+    margin-right: 15px;
+}
+  
+.filter-popup__svg-info {
+    display: block;
+}
+
 .filter-popup__inner {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 40px 0;
+    margin: 0 0 25px 0;
     @include mobileXS-block {
         flex-direction: column;
         justify-content: center;
@@ -42,6 +56,10 @@
         justify-content: space-between;
         width: 100%;
     }
+    @include mobileXSS-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .filter-popup__clear {
@@ -50,6 +68,10 @@
     cursor: pointer;
     margin-right: 25px;
     @include mobileXS(margin-right, 15px);
+    @include mobileXSS-block {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }
 
 .filter-popup__clear-svg {
@@ -165,6 +187,9 @@
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     color: var(--color-white-low-45);
     border-radius: 10px;
+    @include mobileXSS-block {
+        padding: 10px 15px;
+    }
 }
 
 .filter-popup__select .ss-content {
@@ -189,6 +214,7 @@
 .filter-popup__select .ss-content .ss-list .ss-option {
     border-bottom: 1px solid rgba(18, 18, 18, 0.1);
     padding: 13px 31px;
+    @include mobileXSS(padding, 9px 15px);
 }
 
 .filter-popup__select .ss-content .ss-list .ss-option:hover {

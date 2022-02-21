@@ -3730,12 +3730,28 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   width: 100%;
 }
 
+.filter-popup__subtitle {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.filter-popup__icon-info {
+  margin-right: 15px;
+}
+
+.filter-popup__svg-info {
+  display: block;
+}
+
 .filter-popup__inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  margin: 0 0 40px 0;
+  margin: 0 0 25px 0;
 }
 
 .filter-popup__top-left {
@@ -5250,5 +5266,25 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @media screen and (max-width: 400px) {
   .modal__actions .wpcf7-spinner {
     margin: 0 4px;
+  }
+
+  .filter-popup__top-left {
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+  }
+
+  .filter-popup__clear {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .filter-popup__select .ss-single-selected {
+    padding: 10px 15px;
+  }
+
+  .filter-popup__select .ss-content .ss-list .ss-option {
+    padding: 9px 15px;
   }
 }

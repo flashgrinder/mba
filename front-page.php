@@ -654,6 +654,18 @@
                 </svg>
             </div>
         </div>
+        <p class="filter-popup__subtitle text text--small text--white-low-45 text--w-light">
+            <span class="filter-popup__icon-info">
+                <svg class="filter-popup__svg-info" width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11.0688" r="10.5" stroke="#707070"></circle>
+                    <circle cx="11" cy="7.06885" r="1" fill="#707070"></circle>
+                    <path d="M11 11.0688V16.0688" stroke="#707070" stroke-width="1.25" stroke-linecap="round"></path>
+                </svg>
+            </span>
+            <span class="filter-popup__subtitle-info">
+                Выберите одну или несколько интересующих вас категорий.
+            </span>
+        </p>
         <div class="filter-popup__content">
             <div class="filter-popup__inputs-wrapp">
                 <?php $termsCalendar = get_terms('events-category') ?>
