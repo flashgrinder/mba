@@ -2968,6 +2968,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 .header__img-logo {
   display: block;
+  max-width: 70px;
 }
 
 .header__inner {
@@ -4527,6 +4528,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
           justify-content: space-between;
   -webkit-align-items: flex-start;
           align-items: flex-start;
+}
+
+.footer__img-logo {
+  display: block;
+  max-width: 160px;
 }
 
 .footer__headline {
