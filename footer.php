@@ -34,12 +34,12 @@
                     <h3 class="footer__headline text text--very-big text--white text--w-bold">
                         Контакты
                     </h3>
-                    <a href="tel:+79998887766" class="footer__phone text text--normal text--white text--w-light">
+                    <a href="tel:+79372255338" class="footer__phone text text--normal text--white text--w-light">
                         <span class="footer__phone-text">
                             Телефон:
                         </span>
                         <span class="footer__phone-num">
-                            +7 999 - 888 - 77 - 66
+                            +7 937 225-53-38
                         </span>
                     </a>
                     <a href="mailto:MBA_club@gmail.com" class="footer__email text text--normal text--white text--w-light">
@@ -47,7 +47,7 @@
                             E-mail:
                         </span>
                         <span class="footer__email-line">
-                            MBA_club@gmail.com
+                            info@mba-mgu.club
                         </span>
                     </a>
                     <div class="footer__social">
