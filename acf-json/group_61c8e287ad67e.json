@@ -131,6 +131,22 @@
             "maxlength": ""
         },
         {
+            "key": "field_62cd3bd9d7f8f",
+            "label": "Ссылка на сайт",
+            "name": "event_link",
+            "type": "url",
+            "instructions": "Укажите ссылку. Если ссылка не указана, будет выводиться модальное окно с формой обратной связи.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_61e512449b3d2",
             "label": "Блок - Галерея",
             "name": "",
@@ -234,5 +250,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1643713517
+    "modified": 1657617488
 }
