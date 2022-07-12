@@ -48,9 +48,16 @@
                                                 <?php the_title(); ?>
                                             </h2>
                                             <div class="main-slider__action">
+                                            <?php $event_link = get_field('event_link', $post->ID); ?>
+                                            <?php if( $event_link ) : ?>
+                                                <a href="<?php echo $event_link; ?>" class="main-slider__btn button button--blue" target="_blank">
+                                                    Принять участие
+                                                </a>
+                                            <?php else : ?>
                                                 <a href="javascript:;" class="main-slider__btn button button--blue" data-hystmodal="#participate">
                                                     Принять участие
                                                 </a>
+                                            <?php endif; ?>
                                             </div>
                                         </div>
                                         <div class="main-slider__text">
@@ -83,9 +90,6 @@
                                 </div>
                             </article>
                         </div>
-                    <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
-                    <?php else : ?>
                         <div class="main-slider__swiper-slide swiper-slide">
                             <article class="main-slider__info main-slider__ionfo--plug">
                                 <div class="main-slider__inner-info">
@@ -107,7 +111,31 @@
                                 </div>
                             </article>
                         </div>
-                    <?php endif; ?>
+                    <?php endwhile; ?>
+                    <?php wp_reset_postdata(); ?>
+                    <!-- <?php else : ?>
+                        <div class="main-slider__swiper-slide swiper-slide">
+                            <article class="main-slider__info main-slider__ionfo--plug">
+                                <div class="main-slider__inner-info">
+                                    <div class="main-slider__info-wrapp">
+                                        <div class="main-slider__header">
+                                            <h2 class="main-slider__heading title title--av-large title--white title--w-semibold">
+                                                Клуб выпускников МВА экономического факультета МГУ
+                                            </h2>
+                                            <div class="main-slider__action">
+                                                <a href="#join" class="main-slider__btn button button--blue">
+                                                    Стать резидентом
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-slider__slide-pic">
+                                    <img class="main-slider__slide-img" src="<?php echo STANDART_DIR; ?>img/main-slider-plug.jpg" alt="">
+                                </div>
+                            </article>
+                        </div>
+                    <?php endif; ?> -->
                 </div>
         </div>
         <div class="main-slider__pagination"></div>
