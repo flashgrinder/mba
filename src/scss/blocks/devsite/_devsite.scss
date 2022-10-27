@@ -1,0 +1,23 @@
+.devsite {
+    padding: 15px;
+    background: #121212;
+}
+
+.devsite__outer {
+    text-align: center;
+}
+
+.devsite__link {
+    display: inline-flex;
+    align-items: center;
+    grid-gap: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.devsite__logo,
+.devsite__logo-img {
+    display: block;
+    max-width: 30px;
+}
