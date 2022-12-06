@@ -54,7 +54,7 @@
                 $lastMonth = 12;
             }
             $number = cal_days_in_month(CAL_GREGORIAN, $lastMonth, $year);
-            if ( $emptyField !== 0) {
+            if ( $emptyFields !== 0) {
                 $lastNumber = $number - $emptyFields;
                 $out.= '<td class="calendar__day lastMonth"><span class="calendar__cell text text--white text--w-light">'.$lastNumber.'</span></td>';
 
