@@ -85,7 +85,6 @@
             'post_type' => 'events',
             'posts_per_page' => $per_page,
             'paged'          => $paged,
-            'orderby'     => 'date',
             'order'       => 'DESC',
             'suppress_filters' => true,
             'meta_query' => array(
@@ -97,7 +96,6 @@
                 )
             ),
             'orderby' => 'meta_value',
-            'order' => 'ASC',
         );
 
         $pastEvents = new WP_Query( $args );

@@ -167,7 +167,7 @@ function get_past_event() {
     $arrayEvents = new WP_Query( array(
 		'post_type' 	   => 'events',
 		'posts_per_page'   => -1,
-		'orderby'          => 'date',
+		// 'orderby'          => 'date',
 		'order'       	   => 'DESC',
 		'suppress_filters' => true,
 		'posts_per_page'   => $per_page,
@@ -181,7 +181,7 @@ function get_past_event() {
 			)
 		),
 		'orderby'		   => 'meta_value',
-		'order'   		   => 'ASC',
+		// 'order'   		   => 'ASC',
 		'tax_query'		   => $tax_query,
    ));
 
@@ -269,7 +269,7 @@ function get_future_event() {
     $arrayEvents = new WP_Query( array(
 		'post_type' 	   => 'events',
 		'posts_per_page'   => -1,
-		'orderby'          => 'date',
+		// 'orderby'          => 'date',
 		'order'       	   => 'DESC',
 		'suppress_filters' => true,
 		'posts_per_page'   => $per_page,
@@ -283,7 +283,7 @@ function get_future_event() {
 			)
 		),
 		'orderby'		   => 'meta_value',
-		'order'   		   => 'ASC',
+		// 'order'   		   => 'ASC',
 		'tax_query'		   => $tax_query,
    ));
 
