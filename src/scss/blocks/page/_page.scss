@@ -12,5 +12,8 @@
         margin: 0 auto;
         overflow: hidden;
         flex: 1 0 auto;
+        padding-top: 94px;
+        @include tabletSM(padding-top, 90px);
+        @include mobileXS(padding-top, 60px);
     }
 }
