@@ -3872,10 +3872,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 /* Event-screen */
 
-.event-screen__body {
-  padding-top: 90px;
-}
-
 .event-screen__img {
   display: block;
   margin: 0;
@@ -4758,10 +4754,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .mba-anim__svg--short {
     max-height: 140px;
-  }
-
-  .event-screen__body {
-    padding-top: 60px;
   }
 
   .events__inner {
